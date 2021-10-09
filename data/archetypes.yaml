@@ -1,0 +1,70 @@
+- name: Dragon Blooded
+  features:
+  - name: Lightning
+    description: >
+      Your body is infused with lightning.
+      All your attacks gain the repeatable property.
+      Attacks that already had the repeatable property
+      cost focus instead of energy to repeat.
+      You can take an additional reaction on each turn.
+      You gain the Lightning Arcana.
+  - name: Fire
+    description: >
+      Your supply of physical energy is unfailing.
+      You have no need for sleep.
+      Gain +2 to Fortitude saves.
+      You gain the Fire Arcana.
+  - name: Dragon Blood
+    description: >
+      Gain +1 to any two elemental affinities.
+      Your wounds heal more quickly than usual;
+      any time you would normally heal one wound, you heal two.
+  - name: Draconic Form
+    description: >
+      You grow wings and scales.
+      Your eyes and mind sharpen.
+      Gain +2 to Will and Perception saves.
+      Gain +1 Earth affinity. Whenever you move, you can fly.
+  - name: Eternal
+    description: >
+      Gain the Life arcana.
+      You have eternal youth.
+      Regain 2 defense at the beginning of each turn.
+- name: Myrmidon
+  features:
+  - name: Purple Powder
+    description: >
+      Learn the firearms or grenade discipline.
+      You can spend one focus per die to reroll hit dice when you make a ranged attack.
+      Each die can only be rerolled once.
+  - name: Battle Savant
+    description: >
+      Learn the Sun or Storm discipline.
+      You can take an additional reaction on each turn.
+      You can maintain an additional stance.
+  - name: Veteran
+    description: >
+      Gain +2 Fire affinity. Learn any weapon discipline.
+  - name: Martial Artist
+    description: >
+      Learn the Unarmed discipline. Increase the magnitude of your melee attacks by 2.
+  - name: Magnificent Warrior
+    description: >
+      Learn any two disciplines. Gain 1 Water affinity.
+- name: Artificer
+  features:
+  - name: Mechanic
+    description: >
+      Learn the Fabrication or Lightning Arcana. You can enhance each of the minions you create once.
+  - name: Arcane Intellect
+    description: >
+      Gain the Telepahy or Conjuration arcana. Gain +3 Focus.
+  - name: Reactives
+    description: >
+      Learn the Fire or Transmutation arcana. Gain +3 Energy.
+  - name: Biologics
+    description: >
+      Learn the Potions or Necromancy arcana. Also learn the Life or Pestilence arcana. Gain +1 Resilience.
+  - name: Runic Magic
+    description: >
+      Learn the Runic or Ritual arcana. You can create a Golem with 3 enhancements.

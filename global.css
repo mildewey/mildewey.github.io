@@ -12,6 +12,35 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+	text-align: left;
+}
+
+
+
+ul {
+	list-style: none;
+	margin: 0
+	padding: 0
+}
+
+.dropdown input[type="checkbox"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+input[type="checkbox"] ~ ul{
+  height: 0;
+  transform: scaleY(0);
+}
+
+input[type="checkbox"]:checked ~ ul{
+  height: 100%;
+  transform-origin: top;
+  transition: transform .2s ease-out;
+  transform: scaleY(1);
+}
+
 a {
 	color: rgb(0,100,200);
 	text-decoration: none;
@@ -60,4 +89,34 @@ button:not(:disabled):active {
 
 button:focus {
 	border-color: #666;
+}
+
+.collapsible.open {
+	background-color: #444;
+	color: #eee;
+	cursor: pointer;
+	text-align: left;
+	align: left;
+	width: max-content;
+}
+
+.collapsible.closed {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	text-align: left;
+	align: left;
+	width: max-content;
+}
+
+.collapsible.closed ~ .content {
+	height: 0;
+	transform: scaleY(0);
+}
+
+.collapsible.open ~ .content {
+	height: 100%;
+	transform-origin: top;
+	transition: transform .2s ease-out;
+	transform: scaleY(1);
 }

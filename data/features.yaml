@@ -1,0 +1,37 @@
+- name: Runes
+  type: Arcana
+  actions:
+  - name: Inscribe
+    action: Ritual
+    ritual: Time based on rune
+    description: >
+      You etch and mystically enchant runes on an object, willing creature, or bound creature.
+      The runes have a wide variety of effects. A target can have multiple runes inscribed on it,
+      but only one effect of those runes can be triggered at once.
+  - name: Activate
+    action: Tactics
+    repeatable: true
+    uses: Energy
+    concentration: Focus
+    duration: Depends on rune
+    description: >
+      Activate a rune on a target for the appropriate duration or until you stop concentrating on the spell.
+- name: Chemistry
+  type: Arcana
+  actions:
+  - name: Brew
+    action: Ritual
+    ritual: Time and money based on potion or poison
+    description: >
+      You craft a potion, ointment, or poison that can be applied once (see below)
+      by any creature in possession of the potion or poison.
+      The cost is ¼ of the base cost of the item in a typical market.
+      GMs may rule that you can find appropriate ingredients through roleplaying
+      ventures including skill checks in appropriate areas.
+  - name: Apply
+    action: Tactics
+    repeatable: true
+    uses: At-Will
+    duration: Depends on potion or poison
+    description: >
+      Activate a potion or poison for the appropriate duration.

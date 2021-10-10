@@ -1,0 +1,50 @@
+div.card {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 3px;
+  background-color: #17a;
+}
+
+div.card-contents {
+  background-color: white;
+  height: 90%;
+  width: 95%;
+  margin: 5px auto;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+div.card.small.open {
+  max-height: 480px;
+}
+
+div.card.medium.open {
+  max-height: 640px;
+}
+
+div.card.large.open {
+  max-height: 800px;
+}
+
+div.card.closed {
+  height: fit-content;
+}
+
+div.card.small {
+  width: 300px;
+}
+
+div.card.medium {
+  width: 400px;
+}
+
+div.card.large {
+  width: 500px;
+}
+
+h3.card {
+  padding-bottom: 5px;
+  margin: 5px;
+  color: white;
+}

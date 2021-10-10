@@ -3,7 +3,6 @@ div.card {
   border-radius: 10px;
   padding: 0px;
   margin: 3px;
-  background-color: #17a;
   flex: none;
 }
 
@@ -14,7 +13,6 @@ div.card-contents {
   border-radius: 10px;
   overflow-y: scroll;
   scrollbar-width: thin;
-  height: 250px;
 }
 
 div.card-contents.small {
@@ -22,11 +20,11 @@ div.card-contents.small {
 }
 
 div.card-contents.medium {
-  height: 350px;
+  height: 400px;
 }
 
 div.card-contents.large {
-  height: 450px;
+  height: 550px;
 }
 
 div.card.small.open {
@@ -34,15 +32,15 @@ div.card.small.open {
 }
 
 div.card.medium.open {
-  height: 400px;
+  height: 450px;
 }
 
 div.card.large.open {
-  height: 500px;
+  height: 600px;
 }
 
 div.card.closed {
-  height: 50px;
+  height: 40px;
 }
 
 div.card.small {
@@ -50,15 +48,37 @@ div.card.small {
 }
 
 div.card.medium {
-  width: 400px;
+  width: 450px;
 }
 
 div.card.large {
-  width: 500px;
+  width: 650px;
 }
 
 h3.card {
   padding-bottom: 5px;
   margin: 5px;
   color: white;
+}
+
+div.card-holder {
+  width: 900px;
+}
+
+div.card-holder.open {
+  height: auto;
+}
+
+div.card-holder.closed {
+  height: 40px;
+}
+
+div.card-holder-contents {
+  background-color: white;
+  margin: 5px auto;
+  padding: 3px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  height: 250px;
 }

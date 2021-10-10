@@ -1,0 +1,18 @@
+- name: Berserker
+  type: Discipline
+  actions:
+  - name: Berserk
+    action: Guard
+    uses: Once
+    concentration: Special
+    duration: 10 rounds
+    description: >
+      You tap into the indomitable energy of the Berserk, replacing thought with
+      instinct and hesitation with unbridled savagery.  Immediately and at the
+      beginning of each turn, you may expend focus to intensify the Rage. For
+      each focus spent, increase the impact of your attacks by 1 until the start
+      of your next turn. The effect ends early if you spend no focus at the
+      start of your turn. At the end of each of your turns, gain temporary
+      Defense equal to the damage you inflicted. This temporary Defense is
+      replaced at the end of your next turn. To maintain concentration, you must
+      spend all your focus at the beginning of your turn.

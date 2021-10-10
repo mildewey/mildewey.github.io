@@ -4,31 +4,45 @@ div.card {
   padding: 0px;
   margin: 3px;
   background-color: #17a;
+  flex: none;
 }
 
 div.card-contents {
   background-color: white;
-  height: 90%;
-  width: 95%;
   margin: 5px auto;
   padding: 3px;
   border-radius: 10px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  height: 250px;
+}
+
+div.card-contents.small {
+  height: 250px;
+}
+
+div.card-contents.medium {
+  height: 350px;
+}
+
+div.card-contents.large {
+  height: 450px;
 }
 
 div.card.small.open {
-  max-height: 480px;
+  height: 300px;
 }
 
 div.card.medium.open {
-  max-height: 640px;
+  height: 400px;
 }
 
 div.card.large.open {
-  max-height: 800px;
+  height: 500px;
 }
 
 div.card.closed {
-  height: fit-content;
+  height: 50px;
 }
 
 div.card.small {

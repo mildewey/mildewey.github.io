@@ -1,8 +1,20 @@
-Wymblade:
+- name: Wymblade
   archetypes:
-    - Myrmidon
-    - Dragon Blooded
-Dragonsteel:
+  - Myrmidon
+  - Dragon Blooded
+  level1:
+    name: Puissance
+    description: >
+      Gain +2 Will and +2 Fortitude. Learn a weapon discipline. After using an
+      arcana, gain +2 damage on all Weapon attacks until the start of your next
+      turn.
+  level6:
+    name: Intuitive Warrior
+    description: >
+      Gain +1 to all saves. When you use a discipline, you can use an arcana of
+      the same action type by spending 1 Focus. When you do this, you cannot
+      spend an energy to repeat an action.
+- name: Dragonsteel
   archetypes:
-    - Dragon Blooded
-    - Artificer
+  - Dragon Blooded
+  - Artificer

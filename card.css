@@ -61,24 +61,8 @@ h3.card {
   color: white;
 }
 
-div.card-holder {
-  width: 900px;
-}
-
-div.card-holder.open {
-  height: auto;
-}
-
-div.card-holder.closed {
-  height: 40px;
-}
-
-div.card-holder-contents {
-  background-color: white;
-  margin: 5px auto;
-  padding: 3px;
-  border-radius: 10px;
-  overflow-y: scroll;
-  scrollbar-width: thin;
-  height: 250px;
+div.card-collection {
+  display: flex;
+  flex-flow: row wrap;
+  height: min;
 }

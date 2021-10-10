@@ -16,7 +16,11 @@ h1,h2,h3,h4,h5,h6,p {
 	text-align: left;
 }
 
-
+h3 {
+  font-size: 1.3em;
+  font-weight: 50;
+  padding: 3px 10px;
+}
 
 ul {
 	list-style: none;

@@ -1,3 +1,12 @@
+- name: Basic Actions
+  type: Discipline
+  actions:
+  - name: Strike
+    flavor: You strike at a target with a weapon
+    action: Attack
+    repeatable: true
+    description: >
+      Attack 1 target within your weapon's range for 2x2h+2 damage.
 - name: Berserker
   type: Discipline
   actions:

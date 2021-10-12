@@ -94,33 +94,3 @@ button:not(:disabled):active {
 button:focus {
 	border-color: #666;
 }
-
-.collapsible.open {
-	background-color: #444;
-	color: #eee;
-	cursor: pointer;
-	text-align: left;
-	align: left;
-	width: max-content;
-}
-
-.collapsible.closed {
-	background-color: #eee;
-	color: #444;
-	cursor: pointer;
-	text-align: left;
-	align: left;
-	width: max-content;
-}
-
-.collapsible.closed ~ .content {
-	height: 0;
-	transform: scaleY(0);
-}
-
-.collapsible.open ~ .content {
-	height: 100%;
-	transform-origin: top;
-	transition: transform .2s ease-out;
-	transform: scaleY(1);
-}

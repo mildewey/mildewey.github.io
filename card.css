@@ -39,8 +39,12 @@ div.card.large.open {
   height: 600px;
 }
 
-div.card.closed {
-  height: 40px;
+div.card.small.closed, div.card.medium.closed, div.card.large.closed {
+  height: max-content;
+  width: max-content;
+  font-size: 10pt;
+  padding: 2px;
+  text-align: center;
 }
 
 div.card.small {
@@ -61,8 +65,17 @@ h3.card {
   color: white;
 }
 
+p.card {
+  vertical-align: middle;
+  padding: 2px;
+  margin: 1px;
+  color: white;
+  font-size: 12pt;
+}
+
 div.card-collection {
   display: flex;
   flex-flow: row wrap;
   height: min;
+  align-items: baseline;
 }

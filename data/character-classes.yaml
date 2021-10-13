@@ -20,12 +20,15 @@
   - Dragon Blooded
   - Artificer
   features:
-  - name: Minion Hive
+  - name: Fortified
     type: base
     description: >
-      Gain +3 Will and +1 Fortitude. Learn an arcana. Any minion you create can
-      be the source of any arcana you use. Minions use your Will save.
-  - name: Indomitable Minions
+      You have begun experimenting with enhancing the power of your blood with
+      the power of alchemy. Gain +2 to all saves. Gain +1 to your Fire affinity.
+  - name: Quikened
     type: advanced
     description: >
-      Gain +2 Will and +1 Perception. Minions you create gain 1 enhancement.
+      You have leveraged the innate magic of your blood and your study of alchemy
+      to enhance your physique, giving you access to deep reserves of magical energy.
+      When you double down on two arcana that cost energy, you pay one less
+      energy.

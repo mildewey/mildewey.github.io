@@ -2,33 +2,61 @@
   archetypes:
   - Myrmidon
   - Dragon Blooded
-  features:
+  aspects:
   - name: Puissant Blade
     type: base
-    description: >
-      Gain +2 Will and +2 Fortitude. Learn a weapon discipline. After using an
-      arcana, gain +2 damage on all Weapon attacks until the start of your next
-      turn.
+    flavor: You channel eldritch energy into your weapon.
+    features:
+    - type: stat
+      stat: Will
+      bonus: 2
+    - type: stat
+      stat: Fortitude
+      bonus: 2
+    - type: discipline
+      tag: Weapon
+    - type: passive
+      name: Crackling Blade
+      description: >
+        After using an arcana, gain +2 damage on all Weapon attacks until the
+        start of your next turn.
   - name: Intuitive Spellsword
     type: advanced
-    description: >
-      Gain +1 to all saves. If you double down on an action and one action is
-      an Arcana and the other is a Discipline, you may spend 3 focus instead of
-      1 Energy.
+    flavor: You wield magic and swords as one .
+    features:
+    - type: passive
+      name: Spellsword
+      description: >
+        When you use both an arcana and a discipline action and double down, you
+        can spend an additional energy to double down twice. Your doubled down
+        actions must include both an arcana and a discipline action.
 - name: Dragonsteel
   archetypes:
   - Dragon Blooded
   - Artificer
-  features:
+  aspects:
   - name: Fortified
     type: base
-    description: >
-      You have begun experimenting with enhancing the power of your blood with
-      the power of alchemy. Gain +2 to all saves. Gain +1 to your Fire affinity.
-  - name: Quikened
+    flavor: You have begun experimenting with enhancing the power of your blood with the power of alchemy.
+    features:
+    - type: stat
+      stat: Fortitude
+      bonus: 2
+    - type: stat
+      stat: Perception
+      bonus: 2
+    - type: stat
+      stat: Will
+      bonus: 2
+    - type: passive
+      name: Power from Pain
+      description: Gain +2 to all saves. When you take a wound, you regain one energy.
+  - name: Quickened
     type: advanced
-    description: >
+    flavor: >
       You have leveraged the innate magic of your blood and your study of alchemy
-      to enhance your physique, giving you access to deep reserves of magical energy.
-      When you double down on two arcana that cost energy, you pay one less
-      energy.
+      to enhance yourself, giving you access to deep reserves of magical energy.
+    features:
+    - type: passive
+      name: Efficient arcana
+      description: When you double down on two arcana that cost energy, you pay one less energy.

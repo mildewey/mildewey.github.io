@@ -1,70 +1,172 @@
 - name: Dragon Blooded
-  features:
+  aspects:
   - name: Lightning
-    description: >
-      Your body is infused with lightning.
-      All your attacks gain the repeatable property.
-      Attacks that already had the repeatable property
-      cost focus instead of energy to repeat.
-      You can take an additional reaction on each turn.
-      You gain the Lightning Arcana.
+    flavor: Your body is infused with lightning.
+    features:
+    - type: passive
+      name: Lightning Reflex
+      description: You can take an additional reaction on each turn.
+    - type: passive
+      name: Lightning Strikes
+      description: All your attacks gain the repeatable property.
+    - type: arcana
+      name: Lightning
   - name: Fire
-    description: >
-      Your supply of physical energy is unfailing.
-      You have no need for sleep.
-      Gain +2 to Fortitude saves.
-      You gain the Fire Arcana.
+    flavor: Your supply of physical energy is unfailing.
+    features:
+    - type: passive
+      name: Vitality
+      description: You have no need for sleep.
+    - type: passive
+      name: Vigor
+      description: Attacks that have the repeatable property cost focus instead of energy to double down.
+    - type: stat
+      stat: Fortitude
+      bonus: 2
+    - type: arcana
+      name: Fire
   - name: Dragon Blood
-    description: >
-      Gain +1 to any two elemental affinities.
-      Your wounds heal more quickly than usual;
-      any time you would normally heal one wound, you heal two.
+    flavor: The blood of your draconic ancestor has blessed you with power.
+    features:
+    - type: stat
+      select: 2
+      repeat: true
+      options:
+      - stat: Fire
+        bonus: 1
+      - stat: Earth
+        bonus: 1
+      - stat: Water
+        bonus: 1
+      - stat: Air
+        bonus: 1
+    - type: passive
+      name: Regeneration
+      description: Your wounds heal more quickly than usual; any time you would normally heal one wound, you heal two.
   - name: Draconic Form
-    description: >
-      You grow wings and scales.
-      Your eyes and mind sharpen.
-      Gain +2 to Will and Perception saves.
-      Gain +1 Earth affinity. Whenever you move, you can fly.
+    flavor: You grow wings and scales and your eyes and mind sharpen.
+    features:
+    - type: stat
+      stat: Will
+      bonus: 2
+    - type: stat
+      stat: Perception
+      bonus: 2
+    - type: stat
+      stat: Earth
+      bonus: 1
+    - type: passive
+      name: Dragon Wings
+      description: Whenever you move, you can fly.
   - name: Eternal
-    description: >
-      Gain the Life arcana.
-      You have eternal youth.
-      Regain 2 defense at the beginning of each turn.
+    flavor: Your draconic blood makes you immortal
+    features:
+    - type: passive
+      name: Youth
+      description: You have eternal youth and cannot be subject to aging effects.
+    - type: arcana
+      name: Life
+    - type: passive
+      name: Vim
+      description: Regain 2 defense at the beginning of each turn.
 - name: Myrmidon
-  features:
+  aspects:
   - name: Purple Powder
-    description: >
-      Learn the firearms or grenade discipline.
-      You can spend one focus per die to reroll hit dice when you make a ranged attack.
-      Each die can only be rerolled once.
+    flavor: Your battlefield experience has made you proficient in modern weapons.
+    features:
+    - type: discipline
+      options:
+      - Firearms
+      - Grenades
+    - type: passive
+      name: Marksman
+      description: You can spend one focus per die to reroll hit dice when you make a ranged attack. Each die can only be rerolled once.
   - name: Battle Savant
-    description: >
-      Learn the Sun or Storm discipline.
-      You can take an additional reaction on each turn.
-      You can maintain an additional stance.
+    flavor: You don't just read battles, you become one with the battle.
+    features:
+    - type: discipline
+      options:
+      - Sun
+      - Storm
+    - type: passive
+      name: Situational Awareness
+      description: You can take an additional reaction on each turn.
   - name: Veteran
-    description: >
-      Gain +2 Fire affinity. Learn any weapon discipline.
+    flavor: You paid for your experience in blood and sweat.
+    features:
+    - type: stat
+      stat: Fire
+      bonus: 2
+    - type: discipline
+      tags:
+      - Weapon
   - name: Martial Artist
-    description: >
-      Learn the Unarmed discipline. Increase the magnitude of your melee attacks by 2.
+    flavor: You are the weapon.
+    features:
+    - type: discipline
+      name: Unarmed
+    - type: passive
+      name: Deadly Weapons
+      description: Gain Magnitude +2 on all weapon attacks.
   - name: Magnificent Warrior
-    description: >
-      Learn any two disciplines. Gain 1 Water affinity.
+    flavor: You have honed your skills to the limit.
+    features:
+    - type: discipline
+    - type: discipline
+    - type: stat
+      name: Water
+      bonus: 1
 - name: Artificer
-  features:
+  aspects:
   - name: Mechanic
-    description: >
-      Learn the Fabrication or Lightning Arcana. You can enhance each of the minions you create once.
+    flavor: You know the ins and outs of machines
+    features:
+    - type: arcana
+      options:
+      - Fabrication
+      - Lightning
+    - type: passive
+      name: Fine-tuning
+      description: You can enhance each of the minions you create once.
   - name: Arcane Intellect
-    description: >
-      Gain the Telepahy or Conjuration arcana. Gain +3 Focus.
+    flavor: You know how to manipulate spirit to project your will.
+    features:
+    - type: arcana
+      options:
+      - Telepathy
+      - Conjuration
+    - type: stat
+      stat: Focus
+      bonus: 3
   - name: Reactives
-    description: >
-      Learn the Fire or Transmutation arcana. Gain +3 Energy.
+    flavor: You have learned the secrets of volatile materials
+    features:
+    - type: arcana
+      options:
+      - Fire
+      - Transmutation
+    - type: stat
+      stat: Energy
+      bonus: 3
   - name: Biologics
-    description: >
-      Learn the Potions or Necromancy arcana. Also learn the Life or Pestilence arcana. Gain +1 Resilience.
+    description: Blood and bone are yours to command
+    features:
+    - type: arcana
+      options:
+      - Chemistry
+      - Necromancy
+    - type: arcana
+      options:
+      - Life
+      - Pestilence
+    - type: stat
+      stat: Resilience
+      bonus: 1
   - name: Runic Magic
-    description: >
-      Learn the Runic or Ritual arcana. You can create a Golem with 3 enhancements.
+    description: Sigils and energy can produce any magic
+    features:
+    - type: arcana
+      name: Runic
+    - type: minion
+      tag: Golem
+      enhancements: 3

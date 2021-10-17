@@ -4,6 +4,7 @@ div.card {
   padding: 0px;
   margin: 3px;
   flex: none;
+  max-width: 90vw;
 }
 
 div.card-contents {
@@ -15,35 +16,11 @@ div.card-contents {
   scrollbar-width: thin;
 }
 
-div.card-contents.small {
-  height: 250px;
-}
-
-div.card-contents.medium {
-  height: 400px;
-}
-
-div.card-contents.large {
-  height: 550px;
-}
-
-div.card.small.open {
-  height: 300px;
-}
-
-div.card.medium.open {
-  height: 450px;
-}
-
-div.card.large.open {
-  height: 600px;
-}
-
 div.card.small.closed, div.card.medium.closed, div.card.large.closed {
   height: max-content;
   width: max-content;
   font-size: 10pt;
-  padding: 2px;
+  padding: 0px;
   text-align: center;
 }
 
@@ -59,18 +36,14 @@ div.card.large {
   width: 650px;
 }
 
-h3.card {
-  padding-bottom: 5px;
-  margin: 5px;
-  color: white;
-}
-
 p.card {
   vertical-align: middle;
   padding: 2px;
-  margin: 1px;
+  margin: 0px;
   color: white;
   font-size: 12pt;
+  border-radius: 7px;
+  min-height: 20px;
 }
 
 div.card-collection {

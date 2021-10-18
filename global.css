@@ -1,11 +1,39 @@
+@media (prefers-color-scheme: dark) {
+	:root {
+		--default-font-color: white;
+		--reverse-font-color: black;
+		--background-color: #444;
+		--arcana-color: #005;
+		--discipline-color: #500;
+		--passive-color: #050;
+		--class-aspect-color: #550;
+		--archetype-aspect-color: #055;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--default-font-color: black;
+		--reverse-font-color: white;
+		--background-color: #eee;
+		--arcana-color: #44d;
+		--discipline-color: #d44;
+		--passive-color: #4d4;
+		--class-aspect-color: #dd4;
+		--archetype-aspect-color: #4dd;
+	}
+}
+
+
 html, body {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	background-color: var(--background-color);
+  color: var(--default-font-color);
 }
 
 body {
-	color: #333;
 	margin: 0;
 	padding: 1vmin;
 	box-sizing: border-box;
@@ -14,6 +42,88 @@ body {
 
 h1,h2,h3,h4,h5,h6,p,li {
 	text-align: left;
+	line-height: 1.5;
+}
+
+p,li {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+h4 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+article {
+  columns: 40ch;
+  height: min-content;
+	padding: 3px;
+}
+
+section {
+	padding-top: 2px;
+	margin-top: 2px;
+}
+
+article + article {
+	border-top-style: solid;
+	border-width: medium;
+}
+
+section + section {
+	border-top-style: solid;
+	border-width: thin;
+}
+
+:is(section,article) > :is(h1,h2,h3,h4,h5,h6) {
+	break-after: avoid;
+	padding-top: 3px;
+	margin-top: 3px;
+	margin-bottom: 5px;
+}
+
+table + table {
+	margin-top: 1rem;
+}
+
+tbody {
+	border-style: solid;
+}
+
+caption {
+	padding-bottom: 0.5rem;
+	text-align: left;
+	font-style: italic;
+}
+
+.openable {
+	cursor: pointer;
 }
 
 p,ul {

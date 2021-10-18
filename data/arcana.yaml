@@ -1,7 +1,7 @@
 - name: Runes
-  type: Arcana
   actions:
   - name: Inscribe
+    type: Arcana
     action: Ritual
     ritual: Time based on rune
     description: >
@@ -9,6 +9,7 @@
       The runes have a wide variety of effects. A target can have multiple runes inscribed on it,
       but only one effect of those runes can be triggered at once.
   - name: Activate
+    type: Arcana
     action: Tactics
     repeatable: true
     uses: Energy
@@ -17,9 +18,9 @@
     description: >
       Activate a rune on a target for the appropriate duration or until you stop concentrating on the spell.
 - name: Chemistry
-  type: Arcana
   actions:
   - name: Brew
+    type: Arcana
     action: Ritual
     ritual: Time and money based on potion or poison
     description: >
@@ -29,6 +30,7 @@
       GMs may rule that you can find appropriate ingredients through roleplaying
       ventures including skill checks in appropriate areas.
   - name: Apply
+    type: Arcana
     action: Tactics
     repeatable: true
     uses: At-Will

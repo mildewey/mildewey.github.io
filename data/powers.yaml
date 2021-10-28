@@ -1,4 +1,37 @@
-- name: Runes
+basicActions:
+  name: Basic Actions
+  type: Discipline
+  actions:
+  - name: Strike
+    type: Discipline
+    flavor: You strike at a target with a weapon
+    action: Attack
+    repeatable: true
+    description: >
+      Attack 1 target within your weapon's range for 2x2h+2 damage.
+berserker:
+  name: Berserker
+  type: Discipline
+  actions:
+  - name: Berserk
+    type: Discipline
+    action: Guard
+    uses: Once
+    concentration: Special
+    duration: 10 rounds
+    description: >
+      You tap into the indomitable energy of the Berserk, replacing thought with
+      instinct and hesitation with unbridled savagery.  Immediately and at the
+      beginning of each turn, you may expend focus to intensify the Rage. For
+      each focus spent, increase the impact of your attacks by 1 until the start
+      of your next turn. The effect ends early if you spend no focus at the
+      start of your turn. At the end of each of your turns, gain temporary
+      Defense equal to the damage you inflicted. This temporary Defense is
+      replaced at the end of your next turn. To maintain concentration, you must
+      spend all your focus at the beginning of your turn.
+runes:
+  name: Runes
+  type: Arcana
   actions:
   - name: Inscribe
     type: Arcana
@@ -17,7 +50,9 @@
     duration: Depends on rune
     description: >
       Activate a rune on a target for the appropriate duration or until you stop concentrating on the spell.
-- name: Chemistry
+chemistry:
+  name: Chemistry
+  type: Arcana
   actions:
   - name: Brew
     type: Arcana

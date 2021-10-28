@@ -1,0 +1,10 @@
+wyrmblade:
+  name: Wymblade
+  archetypes:
+  - myrmidon
+  - dragonBlooded
+dragonsteel:
+  name: Dragonsteel
+  archetypes:
+  - dragonBlooded
+  - artificer

@@ -1,172 +1,42 @@
-- name: Dragon Blooded
+dragonBlooded:
+  name: Dragon Blooded
   aspects:
-  - name: Lightning
-    flavor: Your body is infused with lightning.
-    features:
-    - type: passive
-      name: Lightning Reflex
-      description: You can take an additional reaction on each turn.
-    - type: passive
-      name: Lightning Strikes
-      description: All your attacks gain the repeatable property.
-    - type: arcana
-      name: Lightning
-  - name: Fire
-    flavor: Your supply of physical energy is unfailing.
-    features:
-    - type: passive
-      name: Vitality
-      description: You have no need for sleep.
-    - type: passive
-      name: Vigor
-      description: Attacks that have the repeatable property cost focus instead of energy to double down.
-    - type: stat
-      stat: Fortitude
-      bonus: 2
-    - type: arcana
-      name: Fire
-  - name: Dragon Blood
-    flavor: The blood of your draconic ancestor has blessed you with power.
-    features:
-    - type: stat
-      select: 2
-      repeat: true
-      options:
-      - stat: Fire
-        bonus: 1
-      - stat: Earth
-        bonus: 1
-      - stat: Water
-        bonus: 1
-      - stat: Air
-        bonus: 1
-    - type: passive
-      name: Regeneration
-      description: Your wounds heal more quickly than usual; any time you would normally heal one wound, you heal two.
-  - name: Draconic Form
-    flavor: You grow wings and scales and your eyes and mind sharpen.
-    features:
-    - type: stat
-      stat: Will
-      bonus: 2
-    - type: stat
-      stat: Perception
-      bonus: 2
-    - type: stat
-      stat: Earth
-      bonus: 1
-    - type: passive
-      name: Dragon Wings
-      description: Whenever you move, you can fly.
-  - name: Eternal
-    flavor: Your draconic blood makes you immortal
-    features:
-    - type: passive
-      name: Youth
-      description: You have eternal youth and cannot be subject to aging effects.
-    - type: arcana
-      name: Life
-    - type: passive
-      name: Vim
-      description: Regain 2 defense at the beginning of each turn.
-- name: Myrmidon
+  - lightningInfused
+  - fieryBlood
+  - dragonBlood
+  - draconicForm
+  - eternalYouth
+  powers: []
+  # - fire
+  # - lightning
+  # - spirit
+  # - terror
+  # - telekinetic
+myrmidon:
+  name: Myrmidon
   aspects:
-  - name: Purple Powder
-    flavor: Your battlefield experience has made you proficient in modern weapons.
-    features:
-    - type: discipline
-      options:
-      - Firearms
-      - Grenades
-    - type: passive
-      name: Marksman
-      description: You can spend one focus per die to reroll hit dice when you make a ranged attack. Each die can only be rerolled once.
-  - name: Battle Savant
-    flavor: You don't just read battles, you become one with the battle.
-    features:
-    - type: discipline
-      options:
-      - Sun
-      - Storm
-    - type: passive
-      name: Situational Awareness
-      description: You can take an additional reaction on each turn.
-  - name: Veteran
-    flavor: You paid for your experience in blood and sweat.
-    features:
-    - type: stat
-      stat: Fire
-      bonus: 2
-    - type: discipline
-      tags:
-      - Weapon
-  - name: Martial Artist
-    flavor: You are the weapon.
-    features:
-    - type: discipline
-      name: Unarmed
-    - type: passive
-      name: Deadly Weapons
-      description: Gain Magnitude +2 on all weapon attacks.
-  - name: Magnificent Warrior
-    flavor: You have honed your skills to the limit.
-    features:
-    - type: discipline
-    - type: discipline
-    - type: stat
-      name: Water
-      bonus: 1
-- name: Artificer
+  - purplePowder
+  - battleSavant
+  - veteran
+  - martialArtist
+  - magnificentWarrior
+  powers: []
+  # - blood
+  # - storm
+  # - sun
+  # - moon
+  # - sea
+artificer:
+  name: Artificer
   aspects:
-  - name: Mechanic
-    flavor: You know the ins and outs of machines
-    features:
-    - type: arcana
-      options:
-      - Fabrication
-      - Lightning
-    - type: passive
-      name: Fine-tuning
-      description: You can enhance each of the minions you create once.
-  - name: Arcane Intellect
-    flavor: You know how to manipulate spirit to project your will.
-    features:
-    - type: arcana
-      options:
-      - Telepathy
-      - Conjuration
-    - type: stat
-      stat: Focus
-      bonus: 3
-  - name: Reactives
-    flavor: You have learned the secrets of volatile materials
-    features:
-    - type: arcana
-      options:
-      - Fire
-      - Transmutation
-    - type: stat
-      stat: Energy
-      bonus: 3
-  - name: Biologics
-    description: Blood and bone are yours to command
-    features:
-    - type: arcana
-      options:
-      - Chemistry
-      - Necromancy
-    - type: arcana
-      options:
-      - Life
-      - Pestilence
-    - type: stat
-      stat: Resilience
-      bonus: 1
-  - name: Runic Magic
-    description: Sigils and energy can produce any magic
-    features:
-    - type: arcana
-      name: Runic
-    - type: minion
-      tag: Golem
-      enhancements: 3
+  - mechanic
+  - arcaneIntellect
+  - reactives
+  - biologics
+  - runicMagic
+  powers:
+  - runes
+  # - fabrication
+  # - necromancy
+  - chemistry
+  # - transmutation

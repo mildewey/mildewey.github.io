@@ -126,6 +126,10 @@ caption {
 	cursor: pointer;
 }
 
+a {
+	cursor: pointer;
+}
+
 p,ul {
 	margin: 1px;
 }

@@ -72,3 +72,17 @@ chemistry:
     duration: Depends on potion or poison
     description: >
       Activate a potion or poison for the appropriate duration.
+stunicorns magic rainbows:
+  name: Stunicorns Magic Rainbows
+  type: Arcana
+  actions:
+  - name: Stunicorns
+    type: Arcana
+    action: Ritual
+    ritual: Time and money based on potion or poison
+    description: >
+      You craft a potion, ointment, or poison that can be applied once (see below)
+      by any creature in possession of the potion or poison.
+      The cost is ¼ of the base cost of the item in a typical market.
+      GMs may rule that you can find appropriate ingredients through roleplaying
+      ventures including skill checks in appropriate areas.

@@ -56,28 +56,42 @@ h6 {
 }
 
 h5 {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	font-style: italic;
 }
 
 h4 {
-	font-size: 1.2rem;
-	font-weight: bold;
+	font-size: 1.6rem;
 	text-transform: uppercase;
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: 1.9rem;
 }
 
 h2 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	text-transform: uppercase;
+	font-size: 2.2rem;
+	font-style: italic;
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	text-transform: uppercase;
+}
+
+h1.dragonsteel {
+	font-size: 2.5rem;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+h1.dragonsteel + small {
+	font-size: 1rem;
+	text-transform: lowercase;
+	font-weight: lighter;
+	margin-top: 0px;
+	padding-top: 0px;
 }
 
 article {
@@ -132,12 +146,6 @@ a {
 
 p,ul {
 	margin: 1px;
-}
-
-h3 {
-  font-size: 1.3em;
-  font-weight: 50;
-  padding: 3px 10px;
 }
 
 ul {

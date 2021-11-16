@@ -9,6 +9,106 @@ basicActions:
     repeatable: true
     description: >
       Attack 1 target within your weapon's range for 2x2h+2 damage.
+blood:
+  name: Blood
+  type: Discipline
+  actions:
+  - name: Blood Hound
+    type: Discipline
+    action: Tactics
+    uses: At-Will
+    concentration: Focus
+    duration: 3 rounds
+    description: >
+      You can smell your enemies’ weaknesses. You can identify the current Evasion,
+      Defense, and Resilience of any creature in your sight range. If they are suffering
+      any negative status effects, add 5 damage per status (once per track) when
+      you do damage to them.
+  - name: Dancing Blades
+    type: Discipline
+    action: Reaction
+    when: An enemy damages you with a melee attack
+    uses: Energy
+    description: >
+      Move up to three spaces. Your blades dance between you and your opponents,
+      creating a zone of whirling death. Attack all enemies adjacent to you for
+      5x2h damage.
+storm:
+  name: Storm
+  type: Discipline
+  actions:
+  - name: Forked Lightning
+    type: Discipline
+    action: Tactics
+    uses: At-Will
+    description: >
+      You dart in and out of the foes in your near vicinity. Choose up to three
+      targets within 2 spaces of you. Each target takes 3h damage. If you hit,
+      you can move the targets two spaces in a direction of your choice.
+  - name: Storm Front
+    type: Discipline
+    action: Guard
+    uses: At-Will
+    description: >
+      Until the end of your next turn, you create a sphere of influence within 2 spaces of you.
+      You can push enemies entering or moving inside your sphere of influence back
+      into the space they came from by overcoming their Toughness with 1d12+4.
+  - name: Buffeting Winds
+    type: Discipline
+    action: Move
+    uses: Energy
+    description: >
+      Move your speed, ignoring enemy spaces and zones of control. Each enemy whose
+      space you move through takes 3h damage. If you hit, you can move the enemy
+      one space in any direction and the target becomes Vulnerable.
+sun:
+  name: Sun
+  type: Discipline
+  actions:
+  - name: Sunlight
+    type: Discipline
+    action: Tactics
+    concentration: Focus
+    duration: Stance
+    description: >
+      You draw upon the guiding light of the sun. When making ranged weapon attacks
+      increase range by 2. Reduce the evasion of targets by 1.
+moon:
+  name: Moon
+  type: Discipline
+  actions:
+  - name: Moonlight
+    type: Discipline
+    action: Tactics
+    uses: At-Will
+    concentration: Focus
+    duration: Stance
+    description: >
+      The moon reveals the second nature of many things; some may argue in wisdom
+      that it is a truer beacon. Your enemies’ weaknesses are made more apparent;
+      you may spend 2 additional focus when concentrating on this ability to increase
+      the magnitude of all ranged weapon attacks by 1.
+sea:
+  name: Sea
+  type: Discipline
+  actions:
+  - name: Riptide
+    type: Discipline
+    action: Move
+    repeatable: true
+    uses: At-Will
+    description: >
+      Attack each enemy you move past for 3x1h damage. If you hit an enemy with
+      one of these attacks, the target becomes Hobbled and Vulnerable.
+  - name: Seawall
+    type: Discipline
+    action: Tactics
+    uses: Energy
+    description: >
+      You crash upon your enemies with the fury of the sea. Target 3 within 3 spaces.
+      Overcome Fortitude with 1d12+4, if successful push them up to 3 spaces away.
+      For each space they are moved into a barrier add one accuracy to this attack.
+      Deal 5h2+X damage.
 berserker:
   name: Berserker
   type: Discipline
@@ -72,17 +172,206 @@ chemistry:
     duration: Depends on potion or poison
     description: >
       Activate a potion or poison for the appropriate duration.
-stunicorns magic rainbows:
-  name: Stunicorns Magic Rainbows
+fabrication:
+  name: Fabrication
   type: Arcana
   actions:
-  - name: Stunicorns
+  - name: Animate Object
+    type: Arcana
+    action: Tactics or Ritual
+    ritual: Per size of object
+    concentration: Focus
+    duration: Until the death of the caster, the destruction of the construct, or the caster stops focusing
+    description: >
+      You create an construct creature or pack of creatures from an appropriate
+      object or objects. Each level of construct creature you animate costs one
+      focus to maintain the spell. Tiny objects take a tactics action, Small objects
+      take 1 minute, medium objects take 10 minutes, large objects take 1 hour,
+      huge objects take 4 hours, and gargantuan objects take 8 hours.
+  - name: Creation
     type: Arcana
     action: Ritual
-    ritual: Time and money based on potion or poison
+    ritual: Time based on size
     description: >
-      You craft a potion, ointment, or poison that can be applied once (see below)
-      by any creature in possession of the potion or poison.
-      The cost is ¼ of the base cost of the item in a typical market.
-      GMs may rule that you can find appropriate ingredients through roleplaying
-      ventures including skill checks in appropriate areas.
+      With appropriate components on hand, you create an object by using plans
+      you fully understand, making an exact duplicate of an item you have on hand,
+      or by repairing an object. Tiny objects take 1 hour, Small objects take 2
+      hours, medium objects take 6 hours, large objects take 9 hours, huge objects
+      take 2 days, and gargantuan objects take 5 days.
+necromancy:
+  name: Necromancy
+  type: Arcana
+  actions:
+  - name: Raise Dead
+    type: Arcana
+    action: Tactics
+    uses: Once
+    concentration: Focus (see description)
+    duration: Until the death of the caster, the destruction of the creature, or until the caster surrenders control
+    description: >
+      You create an undead creature or pack of creatures from an appropriate corpse
+      or corpses. Each level of undead creature you raise costs one focus to
+      maintain the spell. When you end the spell, the creature reverts to its
+      natural behavior uncontrolled by you.
+  - name: Vigor
+    type: Arcana
+    action: Move
+    uses: At-Will
+    description: >
+      Move your speed +4. You can climb and leap over gaps up to 2 spaces across
+      -- or an additional space if you can normally leap such a gap.
+transmutation:
+  name: Transmutation
+  type: Arcana
+  actions:
+  - name: Stone Skin
+    type: Arcana
+    action: Guard
+    uses: Once
+    concentration: Focus
+    duration: 10 rounds
+    description: >
+      Until the spell ends, your skin hardens. You cannot be Vulnerable and you
+      gain 2 evasion and 5 defense.
+  - name: Earthchewer
+    type: Arcana
+    action: Tactics
+    uses: Energy
+    concentration: focus
+    duration: 10 rounds
+    description: >
+      Create hazardous and difficult terrain in 3 spaces within 5 spaces of you.
+      The terrain does 5 damage to targets entering or exiting the terrain. At
+      the beginning of each of your turns, create another space of hazardous and
+      difficult terrain. When the spell ends, you may choose whether the terrain
+      stays as it is or goes back to normal.
+  - name: Passage
+    type: Arcana
+    action: Move
+    uses: Energy
+    description: >
+      Treat hazardous terrain and barriers as difficult terrain, ignore difficult
+      terrain. Move double your speed. When moving through barriers, you can opt
+      to leave an opening behind you that lasts for 2 rounds before closing.
+fire:
+  name: Fire
+  type: Arcana
+  actions:
+  - name: Fire Breathing
+    type: Arcana
+    action: Attack
+    uses: Once
+    concentration: Focus
+    duration: 10 rounds
+    description: >
+      Immediately and as an attack action for the duration, you breathe fire from
+      your mouth in either a 10x1 line or a 2 space radius blast within 5 spaces.
+      All creatures in the area take 3h3 damage.
+  - name: Wall of Fire
+    type: Arcana
+    action: Tactics
+    uses: Once
+    concentration: Tactics
+    duration: 10 rounds
+    description: >
+      10 segments of 10 foot tall walls of fire appear along the boundaries of spaces
+      within 10 spaces of you. Creatures adjacent to the wall at the start of their
+      turn take 10h damage. Creatures passing through the wall take 10h+5 damage.
+      The walls are opaque. You can rearrange the walls when you maintain the spell.
+lightning:
+  name: Lightning
+  type: Arcana
+  actions:
+  - name: Arc
+    type: Arcana
+    action: Attack
+    repeatable: true
+    uses: Energy
+    concentration: Attack
+    duration: 3 rounds
+    description: >
+      You unleash electrical bolts. Attack two creatures within 5 spaces of you
+      or one creature within 10 spaces of you. Each target takes 2h2+4 damage.
+      If you hit, the target is dazed until the end of your next turn.
+  - name: Lightning Dodge
+    type: Arcana
+    action: Reaction
+    when: You are attacked
+    uses: Energy
+    description: >
+      You become a bolt of lightning for a split second. Move 3 spaces and increase
+      your evasion by 2 against the attack. If you are no longer an eligible target,
+      the attack or effect fails to harm you. Any creature in a space you pass through
+      takes 1h+5 damage.
+spirit:
+  name: Spirit
+  type: Arcana
+  actions:
+  - name: Bind Spirit
+    type: Arcana
+    action: Ritual
+    ritual: One Day/Week/Month for Spirit level 1/2/3 and cost of Reagents
+    duration: Spirit Binding
+    description: >
+      You seek out a Spirit and bind it to your soul. Depending on the strength
+      of the Spirit and type chosen, you will gain increased affinity to that element
+      and possibly other boons. This spell can be used to bind any Spirit of any
+      power level (Spirit, Wisp, Soul Shard)
+  - name: Spirit Vision
+    type: Arcana
+    action: Guard
+    uses: At-Will
+    concentration: Focus
+    duration: 3 rounds
+    description: >
+      You use your bound Spirit to heighten your senses, giving you the sense of
+      premonition. Gain 3 temporary Defense immediately and at the beginning of
+      every round, and increase your Evasion by 1 as long as you are concentrating
+      on this spell.
+terror:
+  name: Terror
+  type: Arcana
+  actions:
+  - name: Aura of Fear
+    type: Arcana
+    action: Guard
+    uses: Energy
+    concentration: Focus
+    duration: 3 rounds
+    description: >
+      You ooze with the terror of death that binds all living things together.
+      Immediately, and when you maintain this ability, overcome the Will of any
+      targets of your choice within 4 spaces with 1d12+4. If successful, the target
+      is Dazed and Hobbled unless it takes a Tactics action to snap out of it.
+      Targets affected like this or having just snapped out of it cannot target
+      you with an attack.
+  - name: Impunity
+    type: Arcana
+    action: Move
+    uses: Energy
+    description: >
+      Move up to twice your speed. Enemies cannot use reactions on your turn.
+telekinesis:
+  name: Telekinesis
+  type: Arcana
+  actions:
+  - name: Telekinetic Hand
+    type: Arcana
+    action: Tactics
+    repeatable: true
+    uses: Energy
+    concentration: Tactics
+    duration: 5 rounds
+    description: >
+      A translucent hand (of a size appropriate to the task) appears and manipulates
+      objects it can pick up until the end of the caster’s next turn.The hand is able
+      to continuously manipulate the object as long as the caster maintains the spell.
+      It has a capacity of 500 pounds. It can move objects from one place to another.
+      Each tactics action moves one such object up to 5 spaces. The hand continues to
+      carry the object as long as the spell is maintained. The object cannot be thrown
+      or hurled by the hand. The caster may try to Overcome a target creature’s Perception
+      with 2d12 to pick up the creature. A creature that the hand could lift may
+      try to Overcome the caster’s Will with 1d12 to escape the spell as a Guard
+      action. If the caster repeats this action, they may maintain two hands with
+      the same ongoing tactics action. Maintaining two hands on the same target
+      increases the capacity of the spell to 2000 pounds.

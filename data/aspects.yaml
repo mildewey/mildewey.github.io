@@ -125,17 +125,18 @@ quickened:
   passives:
   - name: Efficient arcana
     description: When you double down on two arcana that cost energy, you pay one less energy.
-	
 deathSpeech:
   name: Deathly Speech
-  flavor: >
-	Your connection with death grants you the ability to speak with the dead. 
-	The dead are slow and plodding speakers with no sense of urgency. 
-	They also slowly forget things, older and less important memories first. 
-	This can lead to their speech being rather cryptic. Those with no relationship 
-	to you will speak frankly. Those who still remember your relationship with 
-	them will deal with you accordingly. You must be in physical contact with 
-	the remains of the dead, though it need only be a fragment. 
+  flavor: Your connection with death and the dead opens lines of communion      
   passives:
   - name: Resilience in Death
     description: You gain +4 resilience.
+  - name: Speak with the Dead
+    description: >
+      Your connection with death grants you the ability to speak with the dead.
+      Those with no relationship to you will speak frankly. Those who still remember
+      your relationship with them will deal with you accordingly. You must be in
+      physical contact with the remains of the dead, though it need only be a fragment.
+      The dead are slow and plodding speakers with no sense of urgency.
+      They also slowly forget things, older and less important memories first.
+      This can lead to their speech being rather cryptic.

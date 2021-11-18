@@ -41,31 +41,32 @@ pestilence:
     type: Arcana
     action: Attack
     uses: Once
-	concentration: Focus
-	duration: 5 rounds
+    concentration: Focus
+    duration: 5 rounds
     description: >
-      Choose up to 3 targets within 5 spaces of you. The targets become infected by a contagion. 
-	  On subsequent turns, you can use an attack action to infect up to 3 targets within 
-	  5 spaces of you or another creature infected by the contagion.
-	  >
-	  When a target becomes infected or when you focus on the spell, use 2d12+2 to overcome the targets’ fortitude. 
-	  For each success, the target becomes Weakened or moves along the weakened track. 
-	  If a target is fully weakened, they become Hobbled or move along the hobbled track.
-	  >
-	  If the target is fully weakened and hobbled, they take 10 damage. If you fail to overcome a 
-	  target’s fortitude, they can no longer advance along the condition tracks or take further damage, 
-	  but are still considered infected by the contagion.
+      Choose up to 3 targets within 5 spaces of you. The targets become infected by a contagion.
+      On subsequent turns, you can use an attack action to infect up to 3 targets within
+      5 spaces of you or another creature infected by the contagion.
+      >
+      When a target becomes infected or when you focus on the spell, use 2d12+2 to overcome the targets’ fortitude.
+      For each success, the target becomes Weakened or moves along the weakened track.
+      If a target is fully weakened, they become Hobbled or move along the hobbled track.
+      >
+      If the target is fully weakened and hobbled, they take 10 damage. If you fail to overcome a
+      target’s fortitude, they can no longer advance along the condition tracks or take further damage,
+      but are still considered infected by the contagion.
   - name: Insect Swarm
     type: Arcana
     action: Tactics
-	uses: Energy
- 	concentration: Focus
-	duration: 5 rounds
+    uses: Energy
+    concentration: Focus
+    duration: 5 rounds
     description: >
-      Create 3 swarms of insects within 5 spaces of you. The insects become hazardous terrain doing 5 damage 
-	  to any creature in their space when the insects enter their space or when a creature enters their space 
-	  or when a creature ends their turn in the space. 
-	  >On your turn, you may use a tactics action to move the 3 swarms up to 5 spaces in any direction.
+      Create 3 swarms of insects within 5 spaces of you. The insects become hazardous terrain doing 5 damage
+      to any creature in their space when the insects enter their space or when a creature enters their space
+      or when a creature ends their turn in the space.
+      >
+      On your turn, you may use a tactics action to move the 3 swarms up to 5 spaces in any direction.
 dark:
   name: Dark
   type: Arcana
@@ -76,16 +77,16 @@ dark:
     uses: Energy
     description: >
       You stretch out your hand, firing a ray of weakening energy at a target within 5 spaces.
-	  The target takes 6x3h damage. For each hit they take they gain a level 
-	  of the weakened and Vulnerable condition that lasts until the end of your next turn.
+      The target takes 6x3h damage. For each hit they take they gain a level
+      of the weakened and Vulnerable condition that lasts until the end of your next turn.
   - name: Grave Touch
     type: Arcana
     action: Reaction
     when: An enemy hits you with a melee attack
     uses: Once
     description: >
-      As a counter attack, you reach out and rob some of the life from your enemy. 
-	  Deal 20x1h damage to the creature that attacked you. You heal a wound if you hit the target.
+      As a counter attack, you reach out and rob some of the life from your enemy.
+      Deal 20x1h damage to the creature that attacked you. You heal a wound if you hit the target.
 storm:
   name: Storm
   type: Discipline

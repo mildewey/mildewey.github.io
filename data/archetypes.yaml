@@ -40,3 +40,16 @@ artificer:
   - necromancy
   - chemistry
   - transmutation
+necromancer:
+  name: Necromancer
+  aspects:
+  - deathSpeech
+  - undeadHordes
+  - lichdom
+  - spectralVisage
+  - plague
+  powers:
+  - necromancy
+  - ritual
+  - terror
+  - dark

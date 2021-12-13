@@ -2,18 +2,11 @@
   blurb: A dangerous man that combines his inherited luck with a cunning mind.
   level: 6
   class: dragonsteel
-  initAffinities:
-    Air: 2
-    Earth: 2
-    Fire: 4
-    Water: 2
   affinities:
-  - Fire
-  - Water
-  - Fire
-  - Air
-  - Fire
-  - Water
+    air: 3
+    earth: 2
+    fire: 7
+    water: 4
   aspects:
   - fieryBlood
   - dragonBlood

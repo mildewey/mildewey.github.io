@@ -49,49 +49,57 @@
 }
 
 @media (min-width: 31rem) {
+	html, body {
+		height: 100%;
+		overflow-y: hidden;
+	}
+
 	body {
 		display: grid;
 		grid-template-columns: 250px auto;
-		grid-template-rows: 100px auto 50px;
+		grid-template-rows: 100px auto 2rem;
+		grid-template-areas:
+			"header main"
+			"nav main"
+			"nav footer";
 		grid-gap: 10px;
-	}
-
-	main {
-		grid-column: 2;
-		grid-row: 2;
-		overflow-y: scroll;
-		display: grid;
-		grid-template-columns: auto 300px;
-		grid-template-rows: auto;
-		grid-gap: 10px;
-	}
-
-	div.context {
-		grid-column: 2;
-		grid-row: 1;
-		overflow-y: scroll;
-	}
-
-	article {
-		grid-column: 1;
-		grid-row: 1;
-		overflow-y: scroll;
-	}
-
-	aside {
-		grid-column: 1;
-		grid-row: 2 / 3;
-		overflow-y: scroll;
 	}
 
 	header {
-		grid-column: 1;
-		grid-row: 1;
+		grid-area: header;
+	}
+
+	aside {
+		grid-area: nav;
+		overflow-y: scroll;
 	}
 
 	footer {
-		grid-column: 2;
-		grid-row: 3;
+		grid-area: footer;
+	}
+
+	main {
+		grid-area: main;
+		display: grid;
+		grid-template-columns: auto 300px;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"content side";
+		grid-gap: 10px;
+		overflow-y: hidden;
+		height: 99%;
+	}
+
+	div.context {
+		grid-area: side;
+		overflow-y: scroll;
+		height: 100%;
+	}
+
+	article {
+		grid-area: content;
+		overflow-y: scroll;
+		height: 100%;
 	}
 }
 
@@ -99,7 +107,6 @@
 html, body {
 	position: relative;
 	width: 100%;
-	height: 100%;
 	background-color: var(--background-color);
   color: var(--default-font-color);
 }
@@ -123,6 +130,11 @@ nav {
 h1,h2,h3,h4,h5,h6,p,li {
 	text-align: left;
 	line-height: 1.5;
+}
+
+h5.selections {
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 p,li {
@@ -179,8 +191,6 @@ h1.dragonsteel + small {
 }
 
 article {
-  columns: 60ch;
-  height: min-content;
 	padding: 3px;
 }
 

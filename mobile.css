@@ -1,0 +1,23 @@
+@media screen and (max-width: 30rem) {
+	body {
+	}
+
+	main {
+	}
+
+	aside {
+	}
+
+	header {
+	}
+
+	nav {
+	}
+
+	div.context {
+	}
+
+	footer {
+		border-top: solid;
+	}
+}

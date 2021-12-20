@@ -8,3 +8,18 @@ dragonsteel:
   archetypes:
   - dragonBlooded
   - artificer
+arcaneFortress:
+  name: Arcane Fortress
+  archetypes:
+  - bulwark
+  - artificer
+sailsword:
+  name: Sailsword
+  archetypes:
+  - zephyr
+  - swashbuckler
+blackguard:
+  name: Blackguard
+  archetypes:
+  - myrmidon
+  - warlock

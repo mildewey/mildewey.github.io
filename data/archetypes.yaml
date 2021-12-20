@@ -1,55 +1,36 @@
-dragonBlooded:
-  name: Dragon Blooded
-  aspects:
-  - lightningInfused
-  - fieryBlood
-  - dragonBlood
-  - draconicForm
-  - eternalYouth
-  powers:
-  - fire
-  - lightning
-  - spirit
-  - terror
-  - telekinesis
-myrmidon:
-  name: Myrmidon
-  aspects:
-  - purplePowder
-  - battleSavant
-  - veteran
-  - martialArtist
-  - magnificentWarrior
-  powers:
-  - blood
-  - storm
-  - sun
-  - moon
-  - sea
+knight:
+- indomitable
+- aegis
+- paragon
+- commander
+- defiance
 artificer:
-  name: Artificer
-  aspects:
-  - mechanic
-  - arcaneIntellect
-  - reactives
-  - biologics
-  - runicMagic
-  powers:
-  - runes
-  - fabrication
-  - necromancy
-  - chemistry
-  - transmutation
-necromancer:
-  name: Necromancer
-  aspects:
-  - deathSpeech
-  - undeadHordes
-  - lichdom
-  - spectralVisage
-  - plague
-  powers:
-  - necromancy
-  - ritual
-  - terror
-  - dark
+- fabrication
+- runicMagic
+- arcaneIntellect
+- transmutation
+- reactives
+zephyr:
+- lightning
+- wind
+- cloud
+- thunder
+- wave
+swashbuckler:
+- footwork
+- duelist
+- acrobat
+- cunning
+- trickster
+myrmidon:
+- battleSavant
+- veteran
+- bloodyHands
+- hardenedSteel
+- opportunist
+warlock:
+- eldritch
+- pestilence
+- darkness
+- familiarSpirits
+- ethereal

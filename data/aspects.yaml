@@ -1,142 +1,40 @@
-lightningInfused:
-  name: Lightning Infused
-  flavor: Your body is infused with lightning.
-  passives:
-  - name: Lightning Reflexes
-    description: You can take an additional reaction on each turn.
-  - name: Lightning Strikes
-    description: All your attacks gain the repeatable property.
-fieryBlood:
-  name: Fire
-  flavor: Your supply of physical energy is unfailing.
-  passives:
-  - name: Vitality
-    description: You have no need for sleep.
-  - name: Vigor
-    description: Attacks that have the repeatable property cost focus instead of energy to double down.
-dragonBlood:
-  name: Dragon Blood
-  flavor: The blood of your draconic ancestor has blessed you with power.
-  passives:
-  - name: Regeneration
-    description: Your wounds heal more quickly than usual; any time you would normally heal one wound, you heal two.
-draconicForm:
-  name: Draconic Form
-  flavor: You grow wings and scales and your eyes and mind sharpen.
-  passives:
-  - name: Dragon Wings
-    description: Whenever you move, you can fly.
-eternalYouth:
-  name: Eternal Youth
-  flavor: Your draconic blood makes you immortal
-  passives:
-  - name: Youth
-    description: You have eternal youth and cannot be subject to aging effects.
-  - name: Vim
-    description: Regain 2 defense at the beginning of each turn.
-purplePowder:
-  name: Purple Powder
-  flavor: Your battlefield experience has made you proficient in modern weapons.
-  passives:
-  - name: Marksman
-    description: You can spend one focus per die to reroll hit dice when you make a ranged attack. Each die can only be rerolled once.
-battleSavant:
-  name: Battle Savant
-  flavor: You don't just read battles, you become one with the battle.
-  passives:
-  - name: Situational Awareness
-    description: You can take an additional reaction on each turn.
-veteran:
-  name: Veteran
-  flavor: You paid for your experience in blood and sweat.
-  passives:
-  - name: Deep Experience
-    description: Whenever you take the Tactics action, gain 2 focus for the round.
-martialArtist:
-  name: Martial Artist
-  flavor: You are the weapon.
-  passives:
-  - name: Deadly Weapons
-    description: When taking the attack action to make a melee attack, each die that hits is worth +1 damage.
-magnificentWarrior:
-  name: Magnificent Warrior
-  flavor: You have honed your skills to the limit.
-  passives:
-  - name: Explosive attacks
-    description: When you spend energy to make an attack action, roll an additional hit die.
-mechanic:
-  name: Mechanic
-  flavor: You know the ins and outs of machines
-  passives:
-  - name: Fine-tuning
-    description: You can enhance each of the minions you create once.
-arcaneIntellect:
-  name: Arcane Intellect
-  flavor: You know how to manipulate spirit to project your will.
-  passives:
-  - name: Focus Efficiency
-    description: Ignore the focus cost of one spell to maintain.
-reactives:
-  name: Reactives
-  flavor: You have learned the secrets of volatile materials
-  passives:
-  - name: Explosive
-    description: When you make an attack that has an area of effect, add one space to the area in any location.
-biologics:
-  name: Biologics
-  flavor: Blood and bone are yours to command
-  passives:
-  - name: Biohazard
-    description: Whenever enemies come within one space of you, they take 2d damage.
-runicMagic:
-  name: Runic Magic
-  flavor: Sigils and energy can produce any magic
-  passives:
-  - name: Runic Triggers
-    description: You can immediately activate a rune or an magical equipment power for no energy cost when you begin combat.
-puissantBlade:
-  name: Puissant Blade
-  flavor: You channel eldritch energy into your weapon.
-  passives:
-  - name: Crackling Blade
-    description: >
-      After using an arcana, gain +2 damage on all Weapon attacks until the
-      start of your next turn.
-intuitiveSpellsword:
-  name: Intuitive Spellsword
-  flavor: You wield magic and weapons as one.
-  passives:
-  - name: Spellsword
-    description: >
-      When you use both an arcana and a discipline action and double down, you
-      can spend an additional energy to double down twice. Your doubled down
-      actions must include both an arcana and a discipline action.
-powerFromPain:
-  name: Fortified
-  flavor: You have begun experimenting with enhancing the power of your blood with the power of alchemy.
-  passives:
-  - name: Power from Pain
-    description: Gain +2 to all saves. When you take a wound, you regain one energy.
-quickened:
-  name: Quickened
-  flavor: >
-    You have leveraged the innate magic of your blood and your study of alchemy
-    to enhance yourself, giving you access to deep reserves of magical energy.
-  passives:
-  - name: Efficient arcana
-    description: When you double down on two arcana that cost energy, you pay one less energy.
-deathSpeech:
-  name: Deathly Speech
-  flavor: Your connection with death and the dead opens lines of communion      
-  passives:
-  - name: Resilience in Death
-    description: You gain +4 resilience.
-  - name: Speak with the Dead
-    description: >
-      Your connection with death grants you the ability to speak with the dead.
-      Those with no relationship to you will speak frankly. Those who still remember
-      your relationship with them will deal with you accordingly. You must be in
-      physical contact with the remains of the dead, though it need only be a fragment.
-      The dead are slow and plodding speakers with no sense of urgency.
-      They also slowly forget things, older and less important memories first.
-      This can lead to their speech being rather cryptic.
+footwork:
+  basic:
+  - sureFooted
+  - tripleStep
+  advanced:
+  - flurryOfFeet
+  - toughSoles
+  - leafOnTheWind
+duelist:
+  basic:
+  - riposte
+  - lunge
+  advanced:
+  - heartStriker
+  - rapidStrikes
+  - engarde
+acrobat:
+  basic:
+  - perch
+  - acrobaticDodge
+  advanced:
+  - balanced
+  - tumbling
+  - backflip
+cunning:
+  basic:
+  - 
+  -
+  advanced:
+  -
+  -
+  -
+trickster:
+  basic:
+  -
+  -
+  advanced:
+  -
+  -
+  -

@@ -1,12 +1,14 @@
 footwork:
+  name: Footwork
   basic:
   - sureFooted
-  - tripleStep
+  - backflip
   advanced:
   - flurryOfFeet
   - toughSoles
   - leafOnTheWind
 duelist:
+  name: Duelist
   basic:
   - riposte
   - lunge
@@ -14,27 +16,30 @@ duelist:
   - heartStriker
   - rapidStrikes
   - engarde
-acrobat:
+daredevil:
+  name: Daredevil
   basic:
-  - perch
-  - acrobaticDodge
+  - highFlying
+  - adrenalineHigh
   advanced:
-  - balanced
-  - tumbling
-  - backflip
-cunning:
+  - daringFocus
+  - defyDeath
+  - stuntMan
+lucky:
+  name: Lucky
   basic:
-  - 
-  -
+  - luckyToHaveYou
+  - luckOut
   advanced:
-  -
-  -
-  -
+  - ladyLuck
+  - betterLuck
+  - rideLuck
 trickster:
+  name: Trickster
   basic:
-  -
-  -
+  - feint
+  - dirtyFighting
   advanced:
-  -
-  -
-  -
+  - exploit
+  - opportunist
+  - flourish

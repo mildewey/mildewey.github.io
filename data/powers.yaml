@@ -1,21 +1,37 @@
 # Footwork
+tumbling:
+  name: Tumbling
+  flavor: You know parkour
+  action: Move
+  uses: At-Will
+  description: >
+    Ignore obstacles and enemy zone of control for your movement.
+backflip:
+  name: backflip
+  flavor:
+  action: Reaction
+  when: When an enemy attacks you.
+  uses: Energy
+  description: >
+    Fly up to 2 spaces. If your movement makes you an invalid target the attack
+    is wasted -- melee attackers may move to pursue you if they have movement left.
+    Gain 2 evasion until the beginning of your next turn.
 sureFooted:
   name: Sure-footed
   flavor: >
     Whether it's scrambling up a rock face or walking a tight-rope, you
     know how to get around obstacles that bring others pause.
-  action: Move
-  uses: At-Will
+  action: Passive
   description: >
-    Ignore difficult terrain during your turn.
-tripleStep:
-  name: Triple Step
-  flavor: Every dancer needs partners, but only one may lead.
-  action: Guard
-  uses: At-Will
-  pattern: Flurry
+    Ignore difficult and hazardous terrain during your turn. You can use any
+    Athletics skill twice without refreshing.
+leafOnTheWind:
+  name: Leaf on the Wind
+  action: Passive
+  flavor: You flow in battle where you want to.
   description: >
-    Overcome Resilience with 1h, targets are confused.
+    After you are forced to move by a power, you can immediately move your speed
+    to reposition.
 flurryOfFeet:
   name: Flurry of Feet
   type: Discipline
@@ -24,22 +40,8 @@ flurryOfFeet:
   uses: Energy
   pattern: Flurry
   description: >
-    Targets take 3h3 damage and are pushed 1 space per hit.
-toughSoles:
-  name: Tough Soles
-  action: Passive
-  flavor: Years of training have subjected your feet to the rigors of
-    battlefields, perilous dungeons, and precipitous mountainsides alike.
-  description: >
-    You ignore hazardous terrain in combat encounters. You can use any
-    Athletics skill twice without refreshing.
-leafOnTheWind:
-  name: Leaf on the Wind
-  action: Passive
-  flavor: You flow in battle where you want to.
-  description: >
-    When you are forced to move by a power, you can immediately move your speed
-    to reposition.
+    Targets take 3h3 damage and are pushed 1 space per hit. If at least one
+    hit lands, the target is confused.
 
 # Duelist
 riposte:
@@ -83,43 +85,117 @@ engarde:
   description: >
     Each target is weakened or vulnerable.
 
-# Acrobat
-perch:
-  name: Perch
+# Daredevil
+highFlying:
+  name: High Flying
   flavor: >
     You can turn anything into high ground with the right mindset...
     and magnificent core strength.
   action: Tactics
   uses: At-Will
   description: >
-    Enemies treat you as flying for this round.
-acrobaticDodge:
-  name: Acrobatic Dodge
-  flavor: A deep bend or yawing pitch to escape the path of a sword >
-    saves one from an otherwise ignominous end.
-  action: Guard
+    Enemies treat you as flying until the beginning of your next turn.
+adrenalineHigh:
+  name: Adrenaline High
+  flavor: You perform best when your blood is pumping
+  action: Move
   uses: Energy
   description: >
-    Increase evasion by 3 until the beginning of your next turn. Move your speed.
-balanced:
-  name: Balanced
+    You can ignore enemy zones of control for your movement. For each enemy's
+    zone of control you pass through, add a die to your next attack roll.
+daringFocus:
+  name: Daring Focus
   flavor:
   action: Passive
   description: >
-    You ignore one level of the Hobbled condition.
-tumbling:
-  name: Tumbling
-  flavor: You know parkour
-  action: Move
+    You ignore one level of the Hobbled or Vulnerable condition.
+defyDeath:
+  name: Defy Death
+  flavor: You're unphased by your injuries
+  action: Passive
+  description: >
+    For each level of condition you have, do 1 extra damage to one target when
+    you take the attack action.
+stuntMan:
+  name: Stunt Man
+  flavor: Your hijinks are known far and wide
+  action: Passive
+  description: >
+    When you take a move action, you can bypass gaps up to 2 wide.
+
+# Lucky
+luckyToHaveYou:
+  name: Lucky to Have You
+  flavor: Your friends have really lucked out
+  action: Reaction
+  when: An ally makes a roll
   uses: At-Will
   description: >
-    Ignore obstacles and enemy zone of control for your movement.
-backflip:
-  name: backflip
-  flavor:
-  action: Reaction
-  when: When an enemy attacks you.
+    You may spend up to 3 focus to allow an ally to reroll the same number of
+    dice.
+luckOut:
+  name: Luck Out
+  flavor: Sometimes you just know when your luck is coming
+  action: Guard
   uses: Energy
   description: >
-    Move up to 2 spaces. If your movement makes you an invalid target, the attack
-    is wasted. Gain 2 evasion until the beginning of your next turn.
+    Until the start of your next turn, enemies roll two extra dice any time they
+    make a roll against you. After the roll, you remove two of the dice rolled
+    before resolving the outcome.
+ladyLuck:
+  name: Lady Luck
+  flavor: You're luck's favored companion
+  action: Passive
+  description: >
+    When an enemy attacks you or tries to overcome you, you can spend up to 2
+    focus to force them to reroll a corresponding number of dice.
+betterLuck:
+  name: Better Luck
+  flavor: You'll have better luck next time.
+  action: Passive
+  description: >
+    When you make a skill roll and fail, you don't expend the skill point.
+rideLuck:
+  name: Ride Luck
+  action: Tactics
+  uses: Energy
+  description: >
+    Until the start of your next turn. Each time you roll dice, you can reroll
+    any or all of those dice once.
+
+# Trickster
+feint:
+  name: Feint
+  flavor: Deception is essential in a duel between masters
+  action: Tactics
+  uses: At-Will
+  description: >
+    On your next attack, spend up to 3 focus to roll one extra die per focus.
+    After rolling, remove the same number of dice before resolving the attack.
+dirtyFighting:
+  name: Dirty Fighting
+  flavor: Sand in the eyes is a legitimate tactic in a fight for your life.
+  action: Reaction
+  when: an opponent takes the attack action within 5
+  uses: Energy
+  description: >
+    Cancel the enemy action.
+exploit:
+  name: Exploit
+  action: Attack
+  uses: Energy
+  pattern: Melee
+  description: >
+    Do Xd*2 damage where X is the number of condition levels the target has.
+opportunist:
+  name: Opportunist
+  flavor: Enemies beware
+  action: Passive
+  description: >
+    Your zone of control is hazardous terrain that does 2 damage.
+flourish:
+  name: Flourish
+  action: Passive
+  description: >
+    When you take the attack action, for each enemy you can spend up to 2 focus
+    to reduce their evasion by the same amount.

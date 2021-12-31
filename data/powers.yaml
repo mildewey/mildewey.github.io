@@ -8,7 +8,7 @@ myrmidonsSteel:
   uses: At-Will
   concentration: Stance
   description: >
-    While you maintain this stance, increase Impact of all melee attacks by 1.
+    While you maintain this stance, increase the damage of all melee attacks by 1.
 #Move
 bruteForce:
   name: Brute Force
@@ -16,8 +16,8 @@ bruteForce:
   action: Move
   uses: At-Will
   description: >
-    Move up to 3 spaces. You can move through enemy spaces during this movement. 
-
+    You can move through enemy spaces during this movement. When you do, move the
+    enemy to an adjacent space.
 #Attack
 practicedStrike:
   name: Practiced Strike
@@ -27,7 +27,7 @@ practicedStrike:
   repeatable: Yes
   pattern: Precision
   description: >
-     Target takes 3d*3+1 damage.
+     Make a weapon attack with an additional hit die.
 #Guard
 steelPillar:
   name: Steel Pillar
@@ -35,16 +35,56 @@ steelPillar:
   action: Guard
   uses: At-Will
   description: >
-    Increase your evasion by 2, and you have an extra die when rolling saves for movement effects until the beginning of your next turn.
+    Until the beginning of your next turn, increase your Resilience by 2 and you
+    cannot be affected by forced movement effects.
 #Reaction
 whirlingCounter:
   name: Whirling Counter
   flavor: You use your attacker's momentum to counter with a quick and vicious blow.
   action: Reaction
-  uses: At-Will, when an enemy targets you with a melee attack.
+  uses: At-Will
+  when: An enemy targets you with a melee attack.
   description: >
-    Increase evasion by 1 for this attack. If the attack misses, the attacker takes 2 damage.
+    Increase evasion by 1 for this attack. For each of the attacker's hit dice that misses,
+    the attacker takes 2 damage.
 
+battleSavant:
+  name: Battle Savant
+  flavor: Your brilliance in battle is unparalleled.
+  action: Tactics
+  uses: Energy
+  concentration: Stance
+  description: >
+    Every time you take the attack action, you may spend 1 focus to reroll any
+    or all dice in your attack pool.
+veteran:
+  name: Veteran
+  flavor: Your hard won experience pays off.
+  action: Passive
+  description: >
+    You may maintain 2 stances.
+bloodyHands:
+  name: Bloody Hands
+  flavor: You are death.
+  action: Passive
+  description: >
+    Any time you do damage to an enemy, increase that damage by 1.
+hardenedSteel:
+  name: Hardened Steel
+  flavor: Your steel will see you through even deathly situations.
+  action: Attack
+  uses: Energy
+  pattern: Nova
+  description: >
+    Do 2d damage to all targets. For each hit die that hits, regain 1 defense point.
+opportunist:
+  name: Opportunist
+  flavor: Killing is a full time job.
+  action: Reaction
+  when: An ally uses the attack action on a target within range.
+  uses: Energy
+  description: >
+    Use a weapon attack against the same target as your ally.
 
 
 

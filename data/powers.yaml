@@ -1,3 +1,55 @@
+#Myrmidon At-Will powers (Starting set)
+
+#Tactics
+myrmidonsSteel:
+  name: Myrmidon's Steel
+  flavor: Paid in gold, deliver a deluge of blood and steel.
+  action: Tactics
+  uses: At-Will
+  concentration: Stance
+  description: >
+    While you maintain this stance, increase Impact of all melee attacks by 1.
+#Move
+bruteForce:
+  name: Brute Force
+  flavor: You use your shield to push enemies out of the way in order to reach your target.
+  action: Move
+  uses: At-Will
+  description: >
+    Move up to 3 spaces. You can move through enemy spaces during this movement. 
+
+#Attack
+practicedStrike:
+  name: Practiced Strike
+  flavor: Practice until it becomes instinct, then practice some more.
+  action: Attack
+  uses: At-Will
+  repeatable: Yes
+  pattern: Precision
+  description: >
+     Target takes 3d*3+1 damage.
+#Guard
+steelPillar:
+  name: Steel Pillar
+  flavor: A pillar is neither easily moved or toppled.
+  action: Guard
+  uses: At-Will
+  description: >
+    Increase your evasion by 2, and you have an extra die when rolling saves for movement effects until the beginning of your next turn.
+#Reaction
+whirlingCounter:
+  name: Whirling Counter
+  flavor: You use your attacker's momentum to counter with a quick and vicious blow.
+  action: Reaction
+  uses: At-Will, when an enemy targets you with a melee attack.
+  description: >
+    Increase evasion by 1 for this attack. If the attack misses, the attacker takes 2 damage.
+
+
+
+
+
+
 # Footwork
 tumbling:
   name: Tumbling

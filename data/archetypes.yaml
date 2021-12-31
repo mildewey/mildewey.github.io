@@ -1,3 +1,30 @@
+myrmidon:
+- battleSavant
+- veteran
+- bloodyHands
+- hardenedSteel
+- opportunist
+#starting powers
+#myrmidonsSteel
+#bruteForce
+#practicedStrike
+#steelPillar
+#whirlingCounter
+ 
+
+
+warlock:
+- eldritch
+- pestilence
+- darkness
+- familiarSpirits
+- ethereal
+
+
+
+
+
+
 knight:
 - indomitable
 - aegis
@@ -12,25 +39,14 @@ artificer:
 - reactives
 zephyr:
 - lightning
-- wind
-- cloud
-- thunder
-- wave
+- flight
+- telekinesis
+- terror
+- confusion
 swashbuckler:
 - footwork
 - duelist
-- acrobat
-- cunning
+- daredevil
+- lucky
 - trickster
-myrmidon:
-- battleSavant
-- veteran
-- bloodyHands
-- hardenedSteel
-- opportunist
-warlock:
-- eldritch
-- pestilence
-- darkness
-- familiarSpirits
-- ethereal
+

@@ -1,6 +1,19 @@
-#Myrmidon At-Will powers (Starting set)
-
-#Tactics
+# Myrmidon
+practicedStrike:
+  name: Practiced Strike
+  flavor: Practice until it becomes instinct, then practice some more.
+  action: Attack
+  uses: At-Will
+  description: >
+     Make a weapon attack with an additional hit die.
+whirlingCounters:
+  name: Whirling Counters
+  flavor: You use your attacker's momentum to counter with a quick and vicious blow.
+  action: Guard
+  uses: At-Will
+  description: >
+    Until the beginning of your next turn, spend 1 focus to cause an enemy's melee
+    attack against you to do 1 damage to them per missed hit die.
 myrmidonsSteel:
   name: Myrmidon's Steel
   flavor: Paid in gold, deliver a deluge of blood and steel.
@@ -9,7 +22,6 @@ myrmidonsSteel:
   concentration: Stance
   description: >
     While you maintain this stance, increase the damage of all melee attacks by 1.
-#Move
 bruteForce:
   name: Brute Force
   flavor: You use your shield to push enemies out of the way in order to reach your target.
@@ -18,35 +30,6 @@ bruteForce:
   description: >
     You can move through enemy spaces during this movement. When you do, move the
     enemy to an adjacent space.
-#Attack
-practicedStrike:
-  name: Practiced Strike
-  flavor: Practice until it becomes instinct, then practice some more.
-  action: Attack
-  uses: At-Will
-  repeatable: Yes
-  pattern: Precision
-  description: >
-     Make a weapon attack with an additional hit die.
-#Guard
-steelPillar:
-  name: Steel Pillar
-  flavor: A pillar is neither easily moved or toppled.
-  action: Guard
-  uses: At-Will
-  description: >
-    Until the beginning of your next turn, increase your Resilience by 2 and you
-    cannot be affected by forced movement effects.
-#Reaction
-whirlingCounter:
-  name: Whirling Counter
-  flavor: You use your attacker's momentum to counter with a quick and vicious blow.
-  action: Reaction
-  uses: At-Will
-  when: An enemy targets you with a melee attack.
-  description: >
-    Increase evasion by 1 for this attack. For each of the attacker's hit dice that misses,
-    the attacker takes 2 damage.
 
 battleSavant:
   name: Battle Savant
@@ -55,14 +38,14 @@ battleSavant:
   uses: Energy
   concentration: Stance
   description: >
-    Every time you take the attack action, you may spend 1 focus to reroll any
-    or all dice in your attack pool.
+    Every time you take the attack action, you may spend 1 focus per die
+    to reroll any or all dice in your attack pool.
 veteran:
   name: Veteran
   flavor: Your hard won experience pays off.
   action: Passive
   description: >
-    You may maintain 2 stances.
+    Increase the number of stances you can maintain by 1.
 bloodyHands:
   name: Bloody Hands
   flavor: You are death.
@@ -80,15 +63,141 @@ hardenedSteel:
 opportunist:
   name: Opportunist
   flavor: Killing is a full time job.
-  action: Reaction
-  when: An ally uses the attack action on a target within range.
+  action: Guard
+  uses: Energy
+  duration: 1 round
+  description: >
+    When an enemy moves into your side of the battlefield, spend 1 focus to do
+    2d damage.
+
+# Warlock
+deathlyGaze:
+  name: Deathly Gaze
+  flavor: The pain of death is manifest in your visage
+  action: Attack
+  pattern: Line
+  uses: At-Will
+  description: >
+    Do 2d*2 damage vs Resilience. If you hit, the target is Confused for one round.
+graveCurse:
+  name: Grave Curse
+  action: Tactics
+  pattern: Precision
+  uses: At-Will
+  description: >
+    The target is 3d vs Resilience. If you hit, the target is Vulnerable and Dazed.
+contagion:
+  name: Contagion
+  action: Guard
+  description: >
+    When an enemy enters your side of the battlefield, you can spend 1 Focus to
+    roll 1d vs Resilience. If you succeed, the target is Weakened for this turn.
+ghostlyJaunt:
+  name: Ghostly Jaunt
+  action: Move
+  uses: At-Will
+  description: >
+    You can ignore Barriers during your movement.
+
+eldritch:
+  name: Eldritch
+  action: Passive
+  description: >
+    When you attack Resilience, increase the number of each die you roll by 1.
+pestilence:
+  name: Pestilence
+  action: Attack
+  uses: Energy
+  concentration: Attack
+  duration: 5 rounds
+  pattern: Suffusion
+  description: >
+    Roll 2d vs resilience. All targets you hit are Hobbled and Dazed.
+darkness:
+  name: Darkness
+  action: Passive
+  description: >
+    You can see in the dark as though you were in bright light. You can use Stealth
+    one additional time, even if you aren't trained in it.
+familiarSpirit:
+  name: Familiar Spirit
+  action: Passive
+  description: >
+    You have gained a familiar spirit companion. The familiar is an intelligent
+    spirit that can take on the physical form of a tiny creature, like a cat,
+    rat, or crow. The familiar is proficient in all Lore skills and can allow
+    you an additional die when you roll against any Magic skill.
+ethereal:
+  name: Ethereal
+  action: Guard
+  uses: Energy
+  duration: 5 round
+  concentration: Focus
+  description: >
+    When you take damage, you can spend 1 focus to reduce the damage by 5.
+
+# Knight
+charge:
+  name: Charge
+  action: Attack
+  uses: At-Will
+  pattern: Line
+  description: >
+    Do 3d+1 damage to each target.
+inspire:
+  name: Inspire
+  action: Tactics
+  uses: At-Will
+  concentration: Stance
+  description: >
+    Your allies can spend up to 3 focus at the beginning of each round to
+    regain the same number of defense points.
+protect:
+  name: Protect
+  action: Guard
+  uses: At-Will
+  duration: 1 Round
+  description: >
+    When your allies are attacked, you can spend up to 2 focus to force an attacker
+    to reroll the same number of hit dice.
+overpower:
+  name: Overpower
+  action: Move
+  uses: At-Will
+  description: >
+    You can move through enemy spaces. For each enemy whose space you pass through,
+    roll 2d vs Resilience. If you hit, the enemy is Hobbled or Confused, your
+    choice.
+
+indomitable:
+  name: Indomitable
+  action: Passive
+  description: >
+    You can ignore one level of any condition track. You can use any Athletics
+    skill twice.
+aegis:
+  name: Aegis
+  action: Guard
+  uses: Energy
+  concentration: Stance
+  description: >
+    Increase the Evasion and Resilience of all your allies by 1.
+paragon:
+  name: Paragon
+  action: Passive
+  description: >
+    Whenever you use Energy to roll a used skill, you can recharge another skill.
+commander:
+  name: Commander
+  action: Attack
   uses: Energy
   description: >
-    Use a weapon attack against the same target as your ally.
-
-
-
-
+    You and an ally can take an attack action immediately.
+defiance:
+  name: Defiance
+  action: Passive
+  description: >
+    You regain 2 defense at the beginning of each turn.
 
 # Footwork
 tumbling:

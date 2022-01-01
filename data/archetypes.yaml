@@ -1,36 +1,39 @@
 myrmidon:
-- battleSavant
-- veteran
-- bloodyHands
-- hardenedSteel
-- opportunist
-#starting powers
-#myrmidonsSteel
-#bruteForce
-#practicedStrike
-#steelPillar
-#whirlingCounter
- 
-
-
+  basePowers:
+  - myrmidonsSteel
+  - bruteForce
+  - practicedStrike
+  - whirlingCounters
+  upgrades:
+  - battleSavant
+  - veteran
+  - bloodyHands
+  - hardenedSteel
+  - opportunist
 warlock:
-- eldritch
-- pestilence
-- darkness
-- familiarSpirits
-- ethereal
-
-
-
-
-
-
+  basePowers:
+  - deathlyGaze
+  - graveCurse
+  - contagion
+  - ghostlyJaunt
+  upgrades:
+  - eldritch
+  - pestilence
+  - darkness
+  - familiarSpirit
+  - ethereal
 knight:
-- indomitable
-- aegis
-- paragon
-- commander
-- defiance
+  basePowers:
+  - charge
+  - inspire
+  - protect
+  - overpower
+  upgrades:
+  - indomitable
+  - aegis
+  - paragon
+  - commander
+  - defiance
 artificer:
 - fabrication
 - runicMagic
@@ -49,4 +52,3 @@ swashbuckler:
 - daredevil
 - lucky
 - trickster
-

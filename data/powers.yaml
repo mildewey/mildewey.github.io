@@ -1,3 +1,35 @@
+# Basic
+strike:
+  name: Strike
+  basic: True
+  action: Attack
+  pattern: Melee
+  uses: At-Will
+  description: >
+    Make a melee attack, dealing 2d*2 damage.
+move:
+  name: Move
+  basic: True
+  action: Move
+  uses: At-Will
+  description: >
+    Move your speed.
+guard:
+  name: Guard
+  basic: True
+  action: Guard
+  uses: At-Will
+  description: >
+    Refresh two tapped Defense tokens.
+tactics:
+  name: Tactics
+  basic: True
+  action: Tactics
+  uses: At-Will  
+  description: >
+    Move up one level on one condition track.
+
+
 # Myrmidon
 practicedStrike:
   name: Practiced Strike

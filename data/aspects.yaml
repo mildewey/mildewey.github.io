@@ -1,25 +1,33 @@
 #Myrmidon Aspects
-#-battleSavant
-#-veteran
-#-bloodyHands
-#-hardenedSteel
-#-opportunist
+-battleSavant
+-veteran
+-bloodyHands
+-hardenedSteel
+-opportunist
+
+#Warlock Aspects
+-eldritch
+-pestilence
+-darkness
+-familiarSpirit
+-ethereal
+
+#Knight Aspects
+-indomitable
+-aegis
+-paragon
+-commander
+-defiance
 
 
-
-
-
-
-
-
-
-
-
+#on resilience, defense tokens recharging automatically -- no, have Guard recharge 2
+#SOMETHING ELSE - was it with guard action? Tactics action maybe.
+#WEAPON PROFICIENCIES
 
 
 
 #Swashbuckler Aspects
-footwork:
+#footwork:
   name: Footwork
   basic:
   - sureFooted
@@ -28,7 +36,7 @@ footwork:
   - flurryOfFeet
   - toughSoles
   - leafOnTheWind
-duelist:
+#duelist:
   name: Duelist
   basic:
   - riposte
@@ -37,7 +45,7 @@ duelist:
   - heartStriker
   - rapidStrikes
   - engarde
-daredevil:
+#daredevil:
   name: Daredevil
   basic:
   - highFlying
@@ -46,7 +54,7 @@ daredevil:
   - daringFocus
   - defyDeath
   - stuntMan
-lucky:
+#lucky:
   name: Lucky
   basic:
   - luckyToHaveYou
@@ -55,7 +63,7 @@ lucky:
   - ladyLuck
   - betterLuck
   - rideLuck
-trickster:
+#trickster:
   name: Trickster
   basic:
   - feint

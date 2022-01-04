@@ -36,25 +36,37 @@ knight:
   - defiance
 artificer:
   basePowers:
-  - electrocute
-  - automatons
+  - tinyArmy
+  - arcaneMines
   - runicShield
   - rawTransmutation
   upgrades:
-  - explosives
+  - shoulderCannon
   - fabrication
   - arcaneIntellect
   - fleshTransmutation
   - tonic
 zephyr:
-- lightning
-- flight
-- telekinesis
-- terror
-- confusion
+  basePowers:
+  - callLightning
+  - gust
+  - mistyFigure
+  - waveStep
+  upgrades:
+  - lightningInfusion
+  - flight
+  - graspingWind
+  - staticCharge
+  - hungryCloud
 swashbuckler:
-- footwork
-- duelist
-- daredevil
-- lucky
-- trickster
+  basePowers:
+  - lunge
+  - feint
+  - riposte
+  - tumbling
+  upgrades:
+  - exploit
+  - defyDeath
+  - runOfLuck
+  - sureFooted
+  - rapidStrikes

@@ -235,7 +235,175 @@ defiance:
     You can spend 4 focus to refresh a tapped defense token at the beginning of
     every turn.
 
-# Footwork
+# Artificer
+tinyArmy:
+  name: Tiny Army
+  action: Attack
+  uses: At-Will
+  concentration: Attack
+  pattern: Precision
+  description: >
+    Targets take 5d damage. If the target is hit at least 3 times, it is
+    Confused.
+arcaneMines:
+  name: Arcane Mines
+  action: Tactics
+  uses: At-Will
+  pattern: Scatter
+  description: >
+    Target terrain becomes hazardous until it damages a target. Cannot target
+    terrain occupied by a creature.
+runicShield:
+  name: Runic Shield
+  action: Guard
+  uses: At-Will
+  concentration: Stance
+  description: >
+    Whenever a defense token would break, you can spend an energy to tap it instead.
+    This can't be used to prevent a tapped defense token from breaking.
+rawTransmutation:
+  name: Raw Transmutation
+  action: Move
+  uses: At-Will
+  description: >
+    Wherever you move, you may leave behind or remove difficult terrain.
+
+shoulderCannon:
+  name: Shoulder Cannon
+  action: Attack
+  uses: Energy
+  pattern: Wave
+  description: >
+    Target creatures take 4d*5 damage. Targets become dazed.
+fabrication:
+  name: Fabrication
+  action: Passive
+  description: >
+    You can use your Creativity skills twice before exhausting them. You may use
+    the Artifice skills in place of Physique skills.
+arcaneIntellect:
+  name: Arcane Intellect
+  action: Passive
+  description: >
+    When you maintain a power with an action, you can double down on that action
+    for one focus instead of 1 energy.
+fleshTransmutation:
+  name: Flesh Transmutation
+  action: Guard
+  uses: Energy
+  concentration: Guard
+  description: >
+    You gain 2 Evasion, 2 Defense, and 2 Speed.
+tonic:
+  name: Tonic
+  action: Move
+  uses: Energy
+  description: >
+    Move double your speed. Reduce a condition. Refresh a tapped defense token.
+
+
+# Zephyr
+callLightning:
+  name: Call Lightning
+  action: Attack
+  repeatable: true
+  uses: At-Will
+  pattern: Precision
+  description: >
+    Target takes 3d*4 damage. If hit, the target is Dazed.
+gust:
+  name: Gust
+  action: Tactics
+  uses: At-Will
+  pattern: Burst
+  description: >
+    Targets take 3d damage. If hit, the targets are moved 2 spaces in any direction.
+mistyFigure:
+  name: Misty Figure
+  action: Guard
+  uses: At-Will
+  description: >
+    Until the start of your next turn. Attacks targetting you must roll 2 extra
+    dice. After the dice are rolled, you choose 2 to discard before determining
+    the results.
+waveStep:
+  name: Wave Step
+  action: Move
+  uses: At-Will
+  pattern: Nova
+  description: >
+    Choose a space in your movement path. All targets are pushed 1 space and tap
+    a defense token.
+
+lightningInfusion:
+  name: lightningInfusion
+  action: Passive
+  description: >
+    You can double down on repeatable attacks without spending energy.
+flight:
+  name: Flight
+  action: Move
+  uses: Energy
+  concentration: Focus
+  duration: 1 hour
+  description: >
+    You or an ally are considered flying.
+graspingWind:
+  name: Grasping Wind
+  action: Tactics
+  uses: Energy
+  concentration: Tactics
+  duration: 10 rounds
+  pattern: Precision
+  description: >
+    Move one creature or object 4 spaces. When you concentrate on this action
+    repeat the effect on any valid target.
+staticCharge:
+  name: Static Charge
+  action: Guard
+  uses: Energy
+  concentration: Focus
+  duration: Until discharged
+  description: >
+    When a creature makes a melee attack against you they take 5d*5 damage and are
+    weakened. This power is then discharged unless you spend 1 energy.
+hungryCloud:
+  name: Hungry Cloud
+  action: Attack
+  uses: Energy
+  concentration: Energy
+  duration: 5 rounds
+  pattern: Suffusion
+  description: >
+    Targets take 3d*2 damage and are Confused at the start of their turns.
+
+
+# Swashbuckler
+lunge:
+  name: Lunge
+  flavor: You dart in for a powerful strike.
+  action: Attack
+  pattern: Melee
+  uses: At-Will
+  description: >
+    Spend up to 4 focus to do 3d*F damage. The target of your attack may not use
+    a reaction this turn.
+feint:
+  name: Feint
+  flavor: Deception is essential in a duel between masters
+  action: Tactics
+  uses: At-Will
+  pattern: Melee
+  description: >
+    The target taps a defense token.
+riposte:
+  name: Riposte
+  flavor: Deftly turning your enemy's blade away, you retaliate with a flourish.
+  action: Guard
+  uses: At-Will
+  description: >
+    When an enemy attacks you, spend 1 Focus to reduce the damage you take by 2d*3.
+    The attacker takes the same damage.
 tumbling:
   name: Tumbling
   flavor: You know parkour
@@ -243,6 +411,50 @@ tumbling:
   uses: At-Will
   description: >
     Ignore obstacles and enemy zone of control for your movement.
+
+exploit:
+  name: Exploit
+  action: Attack
+  uses: Energy
+  pattern: Melee
+  description: >
+    Do Xd*4 damage where X is the number of condition levels the target has.
+runOfLuck:
+  name: Run of Luck
+  action: Tactics
+  uses: Energy
+  concentration: Stance
+  description: >
+    Each time you roll dice, you can reroll any or all of those dice once.
+    When enemies target you with an attack, you can spend up to 4 focus to
+    force the same number of dice to be re-rolled.
+defyDeath:
+  name: Defy Death
+  flavor: You're unphased by your injuries
+  action: Passive
+  description: >
+    For each level of condition you have, do 2 extra damage to one target when
+    you take the attack action. You ignore one level of the Vulnerable condition.
+sureFooted:
+  name: Sure-footed
+  flavor: >
+    Whether it's scrambling up a rock face or walking a tight-rope, you
+    know how to get around obstacles that bring others pause.
+  action: Passive
+  description: >
+    Ignore difficult and hazardous terrain during your turn. You can use any
+    Athletics skill twice without refreshing. You ignore one level of the Hobbled
+    condition.
+rapidStrikes:
+  name: Rapid Strikes
+  flavor: Your sword is a blur.
+  action: Passive
+  description: >
+    When you double down on an attack action, you may spend an energy to double
+    down again. When you do so, all targets become your choice of vulnerable or
+    weakened.
+
+# Footwork
 backflip:
   name: backflip
   flavor:
@@ -253,15 +465,7 @@ backflip:
     Fly up to 2 spaces. If your movement makes you an invalid target the attack
     is wasted -- melee attackers may move to pursue you if they have movement left.
     Gain 2 evasion until the beginning of your next turn.
-sureFooted:
-  name: Sure-footed
-  flavor: >
-    Whether it's scrambling up a rock face or walking a tight-rope, you
-    know how to get around obstacles that bring others pause.
-  action: Passive
-  description: >
-    Ignore difficult and hazardous terrain during your turn. You can use any
-    Athletics skill twice without refreshing.
+
 leafOnTheWind:
   name: Leaf on the Wind
   action: Passive
@@ -289,15 +493,7 @@ riposte:
   when: An enemy makes a melee attack against you
   description: >
     Reduce the damage you take by 2d*3. The attacker takes the same 2h3 damage.
-lunge:
-  name: Lunge
-  flavor: You dart in for a powerful strike.
-  action: Attack
-  pattern: Melee
-  uses: At-Will
-  description: >
-    Spend up to 4 focus to do 3d*F damage. The target of your attack may not use
-    a reaction this turn.
+
 heartStriker:
   name: Heart Striker
   flavor:
@@ -401,14 +597,7 @@ rideLuck:
     any or all of those dice once.
 
 # Trickster
-feint:
-  name: Feint
-  flavor: Deception is essential in a duel between masters
-  action: Tactics
-  uses: At-Will
-  description: >
-    On your next attack, spend up to 3 focus to roll one extra die per focus.
-    After rolling, remove the same number of dice before resolving the attack.
+
 dirtyFighting:
   name: Dirty Fighting
   flavor: Sand in the eyes is a legitimate tactic in a fight for your life.
@@ -417,13 +606,7 @@ dirtyFighting:
   uses: Energy
   description: >
     Cancel the enemy action.
-exploit:
-  name: Exploit
-  action: Attack
-  uses: Energy
-  pattern: Melee
-  description: >
-    Do Xd*2 damage where X is the number of condition levels the target has.
+
 opportunist:
   name: Opportunist
   flavor: Enemies beware

@@ -1,31 +1,31 @@
 # Basic
 strike:
   name: Strike
-  basic: True
+  basic: true
   action: Attack
   pattern: Melee
   uses: At-Will
   description: >
-    Make a melee attack, dealing 2d*2 damage.
+    The target takes 3d*3 damage.
 move:
   name: Move
-  basic: True
+  basic: true
   action: Move
   uses: At-Will
   description: >
-    Move your speed.
+    Change your position by moving your speed.
 guard:
   name: Guard
-  basic: True
+  basic: true
   action: Guard
   uses: At-Will
   description: >
     Refresh two tapped Defense tokens.
 tactics:
   name: Tactics
-  basic: True
+  basic: true
   action: Tactics
-  uses: At-Will  
+  uses: At-Will
   description: >
     Move up one level on one condition track.
 
@@ -37,15 +37,15 @@ practicedStrike:
   action: Attack
   uses: At-Will
   description: >
-     Make a weapon attack with an additional hit die.
+     Make a basic or weapon attack with an additional hit die.
 whirlingCounters:
   name: Whirling Counters
   flavor: You use your attacker's momentum to counter with a quick and vicious blow.
   action: Guard
   uses: At-Will
   description: >
-    Until the beginning of your next turn, spend 1 focus to cause an enemy's melee
-    attack against you to do 1 damage to them per missed hit die.
+    Until the beginning of your next turn, any enemy that makes an attack
+    adjacent to you must tap a defense token.
 myrmidonsSteel:
   name: Myrmidon's Steel
   flavor: Paid in gold, deliver a deluge of blood and steel.
@@ -53,7 +53,7 @@ myrmidonsSteel:
   uses: At-Will
   concentration: Stance
   description: >
-    While you maintain this stance, increase the damage of all melee attacks by 1.
+    While you maintain this stance, increase the damage of all melee attacks by 2.
 bruteForce:
   name: Brute Force
   flavor: You use your shield to push enemies out of the way in order to reach your target.
@@ -83,7 +83,7 @@ bloodyHands:
   flavor: You are death.
   action: Passive
   description: >
-    Any time you do damage to an enemy, increase that damage by 1.
+    Any time you do damage to an enemy, increase that damage by 2.
 hardenedSteel:
   name: Hardened Steel
   flavor: Your steel will see you through even deathly situations.
@@ -91,7 +91,7 @@ hardenedSteel:
   uses: Energy
   pattern: Nova
   description: >
-    Do 2d damage to all targets. For each hit die that hits, regain 1 defense point.
+    Do 2d damage to all targets. Refresh a tapped defense token.
 opportunist:
   name: Opportunist
   flavor: Killing is a full time job.

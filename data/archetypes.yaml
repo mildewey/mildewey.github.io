@@ -35,11 +35,17 @@ knight:
   - commander
   - defiance
 artificer:
-- fabrication
-- runicMagic
-- arcaneIntellect
-- transmutation
-- reactives
+  basePowers:
+  - electrocute
+  - automatons
+  - runicShield
+  - rawTransmutation
+  upgrades:
+  - explosives
+  - fabrication
+  - arcaneIntellect
+  - fleshTransmutation
+  - tonic
 zephyr:
 - lightning
 - flight

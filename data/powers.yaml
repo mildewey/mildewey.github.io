@@ -110,32 +110,32 @@ deathlyGaze:
   pattern: Line
   uses: At-Will
   description: >
-    Do 2d*2 damage vs Resilience. If you hit, the target is Confused for one round.
+    Do 2d*2 damage. If you hit, the target is Confused.
 graveCurse:
   name: Grave Curse
   action: Tactics
   pattern: Precision
   uses: At-Will
   description: >
-    The target is 3d vs Resilience. If you hit, the target is Vulnerable and Dazed.
+    The target takes 3d damage. If you hit, the target is Vulnerable and Dazed.
 contagion:
   name: Contagion
   action: Guard
   description: >
     When an enemy enters your side of the battlefield, you can spend 1 Focus to
-    roll 1d vs Resilience. If you succeed, the target is Weakened for this turn.
+    do 1d*4 damage. If you hit, the target is Weakened for this turn.
 ghostlyJaunt:
   name: Ghostly Jaunt
   action: Move
   uses: At-Will
   description: >
-    You can ignore Barriers during your movement.
+    You can ignore Barriers and Obstacles during your movement.
 
 eldritch:
   name: Eldritch
   action: Passive
   description: >
-    When you attack Resilience, increase the number of each die you roll by 1.
+    When you inflict a condition on a target, tap one of their defense tokens as well.
 pestilence:
   name: Pestilence
   action: Attack
@@ -144,7 +144,7 @@ pestilence:
   duration: 5 rounds
   pattern: Suffusion
   description: >
-    Roll 2d vs resilience. All targets you hit are Hobbled and Dazed.
+    Targets take 1d*5 damage. All targets you hit are Hobbled and Dazed.
 darkness:
   name: Darkness
   action: Passive
@@ -156,9 +156,12 @@ familiarSpirit:
   action: Passive
   description: >
     You have gained a familiar spirit companion. The familiar is an intelligent
-    spirit that can take on the physical form of a tiny creature, like a cat,
-    rat, or crow. The familiar is proficient in all Lore skills and can allow
-    you an additional die when you roll against any Magic skill.
+    spirit that can inhabit the body of a tiny creature, like a cat, rat, or crow.
+    You must be own such a creature and perform a 1 hour long ritual with it to
+    give it a physical body. The familiar must be in physical form and converse
+    with you to give you its benefits. The familiar is proficient in all
+    Lore skills and can allow you an additional die when you roll against any Magic
+    skill.
 ethereal:
   name: Ethereal
   action: Guard
@@ -175,15 +178,15 @@ charge:
   uses: At-Will
   pattern: Line
   description: >
-    Do 3d+1 damage to each target.
+    Do 2d*3+1 damage to each target.
 inspire:
   name: Inspire
   action: Tactics
   uses: At-Will
   concentration: Stance
   description: >
-    Your allies can spend up to 3 focus at the beginning of each round to
-    regain the same number of defense points.
+    You and your allies can spend 3 focus at the beginning of each round to refresh a
+    tapped defense token.
 protect:
   name: Protect
   action: Guard
@@ -198,7 +201,7 @@ overpower:
   uses: At-Will
   description: >
     You can move through enemy spaces. For each enemy whose space you pass through,
-    roll 2d vs Resilience. If you hit, the enemy is Hobbled or Confused, your
+    you do 2d+2 damage. If you hit, the enemy is Hobbled or Confused, your
     choice.
 
 indomitable:
@@ -213,7 +216,7 @@ aegis:
   uses: Energy
   concentration: Stance
   description: >
-    Increase the Evasion and Resilience of all your allies by 1.
+    Increase the Evasion of all your allies by 1.
 paragon:
   name: Paragon
   action: Passive
@@ -229,7 +232,8 @@ defiance:
   name: Defiance
   action: Passive
   description: >
-    You regain 2 defense at the beginning of each turn.
+    You can spend 4 focus to refresh a tapped defense token at the beginning of
+    every turn.
 
 # Footwork
 tumbling:

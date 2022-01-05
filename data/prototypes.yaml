@@ -1,23 +1,12 @@
-- name: Kasimir
-  blurb: A dangerous man that combines his inherited luck with a cunning mind.
-  level: 6
-  class: dragonsteel
+- name: Kasimir (level 2)
+  blurb: A ne'er do well with more power than he deserves.
+  level: 2
+  class: sailsword
   affinities:
-    air: 3
-    earth: 2
-    fire: 7
+    air: 4
+    earth: 1
+    fire: 2
     water: 4
-  aspects:
-  - fieryBlood
-  - dragonBlood
-  - draconicForm
-  - eternalYouth
-  - reactives
-  - biologics
-  powers:
-  - runes
-  - chemistry
-  - fire
-  - lightning
-  - transmutation
-  - terror
+  upgrades:
+  - lightningInfusion
+  - defyDeath

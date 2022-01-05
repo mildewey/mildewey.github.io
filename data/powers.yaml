@@ -91,7 +91,7 @@ hardenedSteel:
   uses: Energy
   pattern: Nova
   description: >
-    Do 2d damage to all targets. Refresh a tapped defense token.
+    Do 3d*2 damage to all targets. Refresh a tapped defense token.
 opportunist:
   name: Opportunist
   flavor: Killing is a full time job.
@@ -100,7 +100,7 @@ opportunist:
   duration: 1 round
   description: >
     When an enemy moves into your side of the battlefield, spend 1 focus to do
-    2d damage.
+    1d*3 damage.
 
 # Warlock
 deathlyGaze:
@@ -110,7 +110,7 @@ deathlyGaze:
   pattern: Line
   uses: At-Will
   description: >
-    Do 2d*2 damage. If you hit, the target is Confused.
+    Do 2d*4 damage. If you hit, the target is Confused.
 graveCurse:
   name: Grave Curse
   action: Tactics
@@ -123,7 +123,7 @@ contagion:
   action: Guard
   description: >
     When an enemy enters your side of the battlefield, you can spend 1 Focus to
-    do 1d*4 damage. If you hit, the target is Weakened for this turn.
+    do 1d*4 damage. If you hit, the target is Weakened.
 ghostlyJaunt:
   name: Ghostly Jaunt
   action: Move
@@ -178,7 +178,7 @@ charge:
   uses: At-Will
   pattern: Line
   description: >
-    Do 2d*3+1 damage to each target.
+    Do 3d*3+1 damage to each target.
 inspire:
   name: Inspire
   action: Tactics
@@ -232,12 +232,13 @@ defiance:
   name: Defiance
   action: Passive
   description: >
-    You can spend 4 focus to refresh a tapped defense token at the beginning of
+    You can spend 2 focus to refresh a tapped defense token at the beginning of
     every turn.
 
 # Artificer
 tinyArmy:
   name: Tiny Army
+  flavor: Your autotools and whizbots swarm your enemies.
   action: Attack
   uses: At-Will
   concentration: Attack
@@ -375,7 +376,8 @@ hungryCloud:
   duration: 5 rounds
   pattern: Suffusion
   description: >
-    Targets take 3d*2 damage and are Confused at the start of their turns.
+    Immediately, and when you concentrate on this power, targets take 5d*2 damage
+    and are Confused.
 
 
 # Swashbuckler
@@ -453,169 +455,3 @@ rapidStrikes:
     When you double down on an attack action, you may spend an energy to double
     down again. When you do so, all targets become your choice of vulnerable or
     weakened.
-
-# Footwork
-backflip:
-  name: backflip
-  flavor:
-  action: Reaction
-  when: When an enemy attacks you.
-  uses: Energy
-  description: >
-    Fly up to 2 spaces. If your movement makes you an invalid target the attack
-    is wasted -- melee attackers may move to pursue you if they have movement left.
-    Gain 2 evasion until the beginning of your next turn.
-
-leafOnTheWind:
-  name: Leaf on the Wind
-  action: Passive
-  flavor: You flow in battle where you want to.
-  description: >
-    After you are forced to move by a power, you can immediately move your speed
-    to reposition.
-flurryOfFeet:
-  name: Flurry of Feet
-  type: Discipline
-  flavor:
-  action: Attack
-  uses: Energy
-  pattern: Flurry
-  description: >
-    Targets take 3h3 damage and are pushed 1 space per hit. If at least one
-    hit lands, the target is confused.
-
-# Duelist
-riposte:
-  name: Riposte
-  flavor: Deftly turning your enemy's blade away, you retaliate with a flourish.
-  action: Reaction
-  uses: Energy
-  when: An enemy makes a melee attack against you
-  description: >
-    Reduce the damage you take by 2d*3. The attacker takes the same 2h3 damage.
-
-heartStriker:
-  name: Heart Striker
-  flavor:
-  action: Passive
-  description: >
-    You may spend one focus to reroll two dice during an attack action. You may
-    spend one focus like this per target.
-rapidStrikes:
-  name: Rapid Strikes
-  flavor:
-  action: Passive
-  description: >
-    When you double down on an attack action. You may spend an energy to double
-    down again.
-engarde:
-  name: Engarde
-  flavor: >
-    You expertly timed parries weaken the attacks and defenses of your enemies.
-  action: Guard
-  uses: Energy
-  pattern: Nova
-  description: >
-    Each target is weakened or vulnerable.
-
-# Daredevil
-highFlying:
-  name: High Flying
-  flavor: >
-    You can turn anything into high ground with the right mindset...
-    and magnificent core strength.
-  action: Tactics
-  uses: At-Will
-  description: >
-    Enemies treat you as flying until the beginning of your next turn.
-adrenalineHigh:
-  name: Adrenaline High
-  flavor: You perform best when your blood is pumping
-  action: Move
-  uses: Energy
-  description: >
-    You can ignore enemy zones of control for your movement. For each enemy's
-    zone of control you pass through, add a die to your next attack roll.
-daringFocus:
-  name: Daring Focus
-  flavor:
-  action: Passive
-  description: >
-    You ignore one level of the Hobbled or Vulnerable condition.
-defyDeath:
-  name: Defy Death
-  flavor: You're unphased by your injuries
-  action: Passive
-  description: >
-    For each level of condition you have, do 1 extra damage to one target when
-    you take the attack action.
-stuntMan:
-  name: Stunt Man
-  flavor: Your hijinks are known far and wide
-  action: Passive
-  description: >
-    When you take a move action, you can bypass gaps up to 2 wide.
-
-# Lucky
-luckyToHaveYou:
-  name: Lucky to Have You
-  flavor: Your friends have really lucked out
-  action: Reaction
-  when: An ally makes a roll
-  uses: At-Will
-  description: >
-    You may spend up to 3 focus to allow an ally to reroll the same number of
-    dice.
-luckOut:
-  name: Luck Out
-  flavor: Sometimes you just know when your luck is coming
-  action: Guard
-  uses: Energy
-  description: >
-    Until the start of your next turn, enemies roll two extra dice any time they
-    make a roll against you. After the roll, you remove two of the dice rolled
-    before resolving the outcome.
-ladyLuck:
-  name: Lady Luck
-  flavor: You're luck's favored companion
-  action: Passive
-  description: >
-    When an enemy attacks you or tries to overcome you, you can spend up to 2
-    focus to force them to reroll a corresponding number of dice.
-betterLuck:
-  name: Better Luck
-  flavor: You'll have better luck next time.
-  action: Passive
-  description: >
-    When you make a skill roll and fail, you don't expend the skill point.
-rideLuck:
-  name: Ride Luck
-  action: Tactics
-  uses: Energy
-  description: >
-    Until the start of your next turn. Each time you roll dice, you can reroll
-    any or all of those dice once.
-
-# Trickster
-
-dirtyFighting:
-  name: Dirty Fighting
-  flavor: Sand in the eyes is a legitimate tactic in a fight for your life.
-  action: Reaction
-  when: an opponent takes the attack action within 5
-  uses: Energy
-  description: >
-    Cancel the enemy action.
-
-opportunist:
-  name: Opportunist
-  flavor: Enemies beware
-  action: Passive
-  description: >
-    Your zone of control is hazardous terrain that does 2 damage.
-flourish:
-  name: Flourish
-  action: Passive
-  description: >
-    When you take the attack action, for each enemy you can spend up to 2 focus
-    to reduce their evasion by the same amount.

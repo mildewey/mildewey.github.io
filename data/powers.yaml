@@ -341,7 +341,7 @@ waveStep:
     a defense token.
 
 lightningInfusion:
-  name: lightningInfusion
+  name: Lightning Infusion
   action: Passive
   description: >
     You can double down on repeatable attacks without spending energy.

@@ -465,7 +465,7 @@ rapidStrikes:
 stab:
   name: Stab
   weapon: true
-  weaponType: dagger
+  equipmentTag: dagger
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -475,7 +475,7 @@ stab:
 loose:
   name: Loose
   weapon: true
-  weaponType: bow
+  equipmentTag: bow
   action: Attack
   pattern: Precision
   uses: At-Will
@@ -484,7 +484,7 @@ loose:
 volley:
   name: Volley
   weapon: true
-  weaponType: bow
+  equipmentTag: bow
   action: Attack
   pattern: Scatter
   uses: At-Will
@@ -493,7 +493,7 @@ volley:
 crush:
   name: Crush
   weapon: true
-  weaponType: hammer
+  equipmentTag: hammer
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -502,7 +502,7 @@ crush:
 deadlySwing:
   name: Deadly Swing
   weapon: true
-  weaponType: axe
+  equipmentTag: axe
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -512,7 +512,7 @@ deadlySwing:
 cracklingPower:
   name: Crackling Power
   weapon: true
-  weaponType: wand
+  equipmentTag: wand
   action: Attack
   pattern: Precision
   uses: At-Will
@@ -521,7 +521,7 @@ cracklingPower:
 flick:
   name: Flick
   weapon: true
-  weaponType: longsword
+  equipmentTag: longsword
   action: Attack
   pattern: Flurry
   uses: At-Will
@@ -531,7 +531,7 @@ flick:
 beat:
   name: Beat
   weapon: true
-  weaponType: longsword
+  equipmentTag: longsword
   action: Guard
   pattern: Melee
   uses: At-Will
@@ -540,7 +540,7 @@ beat:
 spike:
   name: Spike
   weapon: true
-  weaponType: pick
+  equipmentTag: pick
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -549,7 +549,7 @@ spike:
 deepGuard:
   name: Deep Guard
   weapon: true
-  weaponType: shield
+  equipmentTag: shield
   action: Guard
   uses: At-Will
   description: >
@@ -557,7 +557,7 @@ deepGuard:
 shieldBash:
   name: Shield Bash
   weapon: true
-  weaponType: shield
+  equipmentTag: shield
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -566,7 +566,7 @@ shieldBash:
 sunder:
   name: Sunder
   weapon: true
-  weaponType: heavy
+  equipmentTag: heavyWeapon
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -576,7 +576,7 @@ sunder:
 cleave:
   name: Cleave
   weapon: true
-  weaponType: heavy
+  equipmentTag: heavyWeapon
   action: Attack
   pattern: Flurry
   uses: Energy
@@ -585,7 +585,7 @@ cleave:
 hook:
   name: Hook
   weapon: true
-  weaponType: polearm
+  equipmentTag: polearm
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -594,7 +594,7 @@ hook:
 openStrike:
   name: Open Strike
   weapon: true
-  weaponType: sword
+  equipmentTag: sword
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -603,7 +603,7 @@ openStrike:
 lance:
   name: Lance
   weapon: true
-  weaponType: spear
+  equipmentTag: spear
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -613,7 +613,7 @@ lance:
 throwingKnives:
   name: Throwing Knives
   weapon: true
-  weaponType: dagger
+  equipmentTag: dagger
   action: Attack
   pattern: Scatter
   uses: At-Will

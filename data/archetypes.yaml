@@ -1,4 +1,5 @@
 myrmidon:
+  name: Myrmidon
   basePowers:
   - myrmidonsSteel
   - bruteForce
@@ -11,6 +12,7 @@ myrmidon:
   - hardenedSteel
   - opportunist
 warlock:
+  name: Warlock
   basePowers:
   - deathlyGaze
   - graveCurse
@@ -23,6 +25,7 @@ warlock:
   - familiarSpirit
   - ethereal
 knight:
+  name: Knight
   basePowers:
   - charge
   - inspire
@@ -35,6 +38,7 @@ knight:
   - commander
   - defiance
 artificer:
+  name: Artificer
   basePowers:
   - tinyArmy
   - arcaneMines
@@ -47,6 +51,7 @@ artificer:
   - fleshTransmutation
   - tonic
 zephyr:
+  name: Zephyr
   basePowers:
   - callLightning
   - gust
@@ -59,6 +64,7 @@ zephyr:
   - staticCharge
   - hungryCloud
 swashbuckler:
+  name: Swashbuckler
   basePowers:
   - lunge
   - feint

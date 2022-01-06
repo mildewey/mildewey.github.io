@@ -1,7 +1,7 @@
 arcaneFortress:
   name: Arcane Fortress
   archetypes:
-  - bulwark
+  - knight
   - artificer
 sailsword:
   name: Sailsword

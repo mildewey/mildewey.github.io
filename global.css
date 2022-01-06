@@ -43,7 +43,7 @@ main {
 	text-align: left;
 }
 
-nav {
+nav div.row-flex {
 	display: flex;
 	flex-flow: row wrap;
 }

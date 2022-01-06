@@ -29,7 +29,7 @@ tactics:
   description: >
     Move up one level on one condition track.
 
-
+   
 # Myrmidon
 practicedStrike:
   name: Practiced Strike
@@ -97,11 +97,14 @@ opportunist:
   flavor: Killing is a full time job.
   action: Guard
   uses: Energy
-  duration: 1 round
+  duration: 5 rounds
+  concentration: Guard
   description: >
     When an enemy moves into your side of the battlefield, spend 1 focus to do
     1d*3 damage.
+    #added this section because warlock ability is an at-will by comparison. yes myrmidon has more +damage but still want to feel balanced
 
+    
 # Warlock
 deathlyGaze:
   name: Deathly Gaze
@@ -121,6 +124,7 @@ graveCurse:
 contagion:
   name: Contagion
   action: Guard
+  uses: At-Will
   description: >
     When an enemy enters your side of the battlefield, you can spend 1 Focus to
     do 1d*4 damage. If you hit, the target is Weakened.
@@ -455,3 +459,156 @@ rapidStrikes:
     When you double down on an attack action, you may spend an energy to double
     down again. When you do so, all targets become your choice of vulnerable or
     weakened.
+    
+    
+# Weapon
+stab:
+  name: Stab
+  weapon: true
+  weaponType: dagger
+  action: Attack
+  pattern: Melee
+  uses: At-Will
+  repeatable: true
+  description: >
+    The target takes 3d*3+1 damage.
+loose:
+  name: Loose
+  weapon: true
+  weaponType: bow
+  action: Attack
+  pattern: Precision
+  uses: At-Will
+  description: >
+    Spend up to 3 Focus. The target takes 4d*F damage.
+volley:
+  name: Volley
+  weapon: true
+  weaponType: bow
+  action: Attack
+  pattern: Scatter
+  uses: At-Will
+  description: >
+    Each target takes 2d*2 damage.
+crush:
+  name: Crush
+  weapon: true
+  weaponType: hammer
+  action: Attack
+  pattern: Melee
+  uses: At-Will
+  description: >
+    The target takes 4d*2 damage. If you hit, the target is Hobbled.
+deadlySwing:
+  name: Deadly Swing
+  weapon: true
+  weaponType: axe
+  action: Attack
+  pattern: Melee
+  uses: At-Will
+  description: >
+    Spend up to 3 Focus. The target takes Fd*4+1 damage.
+cracklingPower:
+  name: Crackling Power
+  weapon: true
+  weaponType: wand
+  action: Attack
+  pattern: Precision
+  uses: At-Will
+  description: >
+    Choose an element. The target takes 2d*[A] damage, where [A] is your elemental affinity for that element. If you hit, the target suffers a condition based on the chosen element: Earth, Weakened; Fire, Vulnerable; Air, Hobbled; Water, Confused.
+flick:
+  name: Flick
+  weapon: true
+  weaponType: longsword
+  action: Attack
+  pattern: Flurry
+  uses: At-Will
+  repeatable: true
+  description: >
+    Spend up to 3 Focus. Targets take [F]*1 damage each.
+beat:
+  name: Beat
+  weapon: true
+  weaponType: longsword
+  action: Guard
+  pattern: Melee
+  uses: At-Will
+  description: >
+    Increase your defense by two until the start of your next turn. Your target is Weakened.
+spike:
+  name: Spike
+  weapon: true
+  weaponType: pick
+  action: Attack
+  pattern: Melee
+  uses: At-Will
+  description: >
+    Roll one die. If you hit, the target breaks a defense token.
+shieldBash:
+  name: Shield Bash
+  weapon: true
+  weaponType: shield
+  action: Attack
+  pattern: Melee
+  uses: At-Will
+  description: >
+    Tap one of your defense tokens. The target takes 3d*3 damage, is Dazed, and you can push it up to 2 spaces.
+sunder:
+  name: Sunder
+  weapon: true
+  weaponType: heavy
+  action: Attack
+  pattern: Melee
+  uses: At-Will
+  description: >
+    The target takes 2d*4+1 damage. If you hit, the target is Vulnerable.    
+    #heavy is a tag meant for weapons such as greataxes, mauls, greatswords, halberds
+cleave:
+  name: Cleave
+  weapon: true
+  weaponType: heavy
+  action: Attack
+  pattern: Flurry
+  uses: Energy
+  description: >
+    Each target takes 3d*3 damage.
+hook:
+  name: Hook
+  weapon: true
+  weaponType: polearm
+  action: Attack
+  pattern: Melee
+  uses: At-Will
+  description: >
+    The target takes 3d*3 damage. If you hit, it is Vulnerable and you can pull it up to 2 spaces.
+openStrike:
+  name: Open Strike
+  weapon: true
+  weaponType: sword
+  action: Attack
+  pattern: Melee
+  uses: At-Will
+  description: >
+    Tap one of your defense tokens and spend up to 3 Focus. The target takes 3d*3+F damage. If you break the target's token, refresh one of your defense tokens.
+lance:
+  name: Lance
+  weapon: true
+  weaponType: spear
+  action: Attack
+  pattern: Melee
+  uses: At-Will
+  repeatable: true
+  description: >
+    Increase the range of your weapon by 1 for this attack. The target takes 3d*3+1 damage.
+throwingKnives:
+  name: Throwing Knives
+  weapon: true
+  weaponType: dagger
+  action: Attack
+  pattern: Scatter
+  uses: At-Will
+  repeatable: true
+  description: >
+    Each target takes 2d*2 damage. This attack cannot break defense tokens.
+   

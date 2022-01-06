@@ -546,6 +546,14 @@ spike:
   uses: At-Will
   description: >
     Roll one die. If you hit, the target breaks a defense token.
+deepGuard:
+  name: Deep Guard
+  weapon: true
+  weaponType: shield
+  action: Guard
+  uses: At-Will
+  description: >
+    Refresh 3 tapped defense tokens.
 shieldBash:
   name: Shield Bash
   weapon: true

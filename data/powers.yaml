@@ -29,7 +29,7 @@ tactics:
   description: >
     Move up one level on one condition track.
 
-   
+
 # Myrmidon
 practicedStrike:
   name: Practiced Strike
@@ -104,7 +104,7 @@ opportunist:
     1d*3 damage.
     #added this section because warlock ability is an at-will by comparison. yes myrmidon has more +damage but still want to feel balanced
 
-    
+
 # Warlock
 deathlyGaze:
   name: Deathly Gaze
@@ -459,8 +459,8 @@ rapidStrikes:
     When you double down on an attack action, you may spend an energy to double
     down again. When you do so, all targets become your choice of vulnerable or
     weakened.
-    
-    
+
+
 # Weapon
 stab:
   name: Stab
@@ -480,7 +480,7 @@ loose:
   pattern: Precision
   uses: At-Will
   description: >
-    Spend up to 3 Focus. The target takes 4d*F damage.
+    Spend up to 3 Focus. The target takes Fd*4 damage.
 volley:
   name: Volley
   weapon: true
@@ -507,7 +507,8 @@ deadlySwing:
   pattern: Melee
   uses: At-Will
   description: >
-    Spend up to 3 Focus. The target takes Fd*4+1 damage.
+    Spend up to 3 Focus. The target takes 3d*3 damage. If the target is hit,
+    they take an additional F*2 damage.
 cracklingPower:
   name: Crackling Power
   weapon: true
@@ -562,8 +563,8 @@ sunder:
   pattern: Melee
   uses: At-Will
   description: >
-    The target takes 2d*4+1 damage. If you hit, the target is Vulnerable.    
-    #heavy is a tag meant for weapons such as greataxes, mauls, greatswords, halberds
+    The target takes 2d*4+1 damage. If you hit, the target is Vulnerable.
+# heavy is a tag meant for weapons such as greataxes, mauls, greatswords, halberds
 cleave:
   name: Cleave
   weapon: true
@@ -581,7 +582,7 @@ hook:
   pattern: Melee
   uses: At-Will
   description: >
-    The target takes 3d*3 damage. If you hit, it is Vulnerable and you can pull it up to 2 spaces.
+    The target takes 3d*3 damage. If you hit, it is Vulnerable and you can move it up to 2 spaces.
 openStrike:
   name: Open Strike
   weapon: true
@@ -611,4 +612,3 @@ throwingKnives:
   repeatable: true
   description: >
     Each target takes 2d*2 damage. This attack cannot break defense tokens.
-   

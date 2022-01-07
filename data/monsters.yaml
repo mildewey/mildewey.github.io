@@ -1,0 +1,30 @@
+smokeMephit:
+  class: Mob
+  level: 1
+  evasion: 7
+  defense: 5
+  resilience: 2
+  speed: 7
+  powers:
+    sear:
+      name: Sear
+      action: Attack
+      pattern: Flurry
+      description: >
+        Target takes 2d*3+1 damage.
+    cough:
+      name: Cough
+      action: Tactics
+      pattern: Melee
+      description: >
+        Target is Vulnerable.
+    puff:
+      name: Puff
+      action: Guard
+      description: >
+        Reduce incoming damage by 5.
+    drift:
+      name: Drift
+      action: Move
+      description: >
+        Ignore hazardous terrain and zones of control.

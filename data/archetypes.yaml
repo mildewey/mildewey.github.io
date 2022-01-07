@@ -76,3 +76,16 @@ swashbuckler:
   - runOfLuck
   - sureFooted
   - rapidStrikes
+dragonblood:
+  name: Dragonblood
+  basePowers:
+  - fireBreath  #attack
+  - soar  #move
+  - dragonScales  #guard
+  - invigorate  #tactics
+  upgrades:
+  - dragonBlood
+  - draconicForm
+  - eternal
+  - fireStorm
+  - arcaneIntellect

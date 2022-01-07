@@ -13,3 +13,8 @@ blackguard:
   archetypes:
   - myrmidon
   - warlock
+wyrmblade:
+  name: Wyrmblade
+  archetypes:
+  - myrmidon
+  - dragonblood

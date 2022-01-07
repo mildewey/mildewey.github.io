@@ -27,7 +27,7 @@ tactics:
   action: Tactics
   uses: At-Will
   description: >
-    Move up one level on one condition track.
+    Restore one condition.
 
 
 # Myrmidon
@@ -45,7 +45,7 @@ whirlingCounters:
   uses: At-Will
   description: >
     Until the beginning of your next turn, any enemy that makes an attack
-    adjacent to you must tap a defense token.
+    adjacent to you must tap a Defense token.
 myrmidonsSteel:
   name: Myrmidon's Steel
   flavor: Paid in gold, deliver a deluge of blood and steel.
@@ -91,7 +91,7 @@ hardenedSteel:
   uses: Energy
   pattern: Nova
   description: >
-    Do 3d*2 damage to all targets. Refresh a tapped defense token.
+    Do 3d*2 damage to all targets. Refresh a tapped Defense token.
 opportunist:
   name: Opportunist
   flavor: Killing is a full time job.
@@ -139,7 +139,7 @@ eldritch:
   name: Eldritch
   action: Passive
   description: >
-    When you inflict a condition on a target, tap one of their defense tokens as well.
+    When you inflict a condition on a target, tap one of their Defense tokens as well.
 pestilence:
   name: Pestilence
   action: Attack
@@ -190,7 +190,7 @@ inspire:
   concentration: Stance
   description: >
     You and your allies can spend 3 focus at the beginning of each round to refresh a
-    tapped defense token.
+    tapped Defense token.
 protect:
   name: Protect
   action: Guard
@@ -236,7 +236,7 @@ defiance:
   name: Defiance
   action: Passive
   description: >
-    You can spend 2 focus to refresh a tapped defense token at the beginning of
+    You can spend 2 focus to refresh a tapped Defense token at the beginning of
     every turn.
 
 # Artificer
@@ -264,8 +264,8 @@ runicShield:
   uses: At-Will
   concentration: Stance
   description: >
-    Whenever a defense token would break, you can spend an energy to tap it instead.
-    This can't be used to prevent a tapped defense token from breaking.
+    Whenever a Defense token would break, you can spend an energy to tap it instead.
+    This can't be used to prevent a tapped Defense token from breaking.
 rawTransmutation:
   name: Raw Transmutation
   action: Move
@@ -304,7 +304,7 @@ tonic:
   action: Move
   uses: Energy
   description: >
-    Move double your speed. Reduce a condition. Refresh a tapped defense token.
+    Move double your speed. Restore one condition. Refresh a tapped Defense token.
 
 
 # Zephyr
@@ -338,7 +338,7 @@ waveStep:
   pattern: Nova
   description: >
     Choose a space in your movement path. All targets are pushed 1 space and tap
-    a defense token.
+    a Defense token.
 
 lightningInfusion:
   name: Lightning Infusion
@@ -401,7 +401,7 @@ feint:
   uses: At-Will
   pattern: Melee
   description: >
-    The target taps a defense token.
+    The target taps a Defense token.
 riposte:
   name: Riposte
   flavor: Deftly turning your enemy's blade away, you retaliate with a flourish.
@@ -546,7 +546,7 @@ flickerStrike:
   pattern: Melee
   uses: At-Will
   description: >
-    Increase your defense by two until the start of your next turn. Your target is Weakened.
+    Increase your Defense by two until the start of your next turn. Your target is Weakened.
 spike:
   name: Spike
   weapon: true
@@ -556,7 +556,7 @@ spike:
   pattern: Melee
   uses: At-Will
   description: >
-    Roll one die. If you hit, the target breaks a defense token and is Vulnerable.
+    Roll one die. If you hit, the target breaks a Defense token and is Vulnerable.
 shieldUp:
   name: Shield Up!
   weapon: true
@@ -565,7 +565,7 @@ shieldUp:
   action: Guard
   uses: At-Will
   description: >
-    Refresh 3 tapped defense tokens.
+    Refresh 3 tapped Defense tokens.
 shieldBash:
   name: Shield Bash
   weapon: true
@@ -575,7 +575,7 @@ shieldBash:
   pattern: Melee
   uses: At-Will
   description: >
-    Tap one of your defense tokens. The target takes 3d*3 damage, is Dazed, and you can push it up to 2 spaces.
+    Tap one of your Defense tokens. The target takes 3d*3 damage, is Dazed, and you can push it up to 2 spaces.
 sunder:
   name: Sunder
   weapon: true
@@ -618,8 +618,8 @@ openStrike:
   pattern: Melee
   uses: At-Will
   description: >
-    Tap one of your defense tokens and spend up to 3 Focus. The target takes 3d*3+F damage. 
-    If you break the target's token, refresh one of your defense tokens.
+    Tap one of your Defense tokens and spend up to 3 Focus. The target takes 3d*3+F damage. 
+    If you break the target's token, refresh one of your Defense tokens.
 lance:
   name: Lance
   weapon: true
@@ -654,4 +654,73 @@ throwingKnives:
   uses: At-Will
   repeatable: true
   description: >
-    Each target takes 2d*2 damage. This attack cannot break defense tokens.
+    Each target takes 2d*2 damage. This attack cannot break Defense tokens.
+    
+    
+    
+    
+#Dragonblood    
+fireBreath:
+  name: Fire Breath
+  action: Attack
+  pattern: Blast
+  uses: At-Will
+  description: >
+    Each target takes 2d*2 damage. If a target is hit, they are Confused.
+soar:
+  name: Soar
+  action: Move
+  uses: At-Will
+  description: >
+    Move up to your speed plus 2, ignoring Difficult and Hazardous terrain.
+dragonScales:
+  name: Dragon Scales
+  action: Guard
+  duration: 1 Round
+  uses: At-Will
+  description: >
+    Refresh two tapped Defense tokens, and increase your Defense by 2.
+invigorate:
+  name: Invigorate
+  action: Tactics
+  uses: At-Will
+  description: >
+    Restore two conditions.
+
+dragonBlood
+  name: Dragon Blood
+  flavor: The power of dragons and sorcerers flows in your veins, imbuing you with indefatigable energy.
+  action: Passive
+  description: >
+    When you spend an energy to take an action, you can also refresh a Defense token or restore one Condition.
+    You can use Athletics one additional time, even if you aren't trained in it.
+formOfFear
+  name: Form of Fear
+  action: Guard
+  uses: Energy
+  duration: 3 Rounds
+  pattern:  Radiate
+  concentration:  Guard
+  description:  >
+    Refresh one Defense Token. Each target takes 3d*2 damage. If a target is hit, they are Confused or Weakened, your choice.
+eternal
+  name: Eternal
+  flavor: You have the eternal life of a Dragon.
+  action: Passive
+  description: >
+    You no longer age, and are immune to non-magical disease. You ignore one level of any condition track. 
+    You can use Influence one additional time, even if you aren't trained in it.
+fireStorm
+  name: Fire Storm
+  action: Attack
+  uses: Energy
+  duration: 3 Rounds
+  pattern:  Explosion
+  concentration: Attack
+  description:  >
+    Each target takes 4d*3 damage. If a target is hit, they are Vulnerable.
+#arcaneIntellect
+
+
+
+    

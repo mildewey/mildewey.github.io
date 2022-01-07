@@ -5,3 +5,73 @@ pollaxe:
   - heavyWeapon
   - pick
   - axe
+dagger:
+  name: Dagger
+  tags:
+  - dagger
+  - weapon
+longsword:
+  name: Longsword
+  tags:
+  - weapon
+  - sword
+  - longsword
+zweihander:
+  name: Zweihander
+  tags:
+  - weapon
+  - sword
+  - longsword
+  - heavyWeapon
+halberd:
+  name: Halberd
+  tags:
+  - weapon
+  - polearm
+  - axe
+  - heavyWeapon
+  - reach
+spear:
+  name: Spear
+  tags:
+  - weapon
+  - spear
+  - reach
+crossbow:
+  name: Crossbow
+  tags:
+  - weapon
+  - crossbow
+bow:
+  name: Bow
+  tags:
+  - weapon
+  - bow
+warhammer:
+  name: Warhammer
+  tags:
+  - weapon
+  - hammer
+  - pick
+maul:
+  name: Maul
+  tags:
+  - weapon
+  - heavyWeapon
+  - hammer
+battleAxe:
+  name: Battle Axe
+  tags:
+  - weapon
+  - heavyWeapon
+  - axe
+  - pick
+armingSword:
+  name: Arming Sword
+  tags:
+  - weapon
+  - sword
+wand:
+  name: Weapon
+  tags:
+  - wand

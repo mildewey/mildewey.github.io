@@ -465,7 +465,9 @@ rapidStrikes:
 stab:
   name: Stab
   weapon: true
-  equipmentTag: dagger
+  equipmentTags: 
+    - dagger
+    - sword
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -475,7 +477,9 @@ stab:
 loose:
   name: Loose
   weapon: true
-  equipmentTag: bow
+  equipmentTags: 
+    - bow
+    - crossbow
   action: Attack
   pattern: Precision
   uses: At-Will
@@ -484,7 +488,8 @@ loose:
 volley:
   name: Volley
   weapon: true
-  equipmentTag: bow
+  equipmentTags: 
+    - bow
   action: Attack
   pattern: Scatter
   uses: At-Will
@@ -493,7 +498,8 @@ volley:
 crush:
   name: Crush
   weapon: true
-  equipmentTag: hammer
+  equipmentTags: 
+    - hammer
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -502,36 +508,40 @@ crush:
 deadlySwing:
   name: Deadly Swing
   weapon: true
-  equipmentTag: axe
+  equipmentTags: 
+    - axe
   action: Attack
   pattern: Melee
   uses: At-Will
   description: >
     Spend up to 3 Focus. The target takes 3d*3 damage. If the target is hit,
-    they take an additional F*2 damage.
+    they take an additional [F]*2 damage.
 cracklingPower:
   name: Crackling Power
   weapon: true
-  equipmentTag: wand
+  equipmentTags: 
+    - wand
   action: Attack
   pattern: Precision
   uses: At-Will
   description: >
     Choose an element. The target takes 2d*[A] damage, where [A] is your elemental affinity for that element. If you hit, the target suffers a condition based on the chosen element: Earth, Weakened; Fire, Vulnerable; Air, Hobbled; Water, Confused.
-flick:
-  name: Flick
+beat:
+  name: Beat
   weapon: true
-  equipmentTag: longsword
-  action: Attack
+  equipmentTags: 
+    - longsword
+  action: Tactics
   pattern: Flurry
   uses: At-Will
   repeatable: true
   description: >
-    Spend up to 3 Focus. Targets take [F]*1 damage each.
-beat:
-  name: Beat
+    Push targets 1 space.
+flickerStrike:
+  name: Flicker Strike
   weapon: true
-  equipmentTag: longsword
+  equipmentTags: 
+    - longsword
   action: Guard
   pattern: Melee
   uses: At-Will
@@ -540,16 +550,18 @@ beat:
 spike:
   name: Spike
   weapon: true
-  equipmentTag: pick
+  equipmentTags: 
+    - pick
   action: Attack
   pattern: Melee
   uses: At-Will
   description: >
-    Roll one die. If you hit, the target breaks a defense token.
-deepGuard:
-  name: Deep Guard
+    Roll one die. If you hit, the target breaks a defense token and is Vulnerable.
+shieldUp:
+  name: Shield Up!
   weapon: true
-  equipmentTag: shield
+  equipmentTags: 
+    - shield
   action: Guard
   uses: At-Will
   description: >
@@ -557,7 +569,8 @@ deepGuard:
 shieldBash:
   name: Shield Bash
   weapon: true
-  equipmentTag: shield
+  equipmentTags: 
+    - shield
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -566,17 +579,20 @@ shieldBash:
 sunder:
   name: Sunder
   weapon: true
-  equipmentTag: heavyWeapon
+  equipmentTags: 
+    - heavyWeapon
   action: Attack
   pattern: Melee
   uses: At-Will
   description: >
     The target takes 2d*4+1 damage. If you hit, the target is Vulnerable.
-# heavy is a tag meant for weapons such as greataxes, mauls, greatswords, halberds
 cleave:
   name: Cleave
   weapon: true
-  equipmentTag: heavyWeapon
+  equipmentTags: 
+    - heavyWeapon + longsword
+    - axe
+    - heavyWeapon + hammer
   action: Attack
   pattern: Flurry
   uses: Energy
@@ -585,35 +601,54 @@ cleave:
 hook:
   name: Hook
   weapon: true
-  equipmentTag: polearm
+  equipmentTags: 
+    - polearm
+    - reach
   action: Attack
   pattern: Melee
   uses: At-Will
   description: >
-    The target takes 3d*3 damage. If you hit, it is Vulnerable and you can move it up to 2 spaces.
+    The target takes 3d*3 damage. If you hit, it is Vulnerable and you can pull it up to 2 spaces.
 openStrike:
   name: Open Strike
   weapon: true
-  equipmentTag: sword
+  equipmentTags: 
+    - sword
   action: Attack
   pattern: Melee
   uses: At-Will
   description: >
-    Tap one of your defense tokens and spend up to 3 Focus. The target takes 3d*3+F damage. If you break the target's token, refresh one of your defense tokens.
+    Tap one of your defense tokens and spend up to 3 Focus. The target takes 3d*3+F damage. 
+    If you break the target's token, refresh one of your defense tokens.
 lance:
   name: Lance
   weapon: true
-  equipmentTag: spear
+  equipmentTags: 
+    - spear
+    - polearm
   action: Attack
   pattern: Melee
   uses: At-Will
   repeatable: true
   description: >
-    Increase the range of your weapon by 1 for this attack. The target takes 3d*3+1 damage.
+    Increase the range of your weapon by 1 for this attack. The target takes 3d*3 damage.
+hurl:
+  name: Hurl
+  weapon: true
+  equipmentTags: 
+    - dagger
+    - spear
+  action: Attack
+  pattern: Precision
+  uses: At-Will
+  description: >
+    Spend up to 3 Focus. The target takes 2d*2 damage. If the target is hit,
+    they take an additional [F]*2 damage.
 throwingKnives:
   name: Throwing Knives
   weapon: true
-  equipmentTag: dagger
+  equipmentTags: 
+    - dagger
   action: Attack
   pattern: Scatter
   uses: At-Will

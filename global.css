@@ -66,6 +66,8 @@ h6 {
 	font-size: 1.2rem;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 h5 {
@@ -269,18 +271,18 @@ table.statblock {
 }
 
 td.stat {
-	text-align: right;
-	padding-right: 5px;
-	font-weight: bold;
-}
-
-td.action-header {
 	text-align: left;
 	padding-right: 5px;
 	font-weight: bold;
 }
 
-td.action {
+td.table-header {
+	text-align: left;
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+td.table-item {
 	text-align: left;
 }
 

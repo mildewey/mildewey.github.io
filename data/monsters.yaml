@@ -1,10 +1,13 @@
 smokeMephit:
+  name: Smoke Mephit
+  flavor: The smoky figure is both frolicsome and fierce.
   class: Mob
   level: 1
-  evasion: 7
-  defense: 5
-  resilience: 2
-  speed: 7
+  stats:
+    Evasion: 7
+    Defense: 5
+    Resilience: 2
+    Speed: 7
   powers:
     sear:
       name: Sear

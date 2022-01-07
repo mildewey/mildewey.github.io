@@ -236,7 +236,7 @@ defiance:
   action: Passive
   description: >
     You can spend 2 focus to refresh a tapped Defense token at the beginning of
-    every turn.
+    each round.
 
 # Artificer
 tinyArmy:
@@ -686,14 +686,14 @@ invigorate:
   description: >
     Restore two conditions.
 
-dragonBlood
+dragonBlood:
   name: Dragon Blood
   flavor: The power of dragons and sorcerers flows in your veins, imbuing you with indefatigable energy.
   action: Passive
   description: >
     When you spend an energy to take an action, you can also refresh a Defense token or restore one Condition.
     You can use Athletics one additional time, even if you aren't trained in it.
-formOfFear
+formOfFear:
   name: Form of Fear
   action: Guard
   uses: Energy
@@ -702,14 +702,14 @@ formOfFear
   concentration:  Guard
   description:  >
     Refresh one Defense Token. Each target takes 3d*2 damage. If a target is hit, they are Confused or Weakened, your choice.
-eternal
+eternal:
   name: Eternal
   flavor: You have the eternal life of a Dragon.
   action: Passive
   description: >
     You no longer age, and are immune to non-magical disease. You ignore one level of any condition track.
     You can use Influence one additional time, even if you aren't trained in it.
-fireStorm
+fireStorm:
   name: Fire Storm
   action: Attack
   uses: Energy
@@ -718,4 +718,4 @@ fireStorm
   concentration: Attack
   description:  >
     Each target takes 4d*3 damage. If a target is hit, they are Vulnerable.
-#arcaneIntellect
+# arcaneIntellect

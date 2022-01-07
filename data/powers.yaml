@@ -102,7 +102,6 @@ opportunist:
   description: >
     When an enemy moves into your side of the battlefield, spend 1 focus to do
     1d*3 damage.
-    #added this section because warlock ability is an at-will by comparison. yes myrmidon has more +damage but still want to feel balanced
 
 
 # Warlock
@@ -392,8 +391,8 @@ lunge:
   pattern: Melee
   uses: At-Will
   description: >
-    Spend up to 4 focus to do 3d*F damage. The target of your attack may not use
-    a reaction this turn.
+    Spend up to 4 focus to do 3d*F damage. If you hit, the target must tap another
+    Defense token.
 feint:
   name: Feint
   flavor: Deception is essential in a duel between masters
@@ -465,7 +464,7 @@ rapidStrikes:
 stab:
   name: Stab
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - dagger
     - sword
   action: Attack
@@ -477,7 +476,7 @@ stab:
 loose:
   name: Loose
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - bow
     - crossbow
   action: Attack
@@ -488,7 +487,7 @@ loose:
 volley:
   name: Volley
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - bow
   action: Attack
   pattern: Scatter
@@ -498,7 +497,7 @@ volley:
 crush:
   name: Crush
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - hammer
   action: Attack
   pattern: Melee
@@ -508,7 +507,7 @@ crush:
 deadlySwing:
   name: Deadly Swing
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - axe
   action: Attack
   pattern: Melee
@@ -519,7 +518,7 @@ deadlySwing:
 cracklingPower:
   name: Crackling Power
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - wand
   action: Attack
   pattern: Precision
@@ -529,7 +528,7 @@ cracklingPower:
 beat:
   name: Beat
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - longsword
   action: Tactics
   pattern: Flurry
@@ -540,7 +539,7 @@ beat:
 flickerStrike:
   name: Flicker Strike
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - longsword
   action: Guard
   pattern: Melee
@@ -550,7 +549,7 @@ flickerStrike:
 spike:
   name: Spike
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - pick
   action: Attack
   pattern: Melee
@@ -560,7 +559,7 @@ spike:
 shieldUp:
   name: Shield Up!
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - shield
   action: Guard
   uses: At-Will
@@ -569,7 +568,7 @@ shieldUp:
 shieldBash:
   name: Shield Bash
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - shield
   action: Attack
   pattern: Melee
@@ -579,7 +578,7 @@ shieldBash:
 sunder:
   name: Sunder
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - heavyWeapon
   action: Attack
   pattern: Melee
@@ -589,7 +588,7 @@ sunder:
 cleave:
   name: Cleave
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - heavyWeapon + longsword
     - axe
     - heavyWeapon + hammer
@@ -601,7 +600,7 @@ cleave:
 hook:
   name: Hook
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - polearm
     - reach
   action: Attack
@@ -612,18 +611,18 @@ hook:
 openStrike:
   name: Open Strike
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - sword
   action: Attack
   pattern: Melee
   uses: At-Will
   description: >
-    Tap one of your Defense tokens and spend up to 3 Focus. The target takes 3d*3+F damage. 
+    Tap one of your Defense tokens and spend up to 3 Focus. The target takes 3d*3+F damage.
     If you break the target's token, refresh one of your Defense tokens.
 lance:
   name: Lance
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - spear
     - polearm
   action: Attack
@@ -635,7 +634,7 @@ lance:
 hurl:
   name: Hurl
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - dagger
     - spear
   action: Attack
@@ -647,7 +646,7 @@ hurl:
 throwingKnives:
   name: Throwing Knives
   weapon: true
-  equipmentTags: 
+  equipmentTags:
     - dagger
   action: Attack
   pattern: Scatter
@@ -655,11 +654,11 @@ throwingKnives:
   repeatable: true
   description: >
     Each target takes 2d*2 damage. This attack cannot break Defense tokens.
-    
-    
-    
-    
-#Dragonblood    
+
+
+
+
+#Dragonblood
 fireBreath:
   name: Fire Breath
   action: Attack
@@ -708,7 +707,7 @@ eternal
   flavor: You have the eternal life of a Dragon.
   action: Passive
   description: >
-    You no longer age, and are immune to non-magical disease. You ignore one level of any condition track. 
+    You no longer age, and are immune to non-magical disease. You ignore one level of any condition track.
     You can use Influence one additional time, even if you aren't trained in it.
 fireStorm
   name: Fire Storm
@@ -720,7 +719,3 @@ fireStorm
   description:  >
     Each target takes 4d*3 damage. If a target is hit, they are Vulnerable.
 #arcaneIntellect
-
-
-
-    

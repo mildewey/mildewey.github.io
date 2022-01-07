@@ -72,6 +72,7 @@ armingSword:
   - weapon
   - sword
 wand:
-  name: Weapon
+  name: Wand
   tags:
+  - weapon
   - wand

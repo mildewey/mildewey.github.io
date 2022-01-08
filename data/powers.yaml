@@ -1,7 +1,9 @@
 # Basic
 strike:
   name: Strike
-  basic: true
+  tags:
+  - basic
+  - weapon
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -9,21 +11,24 @@ strike:
     The target takes 3d*3 damage.
 move:
   name: Move
-  basic: true
+  tags:
+  - basic
   action: Move
   uses: At-Will
   description: >
     Change your position by moving your speed.
 guard:
   name: Guard
-  basic: true
+  tags:
+  - basic
   action: Guard
   uses: At-Will
   description: >
     Refresh two tapped Defense tokens.
 tactics:
   name: Tactics
-  basic: true
+  tags:
+  - basic
   action: Tactics
   uses: At-Will
   description: >
@@ -463,10 +468,8 @@ rapidStrikes:
 # Weapon
 stab:
   name: Stab
-  weapon: true
-  equipmentTags:
-    - dagger
-    - sword
+  tags:
+  - weapon
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -475,10 +478,8 @@ stab:
     The target takes 3d*3+1 damage.
 loose:
   name: Loose
-  weapon: true
-  equipmentTags:
-    - bow
-    - crossbow
+  tags:
+  - weapon
   action: Attack
   pattern: Precision
   uses: At-Will
@@ -486,7 +487,8 @@ loose:
     Spend up to 3 Focus. The target takes Fd*4 damage.
 volley:
   name: Volley
-  weapon: true
+  tags:
+  - weapon
   equipmentTags:
     - bow
   action: Attack
@@ -496,9 +498,8 @@ volley:
     Each target takes 2d*2 damage.
 crush:
   name: Crush
-  weapon: true
-  equipmentTags:
-    - hammer
+  tags:
+  - weapon
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -506,9 +507,8 @@ crush:
     The target takes 4d*2 damage. If you hit, the target is Hobbled.
 deadlySwing:
   name: Deadly Swing
-  weapon: true
-  equipmentTags:
-    - axe
+  tags:
+  - weapon
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -517,9 +517,8 @@ deadlySwing:
     they take an additional [F]*2 damage.
 cracklingPower:
   name: Crackling Power
-  weapon: true
-  equipmentTags:
-    - wand
+  tags:
+  - weapon
   action: Attack
   pattern: Precision
   uses: At-Will
@@ -527,9 +526,8 @@ cracklingPower:
     Choose an element. The target takes 2d*[A] damage, where [A] is your elemental affinity for that element. If you hit, the target suffers a condition based on the chosen element: Earth, Weakened; Fire, Vulnerable; Air, Hobbled; Water, Confused.
 beat:
   name: Beat
-  weapon: true
-  equipmentTags:
-    - longsword
+  tags:
+  - weapon
   action: Tactics
   pattern: Flurry
   uses: At-Will
@@ -538,9 +536,8 @@ beat:
     Push targets 1 space.
 flickerStrike:
   name: Flicker Strike
-  weapon: true
-  equipmentTags:
-    - longsword
+  tags:
+  - weapon
   action: Guard
   pattern: Melee
   uses: At-Will
@@ -548,9 +545,8 @@ flickerStrike:
     Increase your Defense by two until the start of your next turn. Your target is Weakened.
 spike:
   name: Spike
-  weapon: true
-  equipmentTags:
-    - pick
+  tags:
+  - weapon
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -558,18 +554,16 @@ spike:
     Roll one die. If you hit, the target breaks a Defense token and is Vulnerable.
 shieldUp:
   name: Shield Up!
-  weapon: true
-  equipmentTags:
-    - shield
+  tags:
+  - weapon
   action: Guard
   uses: At-Will
   description: >
     Refresh 3 tapped Defense tokens.
 shieldBash:
   name: Shield Bash
-  weapon: true
-  equipmentTags:
-    - shield
+  tags:
+  - weapon
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -577,9 +571,8 @@ shieldBash:
     Tap one of your Defense tokens. The target takes 3d*3 damage, is Dazed, and you can push it up to 2 spaces.
 sunder:
   name: Sunder
-  weapon: true
-  equipmentTags:
-    - heavyWeapon
+  tags:
+  - weapon
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -587,11 +580,8 @@ sunder:
     The target takes 2d*4+1 damage. If you hit, the target is Vulnerable.
 cleave:
   name: Cleave
-  weapon: true
-  equipmentTags:
-    - heavyWeapon + longsword
-    - axe
-    - heavyWeapon + hammer
+  tags:
+  - weapon
   action: Attack
   pattern: Flurry
   uses: Energy
@@ -599,10 +589,8 @@ cleave:
     Each target takes 3d*3 damage.
 hook:
   name: Hook
-  weapon: true
-  equipmentTags:
-    - polearm
-    - reach
+  tags:
+  - weapon
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -610,9 +598,8 @@ hook:
     The target takes 3d*3 damage. If you hit, it is Vulnerable and you can pull it up to 2 spaces.
 openStrike:
   name: Open Strike
-  weapon: true
-  equipmentTags:
-    - sword
+  tags:
+  - weapon
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -621,10 +608,8 @@ openStrike:
     If you break the target's token, refresh one of your Defense tokens.
 lance:
   name: Lance
-  weapon: true
-  equipmentTags:
-    - spear
-    - polearm
+  tags:
+  - weapon
   action: Attack
   pattern: Melee
   uses: At-Will
@@ -633,10 +618,8 @@ lance:
     Increase the range of your weapon by 1 for this attack. The target takes 3d*3 damage.
 hurl:
   name: Hurl
-  weapon: true
-  equipmentTags:
-    - dagger
-    - spear
+  tags:
+  - weapon
   action: Attack
   pattern: Precision
   uses: At-Will
@@ -645,9 +628,8 @@ hurl:
     they take an additional [F]*2 damage.
 throwingKnives:
   name: Throwing Knives
-  weapon: true
-  equipmentTags:
-    - dagger
+  tags:
+  - weapon
   action: Attack
   pattern: Scatter
   uses: At-Will

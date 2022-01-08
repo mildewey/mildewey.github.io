@@ -1,78 +1,115 @@
+shield:
+  name: Shield
+  tags:
+  - weapon
+  powers:
+  - shieldUp
+  - shieldBash
 pollaxe:
   name: Pollaxe
   tags:
   - weapon
-  - heavyWeapon
-  - pick
-  - axe
+  powers:
+  - sunder
+  - deadlySwing
+  - spike
+  - hook
+  - lance
+  description: >
+    The primary weapon of any well-trained man-at-arms.
 dagger:
   name: Dagger
   tags:
-  - dagger
   - weapon
+  powers:
+  - stab
+  - hurl
+  - throwingKnives
 longsword:
   name: Longsword
   tags:
   - weapon
-  - sword
-  - longsword
+  powers:
+  - stab
+  - beat
+  - flickerStrike
+  - openStrike
 zweihander:
   name: Zweihander
   tags:
   - weapon
-  - sword
-  - longsword
-  - heavyWeapon
+  powers:
+  - sunder
+  - stab
+  - beat
+  - flickerStrike
+  - cleave
+  - openStrike
 halberd:
   name: Halberd
   tags:
   - weapon
-  - polearm
-  - axe
-  - heavyWeapon
-  - reach
+  powers:
+  - sunder
+  - deadlySwing
+  - cleave
+  - hook
+  - lance
 spear:
   name: Spear
   tags:
   - weapon
-  - spear
-  - reach
+  powers:
+  - stab
+  - hook
+  - lance
+  - hurl
 crossbow:
   name: Crossbow
   tags:
   - weapon
-  - crossbow
+  powers:
+  - loose
 bow:
   name: Bow
   tags:
   - weapon
-  - bow
+  powers:
+  - loose
+  - volley
 warhammer:
   name: Warhammer
   tags:
   - weapon
-  - hammer
-  - pick
+  powers:
+  - crush
+  - spike
 maul:
   name: Maul
   tags:
   - weapon
-  - heavyWeapon
-  - hammer
+  powers:
+  - sunder
+  - crush
+  - cleave
 battleAxe:
   name: Battle Axe
   tags:
   - weapon
-  - heavyWeapon
-  - axe
-  - pick
+  powers:
+  - sunder
+  - deadlySwing
+  - spike
 armingSword:
   name: Arming Sword
   tags:
   - weapon
-  - sword
+  powers:
+  - stab
+  - openStrike
 wand:
   name: Wand
   tags:
   - weapon
-  - wand
+  powers:
+  - cracklingPower

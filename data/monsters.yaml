@@ -31,3 +31,186 @@ smokeMephit:
       action: Move
       description: >
         Ignore hazardous terrain and zones of control.
+
+townGuard:
+  name: Town Guard
+  flavor: The uniform tabard is well kept, but shows signs of wear.
+  class: Elite
+  level: 1
+  stats:
+    Evasion: 5
+    Defense: 7
+    Resilience: 4
+    Speed: 4
+    Energy: 3
+  powers: []
+
+direWolf:
+  name: Dire Wolf
+  flavor: This hungry creature is a grim sight in the wilderness.
+  class: Apex
+  level: 1
+  stats:
+    Evasion: 7
+    Defense: 6
+    Resilience: 6
+    Speed: 8
+    Energy: 4
+    Focus: 3
+  powers: []
+
+goblin:
+  name: Goblin
+  flavor: It's green, ugly, and hates you.
+  class: Mob
+  level: 2
+  stats:
+    Evasion: 8
+    Defense: 5
+    Resilience: 4
+    Speed: 5
+  powers: []
+
+bugbear:
+  name: Bugbear
+  flavor: You didn't see the hairy monstrosity until it was strangling you.
+  class: Elite
+  level: 2
+  stats:
+    Evasion: 5
+    Defense: 7
+    Resilience: 8
+    Speed: 5
+    Energy: 2
+  powers: []
+
+bugbearAlpha:
+  name: Bugbear Alpha
+  flavor: You didn't see the hairy monstrosity until it was strangling you.
+  class: Apex
+  level: 2
+  stats:
+    Evasion: 6
+    Defense: 7
+    Resilience: 9
+    Speed: 5
+    Energy: 3
+    Focus: 4
+  powers: []
+
+hobgoblin:
+  name: Hobgoblin
+  flavor: Hobgoblins are known for their fanatic devotion to the God of Battle.
+  class: Mob
+  level: 3
+  stats:
+    Evasion: 8
+    Defense: 5
+    Resilience: 5
+    Speed: 5
+  powers: []
+
+hobgoblinMyrmidon:
+  name: Hobgoblin Myrmidon
+  flavor: The battle grace before you and the aura of command set this hobgoblin apart.
+  class: Elite
+  level: 3
+  stats:
+    Evasion: 8
+    Defense: 6
+    Resilience: 6
+    Speed: 5
+    Energy: 4
+  powers: []
+
+goblinWarlord:
+  name: Goblin Warlord
+  flavor: The insanity of its grin is the first sign of trouble.
+  class: Apex
+  level: 3
+  stats:
+    Evasion: 7
+    Defense: 5
+    Resilience: 8
+    Speed: 7
+    Energy: 2
+    Focus: 6
+  powers: []
+
+direTiger:
+  name: Dire Tiger
+  flavor: 12 inch teeth can do quite a bit of maiming.
+  class: Mob
+  level: 4
+  stats:
+    Evasion: 6
+    Defense: 6
+    Resilience: 6
+    Speed: 10
+  powers: []
+
+salamanderMage:
+  name: Salamander Mage
+  flavor: Dispassionate malevolence
+  class: Elite
+  level: 4
+  stats:
+    Evasion: 5
+    Defense: 5
+    Resilience: 6
+    Speed: 5
+    Energy: 7
+  powers: []
+
+youngDragon:
+  name: Young Dragon
+  flavor: wings, claws, teeth, fear, death
+  class: Apex
+  level: 4
+  stats:
+    Evasion: 5
+    Defense: 8
+    Resilience: 8
+    Speed: 6
+    Energy: 6
+    Focus: 3
+  powers: []
+
+stoneGiant:
+  name: Stone Giant
+  flavor: 12 feet tall with literally flint skin.
+  class: Mob
+  level: 5
+  stats:
+    Evasion: 4
+    Defense: 10
+    Resilience: 10
+    Speed: 6
+  powers: []
+
+boneDevil:
+  name: Bone Devil
+  flavor: The protrusions and bone weapons are terrifying
+  class: Elite
+  level: 5
+  stats:
+    Evasion: 4
+    Defense: 10
+    Resilience: 10
+    Speed: 5
+    Energy: 3
+  powers: []
+
+adultDragon:
+  name: Adult Dragon
+  flavor: The protrusions and bone weapons are terrifying
+  class: Apex
+  level: 5
+  stats:
+    Evasion: 6
+    Defense: 10
+    Resilience: 10
+    Speed: 6
+    Energy: 8
+    Focus: 5
+  powers: []

@@ -86,7 +86,7 @@ bugbear:
 
 bugbearAlpha:
   name: Bugbear Alpha
-  flavor: You didn't see the hairy monstrosity until it was strangling you.
+  flavor: Bigger, hairier, smellier.
   class: Apex
   level: 2
   stats:
@@ -194,7 +194,7 @@ boneDevil:
   class: Elite
   level: 5
   stats:
-    Evasion: 4
+    Evasion: 6
     Defense: 10
     Resilience: 10
     Speed: 5
@@ -207,7 +207,7 @@ adultDragon:
   class: Apex
   level: 5
   stats:
-    Evasion: 6
+    Evasion: 7
     Defense: 10
     Resilience: 10
     Speed: 6

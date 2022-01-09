@@ -216,8 +216,8 @@ indomitable:
   name: Indomitable
   action: Passive
   description: >
-    You can ignore one level of any condition track. You can use any Athletics
-    skill twice.
+    You can ignore one level of any condition track. You can use any Charisma
+    skill an additional time.
 aegis:
   name: Aegis
   action: Guard
@@ -453,7 +453,7 @@ sureFooted:
   action: Passive
   description: >
     Ignore difficult and hazardous terrain during your turn. You can use any
-    Athletics skill twice without refreshing. You ignore one level of the Hobbled
+    Agility skill an additional time. You ignore one level of the Hobbled
     condition.
 rapidStrikes:
   name: Rapid Strikes

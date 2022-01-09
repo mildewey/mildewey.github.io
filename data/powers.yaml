@@ -524,8 +524,8 @@ cracklingPower:
   uses: At-Will
   description: >
     Choose an element. The target takes 2d*[A] damage, where [A] is your elemental affinity for that element. If you hit, the target suffers a condition based on the chosen element: Earth, Weakened; Fire, Vulnerable; Air, Hobbled; Water, Confused.
-beat:
-  name: Beat
+whirlingBlade:
+  name:  Whirling Blade
   tags:
   - weapon
   action: Tactics
@@ -534,15 +534,15 @@ beat:
   repeatable: true
   description: >
     Push targets 1 space.
-flickerStrike:
-  name: Flicker Strike
+beat:
+  name: Beat
   tags:
   - weapon
   action: Guard
   pattern: Melee
   uses: At-Will
   description: >
-    Increase your Defense by two until the start of your next turn. Your target is Weakened.
+    Increase your Defense by one until the start of your next turn. Your target is Weakened.
 spike:
   name: Spike
   tags:
@@ -560,6 +560,17 @@ shieldUp:
   uses: At-Will
   description: >
     Refresh 3 tapped Defense tokens.
+
+    
+#intercept:
+#  name: Intercept
+#  tags:
+#  action: Move
+#  duration: 1 Round
+#  uses: At-Will
+#  description: >
+#    Move your Speed. If you end your movement next to an Ally, you can spend one Focus to become the target of an attack targeting that ally.
+    
 shieldBash:
   name: Shield Bash
   tags:
@@ -604,7 +615,7 @@ openStrike:
   pattern: Melee
   uses: At-Will
   description: >
-    Tap one of your Defense tokens and spend up to 3 Focus. The target takes 3d*3+F damage.
+    Tap one of your Defense tokens. The target takes 3d*4 damage.
     If you break the target's token, refresh one of your Defense tokens.
 lance:
   name: Lance

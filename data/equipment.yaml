@@ -13,8 +13,6 @@ pollaxe:
   - sunder
   - deadlySwing
   - spike
-  - hook
-  - lance
   description: >
     The primary weapon of any well-trained man-at-arms.
 dagger:
@@ -32,7 +30,7 @@ longsword:
   powers:
   - stab
   - beat
-  - flickerStrike
+  - whirlingBlade
   - openStrike
 zweihander:
   name: Zweihander
@@ -40,9 +38,6 @@ zweihander:
   - weapon
   powers:
   - sunder
-  - stab
-  - beat
-  - flickerStrike
   - cleave
   - openStrike
 halberd:
@@ -50,8 +45,6 @@ halberd:
   tags:
   - weapon
   powers:
-  - sunder
-  - deadlySwing
   - cleave
   - hook
   - lance
@@ -61,7 +54,6 @@ spear:
   - weapon
   powers:
   - stab
-  - hook
   - lance
   - hurl
 crossbow:

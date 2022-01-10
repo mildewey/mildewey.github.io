@@ -43,7 +43,25 @@ townGuard:
     Resilience: 4
     Speed: 4
     Energy: 3
-  powers: []
+  powers:
+    cleave:
+      name: Cleave
+      tags:
+      - weapon
+      action: Attack
+      pattern: Flurry
+      uses: Energy
+      description: >
+        Each target takes 3d*3 damage.
+    hook:
+      name: Hook
+      tags:
+      - weapon
+      action: Attack
+      pattern: Melee
+      uses: At-Will
+      description: >
+        The target takes 3d*3 damage. If hit, it is Vulnerable and pulled up to 2 spaces.
 
 direWolf:
   name: Dire Wolf

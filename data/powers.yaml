@@ -216,7 +216,7 @@ indomitable:
   name: Indomitable
   action: Passive
   description: >
-    You can ignore one level of any condition track. You can use any Charisma
+    Extend any condition track by one. You can use any Charisma
     skill an additional time.
 aegis:
   name: Aegis
@@ -444,7 +444,7 @@ defyDeath:
   action: Passive
   description: >
     For each level of condition you have, do 2 extra damage to one target when
-    you take the attack action. You ignore one level of the Vulnerable condition.
+    you take the attack action. Extend your Vulnerable track by one Vulnerable.
 sureFooted:
   name: Sure-footed
   flavor: >
@@ -453,8 +453,7 @@ sureFooted:
   action: Passive
   description: >
     Ignore difficult and hazardous terrain during your turn. You can use any
-    Agility skill an additional time. You ignore one level of the Hobbled
-    condition.
+    Agility skill an additional time. Extend your Hobbled track by one.
 rapidStrikes:
   name: Rapid Strikes
   flavor: Your sword is a blur.
@@ -700,7 +699,7 @@ eternal:
   flavor: You have the eternal life of a Dragon.
   action: Passive
   description: >
-    You no longer age, and are immune to non-magical disease. You ignore one level of any condition track.
+    You no longer age, and are immune to non-magical disease. Extend any condition track by one.
     You can use Influence one additional time, even if you aren't trained in it.
 fireStorm:
   name: Fire Storm

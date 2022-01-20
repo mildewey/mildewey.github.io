@@ -48,6 +48,7 @@ halberd:
   - cleave
   - hook
   - lance
+  - reachAdvantage
 spear:
   name: Spear
   tags:

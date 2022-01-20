@@ -61,7 +61,26 @@ townGuard:
       pattern: Melee
       uses: At-Will
       description: >
-        The target takes 3d*3 damage. If hit, it is Vulnerable and pulled up to 2 spaces.
+      The target takes 3d*3 damage. If hit, it is Vulnerable and pulled up to 2 spaces.
+    watchsDiscipline:
+      name: Watch's Discipline
+      action: Tactics
+      uses: At-Will
+      description: >
+        Restore one condition. Refresh one defense token.
+    reachAdvantage:
+      name: Reach Advantage
+      action: Guard
+      concentration: Stance
+      uses: At-Will
+      description: >
+        Increase defense by 1.
+    infantryman:
+      name: Infantryman
+      action: Move
+      uses: At-Will
+      description: >
+        If you end your movement next to an ally, they may refresh a defense token.
 
 direWolf:
   name: Dire Wolf

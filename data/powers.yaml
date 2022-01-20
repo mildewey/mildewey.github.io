@@ -550,7 +550,7 @@ spike:
   pattern: Melee
   uses: At-Will
   description: >
-    Roll one die. If you hit, the target breaks a Defense token and is Vulnerable.
+    The target takes 1d damage. If you hit, the target breaks a Defense token instead of tapping and is Vulnerable.
 shieldUp:
   name: Shield Up!
   tags:
@@ -559,7 +559,15 @@ shieldUp:
   uses: At-Will
   description: >
     Refresh 3 tapped Defense tokens.
-
+reachAdvantage:
+  name: Reach Advantage
+  tags:
+  - weapon
+  action: Guard
+  uses: At-Will
+  concentration: Stance
+  description: >
+    Increase defense by 1.
     
 #intercept:
 #  name: Intercept

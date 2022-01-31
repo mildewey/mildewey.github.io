@@ -123,17 +123,13 @@ townGuardArcher:
   powers:
     loose:
       name: Loose
-      tags:
-        - weapon
       action: Attack
       pattern: Precision
       uses: At-Will
       description: >
-        Spend up to 3 Focus. The target takes Fd*4 damage.
+        The target takes 2d*4 damage.
     volley:
       name: Volley
-      tags:
-        - weapon
       action: Attack
       pattern: Scatter
       uses: At-Will

@@ -90,7 +90,7 @@ townGuard:
       pattern: Melee
       uses: At-Will
       description: >
-      The target takes 3d*3 damage. If hit, it is Vulnerable and pulled up to 2 spaces.
+        The target takes 3d*3 damage. If hit, it is Vulnerable and pulled up to 2 spaces.
     watchsDiscipline:
       name: Watch's Discipline
       action: Tactics

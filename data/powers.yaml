@@ -10,15 +10,15 @@ strike:
   description: >
     The target takes 3d*3 damage.
 move:
-  name: Move
+  name: Reposition
   tags:
   - basic
   action: Move
   uses: At-Will
   description: >
-    Change your position by moving your speed.
+    Gain 2 additional movement points and ignore Challenging Terrain.
 guard:
-  name: Guard
+  name: Recover
   tags:
   - basic
   action: Guard
@@ -26,13 +26,14 @@ guard:
   description: >
     Refresh two tapped Defense tokens.
 tactics:
-  name: Tactics
+  name: Aid
   tags:
   - basic
   action: Tactics
   uses: At-Will
   description: >
-    Restore one condition.
+    Give two Heroic tokens to yourself or any ally. The tokens do not have
+    to be given to the same targets.
 
 
 # Myrmidon
@@ -568,7 +569,7 @@ reachAdvantage:
   concentration: Stance
   description: >
     Increase defense by 1.
-    
+
 #intercept:
 #  name: Intercept
 #  tags:
@@ -577,7 +578,7 @@ reachAdvantage:
 #  uses: At-Will
 #  description: >
 #    Move your Speed. If you end your movement next to an Ally, you can spend one Focus to become the target of an attack targeting that ally.
-    
+
 shieldBash:
   name: Shield Bash
   tags:

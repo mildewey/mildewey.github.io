@@ -168,10 +168,6 @@
         description: >
           When you make an attack, reduce the Attack Value by 1 for each Weakened
           token and then discard a Weakened token.
-      - heading: Confused
-        description: >
-          You must take a tactics action that has no effect and then discard a
-          Confused token.
       - heading: Vulnerable
         description: >
           When you are attacked, add 1 to the Attack Value for each Vulnerable
@@ -195,10 +191,6 @@
         description: >
           At the start of your turn you may discard a Heroic token to eliminate
           another token before it has any effect.
-      - heading: Lucky
-        description: >
-          You may reroll any or all dice of an attack that you make or that targets
-          you and then discard a Lucky token.
       - heading: Invigorated
         description: >
           You may double down without spending Energy. The action does not have to
@@ -231,14 +223,15 @@
           Barrier Terrain cannot be moved through.
       - heading: Hazardous Terrain
         description: >
-          Combatants must tap a token to move through Hazardous Terrain.
+          Combatants must tap or discard a defense token to move through Hazardous Terrain.
       - heading: Obscuring Terrain
         description: >
           Attacks targeting or originating from obscuring terrain roll one fewer
           hit die.
       - heading: Liquid Terrain
         description: >
-          Liquid Terrain counts as both Difficult Terrain and Obscuring Terrain.
+          Liquid Terrain costs an extra movement point to enter. Attacks targeting or
+          originating from liquid derrain roll one fewer hit die.
       - heading: Elevated Terrain
         description: >
           Elevated Terrain costs two extra movement points to enter unless entering
@@ -251,7 +244,7 @@
         description: >
           All combatants generate a '+' shaped zone of control around them including
           their own space. Each space in the zone of control requires an extra
-          movement point to enter from enemies. Many special actions modify the
+          movement point to enter for enemies. Many special actions modify the
           effects of the Zone of Control. Multiple Zones of Control that overlap
           stack their effects.
     - heading: Special Movement
@@ -338,7 +331,7 @@
         grants +1 evasion and +1 defense, but also -1 Speed.
   - heading: Leveling Up
     description: >
-      At the GM's discretion, character may level up at points in time throughout
+      At the GM's discretion, characters may level up at points in time throughout
       the campaign. A character may level up one or more times at the time of
       creation -- we recommend that a character levels up once at character creation.
       When a character levels up, they gain 1 Affinity point and unlock one of their

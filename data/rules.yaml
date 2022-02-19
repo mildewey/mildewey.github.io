@@ -133,7 +133,7 @@
         By default, attacks target a single target. Some attacks can target
         multiple targets. The pattern of the attack determines how to determine
         the targets that can be attacked. The origin of the attack must be adjacent
-        to or on the line of the combatant's movement in a turn.
+        to or on the combatant's Movement Path in a turn.
       sections:
       - heading: Scatter
         description: >
@@ -199,9 +199,12 @@
   - heading: Movement
     description: >
       Regardless of what actions you do, your character gains movement points
-      equal to their speed at the start of their turn. Focus points can be converted
+      equal to their Speed at the start of their turn. Focus points can be converted
       into movement points. Move actions only augment movement. The path of movement
       determines where a combatant can apply actions and the patterns of those actions.
+      The combatant defines a movement path that uses some or all of their movement
+      points. After the movement is over, the combatant snaps back to their point
+      of origin unless their movement path ends in their section of the Battle Board. 
     sections:
     - heading: Terrain
       description: >

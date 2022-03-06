@@ -46,6 +46,21 @@
 		height: 100%;
 	}
 
+	div.action {
+		border-radius: 1rem;
+		border-width: 0.2rem;
+		border-style: solid;
+		width: 12rem;
+		height: 18rem;
+		padding: 1rem;
+		margin: 2rem 0rem;
+	}
+
+	div.powers {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
 	article {
 		grid-area: content;
 		overflow-y: scroll;

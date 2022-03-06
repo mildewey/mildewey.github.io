@@ -68,8 +68,9 @@
         Focus is the number of Focus points that a combatant gains at the start
         of each round of combat. Focus points can be used to reroll hit dice
         when making an attack, to increase the Defense stat against a single
-        incoming attack, or converted into movement points. Focus is also frequently
-        used to maintain some powers or use certain types of actions.
+        incoming attack, or converted into movement points. Each power with a duration
+        costs one focus at the beginning of the round to maintain. If the focus
+        isn't spent, the power effects end immediately.
     - heading: Energy
       description: >
         Energy is the number of Energy points that a combatant gains at the start
@@ -149,7 +150,7 @@
           All targets in a 3x3 square.
       - heading: Path
         description: >
-          All targets along your movement path. You can move through enemies.
+          All targets along your movement path. Ignore the basic Zone of Control movement penalty.
       - heading: Wave
         description: >
           All targets in 3 columns.
@@ -196,6 +197,10 @@
           You may double down without spending Energy. The action does not have to
           have the repeatable tag to use an identical action. After doubling down
           like this, discard an Invigorated token.
+      - heading: Aegis
+        description: >
+          Discard this token instead of tapping a defense token. Disard one of these
+          tokens at the beginning of your turn.
   - heading: Movement
     description: >
       Regardless of what actions you do, your character gains movement points
@@ -204,7 +209,7 @@
       determines where a combatant can apply actions and the patterns of those actions.
       The combatant defines a movement path that uses some or all of their movement
       points. After the movement is over, the combatant snaps back to their point
-      of origin unless their movement path ends in their section of the Battle Board. 
+      of origin unless their movement path ends in their section of the Battle Board.
     sections:
     - heading: Terrain
       description: >

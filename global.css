@@ -48,6 +48,11 @@ nav div.row-flex {
 	flex-flow: row wrap;
 }
 
+div.col-flex {
+	display: flex;
+	flex-flow: column wrap;
+}
+
 h1,h2,h3,h4,h5,h6,p,li {
 	text-align: left;
 	line-height: 1.5;
@@ -127,7 +132,7 @@ article + article {
 	border-width: medium;
 }
 
-section + section {
+div.vertical-section + div.vertical-section {
 	border-top-style: solid;
 	border-width: thin;
 }

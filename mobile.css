@@ -17,6 +17,16 @@
 	div.context {
 	}
 
+	div.action {
+		border-radius: 1rem;
+		border-width: 0.2rem;
+		border-style: solid;
+		width: 16rem;
+		height: 24rem;
+		padding: 1rem;
+		margin: 2rem 0rem;
+	}
+
 	footer {
 		border-top: solid;
 	}

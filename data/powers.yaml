@@ -1,39 +1,42 @@
 # Basic
 strike:
   name: Strike
-  tags:
-  - basic
-  - weapon
+  basic: true
   action: Attack
-  pattern: Melee
   uses: At-Will
-  description: >
-    The target takes 3d*3 damage.
+  effects:
+  - target: Single
+    apply:
+    - 3d*3
 move:
   name: Reposition
-  tags:
-  - basic
+  basic: true
   action: Move
   uses: At-Will
-  description: >
-    Gain 2 additional movement points and ignore Challenging Terrain.
+  effects:
+  - target: Self
+    apply:
+    - Movement Points +2
+    - Ignore Challenging Terrain
 guard:
   name: Recover
-  tags:
-  - basic
+  basic: true
   action: Guard
   uses: At-Will
-  description: >
-    Refresh two tapped Defense tokens.
+  effects:
+  - target: Self
+    apply:
+    - Shield
+    - Shield
 tactics:
   name: Aid
-  tags:
-  - basic
+  basic: true
   action: Tactics
   uses: At-Will
-  description: >
-    Give two Heroic tokens to yourself or any ally. The tokens do not have
-    to be given to the same targets.
+  effects:
+  - target: Double
+    apply:
+    - Heroic
 
 
 # Myrmidon
@@ -42,42 +45,58 @@ practicedStrike:
   flavor: Practice until it becomes instinct, then practice some more.
   action: Attack
   uses: At-Will
-  description: >
-     Make a basic or weapon attack with an additional hit die.
+  effects:
+  - target: Single
+    apply:
+    - 3d*3+3
+  - target: Exposed
+    apply:
+    - Expose
+  - target: Broken
+    apply:
+    - Expose
 whirlingCounters:
   name: Whirling Counters
   flavor: You use your attacker's momentum to counter with a quick and vicious blow.
   action: Guard
   uses: At-Will
-  description: >
-    Until the beginning of your next turn, any enemy that makes an attack
-    adjacent to you must tap a Defense token.
+  effects:
+  - target: Zone
+    apply:
+    - Vulnerable
 myrmidonsSteel:
   name: Myrmidon's Steel
   flavor: Paid in gold, deliver a deluge of blood and steel.
   action: Tactics
   uses: At-Will
-  concentration: Stance
-  description: >
-    While you maintain this stance, increase the damage of all melee attacks by 2.
+  duration: Stance
+  effects:
+  - target: Self
+    apply:
+    - Attack Value +2
 bruteForce:
   name: Brute Force
   flavor: You use your shield to push enemies out of the way in order to reach your target.
   action: Move
   uses: At-Will
-  description: >
-    You can move through enemy spaces during this movement. When you do, move the
-    enemy to an adjacent space.
+  effects:
+  - target: Self
+    apply:
+    - Ignore Zone
+  - target: Path
+    apply:
+    - Vulnerable
 
 battleSavant:
   name: Battle Savant
   flavor: Your brilliance in battle is unparalleled.
   action: Tactics
   uses: Energy
-  concentration: Stance
-  description: >
-    Every time you take the attack action, you may spend 1 focus per die
-    to reroll any or all dice in your attack pool.
+  duration: Stance
+  effects:
+  - target: Self
+    apply:
+    - Invigorated
 veteran:
   name: Veteran
   flavor: Your hard won experience pays off.
@@ -89,25 +108,29 @@ bloodyHands:
   flavor: You are death.
   action: Passive
   description: >
-    Any time you do damage to an enemy, increase that damage by 2.
+    Attack Value +2.
 hardenedSteel:
   name: Hardened Steel
   flavor: Your steel will see you through even deathly situations.
   action: Attack
   uses: Energy
-  pattern: Nova
-  description: >
-    Do 3d*2 damage to all targets. Refresh a tapped Defense token.
+  effects:
+  - target: Self
+    apply:
+    - Shield
+  - target: Burst
+    apply:
+    - 3d*2
 opportunist:
   name: Opportunist
   flavor: Killing is a full time job.
   action: Guard
   uses: Energy
   duration: 5 rounds
-  concentration: Guard
-  description: >
-    When an enemy moves into your side of the battlefield, spend 1 focus to do
-    1d*3 damage.
+  effects:
+  - target: Zone
+    apply:
+    - 1d*5+3
 
 
 # Warlock
@@ -115,45 +138,67 @@ deathlyGaze:
   name: Deathly Gaze
   flavor: The pain of death is manifest in your visage
   action: Attack
-  pattern: Line
   uses: At-Will
-  description: >
-    Do 2d*4 damage. If you hit, the target is Confused.
+  effects:
+  - target: Line
+    apply:
+    - 2d*4
+  - target: Exposed
+    apply:
+    - Weakened
+  - target: Broken
+    apply:
+    - Weakened
+    - Vulnerable
 graveCurse:
   name: Grave Curse
   action: Tactics
-  pattern: Precision
   uses: At-Will
-  description: >
-    The target takes 3d damage. If you hit, the target is Vulnerable and Dazed.
+  effects:
+  - target: Single
+    apply:
+    - 2d*3
+  - target: Exposed
+    apply:
+    - Vulnerable
+    - Stunned
 contagion:
   name: Contagion
   action: Guard
   uses: At-Will
-  description: >
-    When an enemy enters your side of the battlefield, you can spend 1 Focus to
-    do 1d*4 damage. If you hit, the target is Weakened.
+  duration: 1 Round
+  effects:
+  - target: Zone
+    apply:
+    - Weakened
 ghostlyJaunt:
   name: Ghostly Jaunt
   action: Move
   uses: At-Will
-  description: >
-    You can ignore Barriers and Obstacles during your movement.
+  effects:
+  - target: Self
+    apply:
+    - Ignore Barriers
+    - Ignore Obstacles
 
 eldritch:
   name: Eldritch
   action: Passive
   description: >
-    When you inflict a condition on a target, tap one of their Defense tokens as well.
+    Effects applied by breaking tokens are inflicted when tokens are Exposed.
 pestilence:
   name: Pestilence
   action: Attack
   uses: Energy
   concentration: Attack
-  duration: 5 rounds
-  pattern: Suffusion
-  description: >
-    Targets take 1d*5 damage. All targets you hit are Hobbled and Dazed.
+  effects:
+  - target: Enemies
+    apply:
+      - 1d*5+5
+  - target: Broken Defense
+    apply:
+    - Hobbled
+    - Stunned
 darkness:
   name: Darkness
   action: Passive
@@ -164,68 +209,77 @@ familiarSpirit:
   name: Familiar Spirit
   action: Passive
   description: >
-    You have gained a familiar spirit companion. The familiar is an intelligent
-    spirit that can inhabit the body of a tiny creature, like a cat, rat, or crow.
-    You must be own such a creature and perform a 1 hour long ritual with it to
-    give it a physical body. The familiar must be in physical form and converse
-    with you to give you its benefits. The familiar is proficient in all
-    Lore skills and can allow you an additional die when you roll against any Magic
-    skill.
+    In a 1 hour ritual, you imbue a tiny creature with the soul of a familiar
+    spirit. The familiar is proficient in all Lore skills and can allow you an
+    additional die when you roll against any Magic skill. The familiar can communicate
+    with you in a language you know.
 ethereal:
   name: Ethereal
   action: Guard
   uses: Energy
-  duration: 5 round
-  concentration: Focus
-  description: >
-    When you take damage, you can spend 1 focus to reduce the damage by 5.
+  duration: 5 rounds
+  effects:
+  - target: Self
+    apply:
+    - Resistance +5
 
 # Knight
 charge:
   name: Charge
   action: Attack
   uses: At-Will
-  pattern: Line
-  description: >
-    Do 3d*3+1 damage to each target.
+  effects:
+  - target: Path
+    apply:
+    - 2d*4+1
+  - target: Broken
+    apply:
+    - Hobbled
+    - Hobbled
 inspire:
   name: Inspire
   action: Tactics
   uses: At-Will
-  concentration: Stance
-  description: >
-    You and your allies can spend 3 focus at the beginning of each round to refresh a
-    tapped Defense token.
+  duration: Stance
+  effects:
+  - target: Single
+    apply:
+    - Shield
+    - Heroic
+    - Invigorated
 protect:
   name: Protect
   action: Guard
   uses: At-Will
-  duration: 1 Round
-  description: >
-    When your allies are attacked, you can spend up to 2 focus to force an attacker
-    to reroll the same number of hit dice.
+  effects:
+  - target: Triple
+    apply:
+    - Aegis
 overpower:
   name: Overpower
   action: Move
   uses: At-Will
-  description: >
-    You can move through enemy spaces. For each enemy whose space you pass through,
-    you do 2d+2 damage. If you hit, the enemy is Hobbled or Confused, your
-    choice.
+  effects:
+  - target: Path
+    apply:
+    - Expose
+    - Hobbled
 
 indomitable:
   name: Indomitable
   action: Passive
   description: >
-    Extend any condition track by one. You can use any Charisma
+    Gain 3 Heroic tokens at the beginning of combat. You can use any Charisma
     skill an additional time.
 aegis:
   name: Aegis
   action: Guard
   uses: Energy
-  concentration: Stance
-  description: >
-    Increase the Evasion of all your allies by 1.
+  duration: Stance
+  effects:
+  - target: Allies
+    apply:
+    - Evasion +1
 paragon:
   name: Paragon
   action: Passive
@@ -235,13 +289,18 @@ commander:
   name: Commander
   action: Attack
   uses: Energy
-  description: >
-    You and an ally can take an attack action immediately.
+  effects:
+  - target: Self
+    apply:
+    - Attack action
+  - target: Single
+    apply:
+    - Attack action
 defiance:
   name: Defiance
   action: Passive
   description: >
-    You can spend 2 focus to refresh a tapped Defense token at the beginning of
+    You can spend 2 focus to refresh a Exposed Defense token at the beginning of
     each round.
 
 # Artificer
@@ -250,41 +309,48 @@ tinyArmy:
   flavor: Your autotools and whizbots swarm your enemies.
   action: Attack
   uses: At-Will
-  concentration: Attack
-  pattern: Precision
-  description: >
-    Targets take 5d damage. If the target is hit at least 3 times, it is
-    Confused.
+  duration: 3 rounds
+  effects:
+  - target: Single
+    apply:
+    - Expose
+    - Stunned
 arcaneMines:
   name: Arcane Mines
   action: Tactics
   uses: At-Will
-  pattern: Scatter
-  description: >
-    Target terrain becomes hazardous until it damages a target. Cannot target
-    terrain occupied by a creature.
+  effects:
+  - target: Triple
+    apply:
+    - Hazardous Terrain
 runicShield:
   name: Runic Shield
   action: Guard
   uses: At-Will
-  concentration: Stance
-  description: >
-    Whenever a Defense token would break, you can spend an energy to tap it instead.
-    This can't be used to prevent a tapped Defense token from breaking.
+  duration: Stance
+  effects:
+  - target: Self
+    apply:
+    - Shield
 rawTransmutation:
   name: Raw Transmutation
   action: Move
   uses: At-Will
   description: >
-    Wherever you move, you may leave behind or remove difficult terrain.
+  effects:
+  - target: Terrain
+    apply:
+    - Difficult
 
 shoulderCannon:
   name: Shoulder Cannon
   action: Attack
   uses: Energy
-  pattern: Wave
-  description: >
-    Target creatures take 4d*5 damage. Targets become dazed.
+  effects:
+  - target: Burst
+    apply:
+    - 4d*5
+    - Stunned
 fabrication:
   name: Fabrication
   action: Passive
@@ -295,21 +361,29 @@ arcaneIntellect:
   name: Arcane Intellect
   action: Passive
   description: >
-    When you maintain a power with an action, you can double down on that action
-    for one focus instead of 1 energy.
+    You don't need to use focus to maintain powers.
 fleshTransmutation:
   name: Flesh Transmutation
   action: Guard
   uses: Energy
-  concentration: Guard
-  description: >
-    You gain 2 Evasion, 2 Defense, and 2 Speed.
+  duration: 5 turns
+  effects:
+  - target: Self
+    apply:
+    - Evasion +1
+    - Defense +1
+    - Speed +2
 tonic:
   name: Tonic
   action: Move
   uses: Energy
-  description: >
-    Move double your speed. Restore one condition. Refresh a tapped Defense token.
+  effects:
+  - target: Self
+    apply:
+    - Movement Points +6
+    - Heroic
+    - Heroic
+    - Shield
 
 
 # Zephyr
@@ -318,32 +392,41 @@ callLightning:
   action: Attack
   repeatable: true
   uses: At-Will
-  pattern: Precision
-  description: >
-    Target takes 3d*4 damage. If hit, the target is Dazed.
+  effects:
+  - target: Single
+    apply:
+    - 3d*4
+  - target: Broken
+    apply:
+    - Weakened
 gust:
   name: Gust
   action: Tactics
   uses: At-Will
-  pattern: Burst
-  description: >
-    Targets take 3d damage. If hit, the targets are moved 2 spaces in any direction.
+  effects:
+  - target: Burst
+    apply:
+    - 3d
+    - Move 2
 mistyFigure:
   name: Misty Figure
   action: Guard
   uses: At-Will
-  description: >
-    Until the start of your next turn. Attacks targetting you must roll 2 extra
-    dice. After the dice are rolled, you choose 2 to discard before determining
-    the results.
+  effects:
+  - target: Self
+    apply:
+    - Aegis
+    - Aegis
+    - Aegis
 waveStep:
   name: Wave Step
   action: Move
   uses: At-Will
-  pattern: Nova
-  description: >
-    Choose a space in your movement path. All targets are pushed 1 space and tap
-    a Defense token.
+  effects:
+  - target: Path
+    apply:
+    - Move 1
+    - Expose
 
 lightningInfusion:
   name: Lightning Infusion
@@ -354,39 +437,44 @@ flight:
   name: Flight
   action: Move
   uses: Energy
-  concentration: Focus
   duration: 1 hour
-  description: >
-    You or an ally are considered flying.
+  effects:
+  - target: Single
+    apply:
+    - Flying
 graspingWind:
   name: Grasping Wind
   action: Tactics
   uses: Energy
-  concentration: Tactics
   duration: 10 rounds
-  pattern: Precision
-  description: >
-    Move one creature or object 4 spaces. When you concentrate on this action
-    repeat the effect on any valid target.
+  effects:
+  - target: Single
+    apply:
+    - Move 4
+    - Hobbled
+    - Hobbled
 staticCharge:
   name: Static Charge
   action: Guard
   uses: Energy
-  concentration: Focus
-  duration: Until discharged
-  description: >
-    When a creature makes a melee attack against you they take 5d*5 damage and are
-    weakened. This power is then discharged unless you spend 1 energy.
+  duration: 5 rounds
+  effects:
+  - target: Revenge
+    apply:
+    - 5d*5
+  - target: Zone
+    apply:
+    - Weakened
 hungryCloud:
   name: Hungry Cloud
   action: Attack
   uses: Energy
-  concentration: Energy
   duration: 5 rounds
-  pattern: Suffusion
-  description: >
-    Immediately, and when you concentrate on this power, targets take 5d*2 damage
-    and are Confused.
+  effects:
+  - target: All Enemies
+    apply:
+    - 4d*2
+    - Confused
 
 
 # Swashbuckler
@@ -394,181 +482,202 @@ lunge:
   name: Lunge
   flavor: You dart in for a powerful strike.
   action: Attack
-  pattern: Melee
   uses: At-Will
-  description: >
-    Spend up to 4 focus to do 3d*F damage. If you hit, the target must tap another
-    Defense token.
+  effects:
+  - target: Single
+    apply:
+    - 2d*7
+  - target: Exposed
+    apply:
+    - Expose
 feint:
   name: Feint
   flavor: Deception is essential in a duel between masters
   action: Tactics
   uses: At-Will
-  pattern: Melee
-  description: >
-    The target taps a Defense token.
+  effects:
+  - target: Single
+    apply:
+    - Expose
+    - Vulnerable
 riposte:
   name: Riposte
-  flavor: Deftly turning your enemy's blade away, you retaliate with a flourish.
   action: Guard
   uses: At-Will
-  description: >
-    When an enemy attacks you, spend 1 Focus to reduce the damage you take by 2d*3.
-    The attacker takes the same damage.
+  duration: 1 round
+  effects:
+  - target: Revenge
+    apply:
+    - 2d*4
+    - Aegis
 tumbling:
   name: Tumbling
   flavor: You know parkour
   action: Move
   uses: At-Will
-  description: >
-    Ignore obstacles and enemy zone of control for your movement.
+  effects:
+  - target: Self
+    apply:
+    - Ignore Challenging Terrain
+    - Ignore Zone
 
 exploit:
   name: Exploit
   action: Attack
   uses: Energy
-  pattern: Melee
-  description: >
-    Do Xd*4 damage where X is the number of condition levels the target has.
+  effects:
+  - target: Single
+    apply:
+    - Vulnerable
+    - Vulnerable
+    - 3d*5
+  - target: Broken
+    apply:
+    - Weakened
+    - Weakened
 runOfLuck:
   name: Run of Luck
   action: Tactics
   uses: Energy
-  concentration: Stance
-  description: >
-    Each time you roll dice, you can reroll any or all of those dice once.
-    When enemies target you with an attack, you can spend up to 4 focus to
-    force the same number of dice to be re-rolled.
+  duration: Stance
+  effects:
+  - target: Self
+    apply:
+    - Aegis
+    - Heroic
 defyDeath:
   name: Defy Death
   flavor: You're unphased by your injuries
   action: Passive
   description: >
-    For each level of condition you have, do 2 extra damage to one target when
-    you take the attack action. Extend your Vulnerable track by one Vulnerable.
+    When you break a target's defenses, you may pass a token on you to them.
 sureFooted:
   name: Sure-footed
-  flavor: >
-    Whether it's scrambling up a rock face or walking a tight-rope, you
-    know how to get around obstacles that bring others pause.
   action: Passive
   description: >
-    Ignore difficult and hazardous terrain during your turn. You can use any
-    Agility skill an additional time. Extend your Hobbled track by one.
+    Ignore difficult and hazardous terrain during your turn.  Discard a Hobbled
+    token at the beginning of each turn.
 rapidStrikes:
   name: Rapid Strikes
-  flavor: Your sword is a blur.
   action: Passive
   description: >
-    When you double down on an attack action, you may spend an energy to double
-    down again. When you do so, all targets become your choice of vulnerable or
-    weakened.
-
+    You may double down on an attack action twice -- making three attacks.
 
 # Weapon
 stab:
   name: Stab
-  tags:
-  - weapon
   action: Attack
-  pattern: Melee
   uses: At-Will
   repeatable: true
-  description: >
-    The target takes 3d*3+1 damage.
+  effects:
+  - target: Single
+    apply:
+    - 3d*3+3
 loose:
   name: Loose
-  tags:
-  - weapon
   action: Attack
-  pattern: Precision
   uses: At-Will
-  description: >
-    Spend up to 3 Focus. The target takes Fd*4 damage.
+  effects:
+  - target: Single
+    apply:
+    - 1d*12
 volley:
   name: Volley
-  tags:
-  - weapon
   equipmentTags:
     - bow
   action: Attack
-  pattern: Scatter
   uses: At-Will
-  description: >
-    Each target takes 2d*2 damage.
+  target:
+  - target: Triple
+    apply:
+    - Expose
 crush:
   name: Crush
-  tags:
-  - weapon
   action: Attack
-  pattern: Melee
   uses: At-Will
-  description: >
-    The target takes 4d*2 damage. If you hit, the target is Hobbled.
+  effects:
+  - target: Single
+    apply:
+    - 4d*2
+  - target: Broken
+    apply:
+    - Hobbled
 deadlySwing:
   name: Deadly Swing
-  tags:
-  - weapon
   action: Attack
-  pattern: Melee
   uses: At-Will
-  description: >
-    Spend up to 3 Focus. The target takes 3d*3 damage. If the target is hit,
-    they take an additional [F]*2 damage.
+  effects:
+  - target: Single
+    apply:
+    - 4d*3
+  - target: Broken
+    apply:
+    - Expose
 cracklingPower:
   name: Crackling Power
-  tags:
-  - weapon
   action: Attack
-  pattern: Precision
+  repeatable: true
   uses: At-Will
-  description: >
-    Choose an element. The target takes 2d*[A] damage, where [A] is your elemental affinity for that element. If you hit, the target suffers a condition based on the chosen element: Earth, Weakened; Fire, Vulnerable; Air, Hobbled; Water, Confused.
+  effects:
+  - target: Single
+    apply:
+    - 2d*5
+  - target: Broken
+    apply:
+    - Weakened
 whirlingBlade:
   name:  Whirling Blade
-  tags:
-  - weapon
   action: Tactics
-  pattern: Flurry
   uses: At-Will
   repeatable: true
-  description: >
-    Push targets 1 space.
+  effects:
+  - target: Triple
+    apply:
+    - Move 1
+    - Vulnerable
 beat:
   name: Beat
-  tags:
-  - weapon
   action: Guard
-  pattern: Melee
   uses: At-Will
-  description: >
-    Increase your Defense by one until the start of your next turn. Your target is Weakened.
+  effects:
+  - target: Self
+    apply:
+    - Defense +1
+  - target: Single
+    apply:
+    - Weakened
 spike:
   name: Spike
-  tags:
-  - weapon
   action: Attack
-  pattern: Melee
   uses: At-Will
-  description: >
-    The target takes 1d damage. If you hit, the target breaks a Defense token instead of tapping and is Vulnerable.
+  effects:
+  - target: Single
+    apply:
+    - 2d*10
+  - target: Broken
+    apply:
+    - Vulnerable
+    - Expose
+    - Expose
 shieldUp:
   name: Shield Up!
-  tags:
-  - weapon
   action: Guard
   uses: At-Will
-  description: >
-    Refresh 3 tapped Defense tokens.
+  effects:
+  - target: Self
+    apply:
+    - Shield
+    - Shield
+    - Shield
 reachAdvantage:
   name: Reach Advantage
-  tags:
-  - weapon
   action: Guard
   uses: At-Will
-  concentration: Stance
-  description: >
-    Increase defense by 1.
+  duration: Stance
+  effects:
+  - target: Self
+    apply:
+    - Defense +1
 
 #intercept:
 #  name: Intercept
@@ -581,142 +690,180 @@ reachAdvantage:
 
 shieldBash:
   name: Shield Bash
-  tags:
-  - weapon
   action: Attack
-  pattern: Melee
   uses: At-Will
-  description: >
-    Tap one of your Defense tokens. The target takes 3d*3 damage, is Dazed, and you can push it up to 2 spaces.
+  effects:
+  - target: Self
+    apply:
+    - Expose
+  - target: Single
+    apply:
+    - 3d*3
+    - Stunned
+    - Move 2
 sunder:
   name: Sunder
-  tags:
-  - weapon
   action: Attack
-  pattern: Melee
   uses: At-Will
-  description: >
-    The target takes 2d*4+1 damage. If you hit, the target is Vulnerable.
+  effects:
+  - target: Single
+    apply:
+    - 2d*4+1
+    - Vulnerable
 cleave:
   name: Cleave
-  tags:
-  - weapon
   action: Attack
-  pattern: Flurry
   uses: Energy
-  description: >
-    Each target takes 3d*3 damage.
+  effects:
+  - target: Double
+    apply:
+    - 2d*6
 hook:
   name: Hook
-  tags:
-  - weapon
   action: Attack
-  pattern: Melee
   uses: At-Will
-  description: >
-    The target takes 3d*3 damage. If you hit, it is Vulnerable and you can pull it up to 2 spaces.
+  effects:
+  - target: Single
+    apply:
+    - 3d*3
+  - target: Exposed
+    apply:
+    - Move 2
+  - target: Broken
+    apply:
+    - Vulnerable
 openStrike:
   name: Open Strike
-  tags:
-  - weapon
   action: Attack
-  pattern: Melee
   uses: At-Will
-  description: >
-    Tap one of your Defense tokens. The target takes 3d*4 damage.
-    If you break the target's token, refresh one of your Defense tokens.
+  effects:
+  - target: Self
+    apply:
+    - Expose
+  - target: Single
+    apply:
+    - 3d*4
+  - target: Broken
+    apply:
+    - Expose
 lance:
   name: Lance
-  tags:
-  - weapon
   action: Attack
-  pattern: Melee
   uses: At-Will
   repeatable: true
-  description: >
-    Increase the range of your weapon by 1 for this attack. The target takes 3d*3 damage.
+  effects:
+  - target: Self
+    apply:
+    - Movement Points +2
+  - target: Single
+    apply:
+    - 3d*3
+  - target: Broken
+    apply:
+    - Hobbled
 hurl:
   name: Hurl
-  tags:
-  - weapon
   action: Attack
-  pattern: Precision
   uses: At-Will
-  description: >
-    Spend up to 3 Focus. The target takes 2d*2 damage. If the target is hit,
-    they take an additional [F]*2 damage.
+  effects:
+  - target: Single
+    apply:
+    - 2d*2
+  - target: Exposed
+    apply:
+    - 5d*2
 throwingKnives:
   name: Throwing Knives
-  tags:
-  - weapon
   action: Attack
-  pattern: Scatter
   uses: At-Will
   repeatable: true
-  description: >
-    Each target takes 2d*2 damage. This attack cannot break Defense tokens.
-
-
+  effects:
+  - target: Triple
+    apply:
+    - 2d*2
 
 
 #Dragonblood
 fireBreath:
   name: Fire Breath
   action: Attack
-  pattern: Blast
   uses: At-Will
-  description: >
-    Each target takes 2d*2 damage. If a target is hit, they are Confused.
+  effects:
+  - target: Burst
+    apply:
+    - 2d*4
+  - target: Exposed
+    apply:
+    - Stunned
+    - Vulnerable
 soar:
   name: Soar
   action: Move
   uses: At-Will
-  description: >
-    Move up to your speed plus 2, ignoring Difficult and Hazardous terrain.
+  effects:
+  - target: Self
+    apply:
+    - Movement Points +2
+    - Flying
 dragonScales:
   name: Dragon Scales
   action: Guard
-  duration: 1 Round
   uses: At-Will
-  description: >
-    Refresh two tapped Defense tokens, and increase your Defense by 2.
+  effects:
+  - target: Self
+    apply:
+    - Shield
+    - Shield
+    - Aegis
 invigorate:
   name: Invigorate
   action: Tactics
   uses: At-Will
-  description: >
-    Restore two conditions.
+  effects:
+  - target: Self
+    apply:
+    - Heroic
+    - Heroic
 
 dragonBlood:
   name: Dragon Blood
   flavor: The power of dragons and sorcerers flows in your veins, imbuing you with indefatigable energy.
   action: Passive
   description: >
-    When you spend an energy to take an action, you can also refresh a Defense token or restore one Condition.
+    When you spend an energy to take an action, gain an Invigotared token.
     You can use Athletics one additional time, even if you aren't trained in it.
 formOfFear:
   name: Form of Fear
   action: Guard
   uses: Energy
   duration: 3 Rounds
-  pattern:  Radiate
   concentration:  Guard
-  description:  >
-    Refresh one Defense Token. Each target takes 3d*2 damage. If a target is hit, they are Confused or Weakened, your choice.
+  effects:
+  - target: Self
+    apply:
+    - Shield
+  - target: Burst
+    apply:
+    - 3d*2
+  - target: Exposed
+    apply:
+    - Weakened
 eternal:
   name: Eternal
-  flavor: You have the eternal life of a Dragon.
   action: Passive
   description: >
-    You no longer age, and are immune to non-magical disease. Extend any condition track by one.
-    You can use Influence one additional time, even if you aren't trained in it.
+    You no longer age, and are immune to non-magical disease. Gain 2 Heroic tokens
+    at the beginning of each combat. You can use Influence one additional time,
+    even if you aren't trained in it.
 fireStorm:
   name: Fire Storm
   action: Attack
   uses: Energy
   duration: 3 Rounds
-  pattern:  Explosion
-  concentration: Attack
-  description:  >
-    Each target takes 4d*3 damage. If a target is hit, they are Vulnerable.
-# arcaneIntellect
+  effects:
+  - target: Burst
+    apply:
+    - 4d*3
+  - target: Exposed
+    apply:
+    - Vulnerable

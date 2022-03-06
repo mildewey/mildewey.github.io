@@ -16,15 +16,27 @@
     display: none;
   }
 
-  article {
-    column-count: 2;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-  }
-
   div.context {
     display: none;
   }
+
+  div.action {
+		border-radius: 3mm;
+		border-width: 1mm;
+		border-style: solid;
+		width: 42mm;
+		height: 67mm;
+		padding: 3mm;
+		margin: 3mm 0mm;
+	}
+
+  div.powers {
+		display: grid;
+		width: min-content;
+	  grid-template-columns: repeat(3, 1fr);
+	  gap: 10px;
+	  grid-auto-rows: minmax(100px, auto);
+	}
 
   footer {
     display: none;

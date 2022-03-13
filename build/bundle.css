@@ -1,0 +1,4 @@
+.monster.svelte-h1e1ic{display:grid;grid-template-columns:8rem 2fr;grid-template-rows:2rem 1fr min-content;grid-template-areas:"name name"
+    "flavor powers"
+    "stats powers";gap:1rem}.monster-name.svelte-h1e1ic{grid-area:name}.monster-flavor.svelte-h1e1ic{grid-area:flavor}.monster-powers.svelte-h1e1ic{grid-area:powers
+}

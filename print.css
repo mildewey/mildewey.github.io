@@ -30,6 +30,16 @@
 		margin: 3mm 0mm;
 	}
 
+	div.monster {
+		border-radius: 3mm;
+		border-width: 1mm;
+		border-style: solid;
+		width: 110mm;
+		height: 67mm;
+		padding: 3mm;
+		margin: 3mm 0mm;
+	}
+
   div.powers {
 		display: grid;
 		width: min-content;

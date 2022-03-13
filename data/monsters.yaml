@@ -12,7 +12,7 @@ smokeMephit:
     sear:
       name: Sear
       action: Attack
-      effect:
+      effects:
       - target: Single
         apply:
         - 1d*8
@@ -22,7 +22,7 @@ smokeMephit:
     puff:
       name: Puff
       action: Tactics
-      effect:
+      effects:
       - target: Self
         apply:
         - Remove Slow
@@ -58,7 +58,7 @@ mudMephit:
     fling:
       name: Fling
       action: Attack
-      effect:
+      effects:
       - target: Single
         apply:
         - 2d*4
@@ -68,7 +68,7 @@ mudMephit:
     mud:
       name: Mud
       action: Tactics
-      effect:
+      effects:
       - target: Self
         apply:
         - Remove Weak
@@ -105,18 +105,19 @@ townGuard:
     cleave:
       name: Cleave
       action: Attack
-      uses: Energy
+      uses: At-Will
       effects:
       - target: Double
         apply:
-        - 2d*6
+        - 2d*4
     hook:
       name: Hook
       action: Tactics
       uses: Energy
       effects:
       - target: Single
-        apply: 2d*3
+        apply:
+        - 2d*3
       - target: Exposed
         apply:
         - Weak

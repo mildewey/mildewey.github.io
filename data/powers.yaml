@@ -26,8 +26,7 @@ guard:
   effects:
   - target: Self
     apply:
-    - Shield
-    - Shield
+    - Aegis
 tactics:
   name: Aid
   basic: true
@@ -36,7 +35,7 @@ tactics:
   effects:
   - target: Double
     apply:
-    - Heroic
+    - Hero
 
 
 # Myrmidon
@@ -51,10 +50,10 @@ practicedStrike:
     - 3d*3+3
   - target: Exposed
     apply:
-    - Expose
+    - Harm
   - target: Broken
     apply:
-    - Expose
+    - Harm
 whirlingCounters:
   name: Whirling Counters
   flavor: You use your attacker's momentum to counter with a quick and vicious blow.
@@ -63,7 +62,7 @@ whirlingCounters:
   effects:
   - target: Zone
     apply:
-    - Vulnerable
+    - Weak
 myrmidonsSteel:
   name: Myrmidon's Steel
   flavor: Paid in gold, deliver a deluge of blood and steel.
@@ -85,7 +84,7 @@ bruteForce:
     - Ignore Zone
   - target: Path
     apply:
-    - Vulnerable
+    - Weak
 
 battleSavant:
   name: Battle Savant
@@ -96,7 +95,7 @@ battleSavant:
   effects:
   - target: Self
     apply:
-    - Invigorated
+    - Vigor
 veteran:
   name: Veteran
   flavor: Your hard won experience pays off.
@@ -117,7 +116,7 @@ hardenedSteel:
   effects:
   - target: Self
     apply:
-    - Shield
+    - Aegis
   - target: Burst
     apply:
     - 3d*2
@@ -145,11 +144,11 @@ deathlyGaze:
     - 2d*4
   - target: Exposed
     apply:
-    - Weakened
+    - Weak
   - target: Broken
     apply:
-    - Weakened
-    - Vulnerable
+    - Weak
+    - Weak
 graveCurse:
   name: Grave Curse
   action: Tactics
@@ -160,8 +159,8 @@ graveCurse:
     - 2d*3
   - target: Exposed
     apply:
-    - Vulnerable
-    - Stunned
+    - Weak
+    - Stun
 contagion:
   name: Contagion
   action: Guard
@@ -170,7 +169,7 @@ contagion:
   effects:
   - target: Zone
     apply:
-    - Weakened
+    - Weak
 ghostlyJaunt:
   name: Ghostly Jaunt
   action: Move
@@ -197,8 +196,8 @@ pestilence:
       - 1d*5+5
   - target: Broken Defense
     apply:
-    - Hobbled
-    - Stunned
+    - Slow
+    - Stun
 darkness:
   name: Darkness
   action: Passive
@@ -234,8 +233,8 @@ charge:
     - 2d*4+1
   - target: Broken
     apply:
-    - Hobbled
-    - Hobbled
+    - Slow
+    - Slow
 inspire:
   name: Inspire
   action: Tactics
@@ -244,9 +243,9 @@ inspire:
   effects:
   - target: Single
     apply:
-    - Shield
-    - Heroic
-    - Invigorated
+    - Aegis
+    - Hero
+    - Vigor
 protect:
   name: Protect
   action: Guard
@@ -262,14 +261,14 @@ overpower:
   effects:
   - target: Path
     apply:
-    - Expose
-    - Hobbled
+    - Harm
+    - Slow
 
 indomitable:
   name: Indomitable
   action: Passive
   description: >
-    Gain 3 Heroic tokens at the beginning of combat. You can use any Charisma
+    Gain 3 Hero tokens at the beginning of combat. You can use any Charisma
     skill an additional time.
 aegis:
   name: Aegis
@@ -313,8 +312,8 @@ tinyArmy:
   effects:
   - target: Single
     apply:
-    - Expose
-    - Stunned
+    - Harm
+    - Stun
 arcaneMines:
   name: Arcane Mines
   action: Tactics
@@ -331,7 +330,7 @@ runicShield:
   effects:
   - target: Self
     apply:
-    - Shield
+    - Aegis
 rawTransmutation:
   name: Raw Transmutation
   action: Move
@@ -350,7 +349,7 @@ shoulderCannon:
   - target: Burst
     apply:
     - 4d*5
-    - Stunned
+    - Stun
 fabrication:
   name: Fabrication
   action: Passive
@@ -381,9 +380,9 @@ tonic:
   - target: Self
     apply:
     - Movement Points +6
-    - Heroic
-    - Heroic
-    - Shield
+    - Hero
+    - Hero
+    - Aegis
 
 
 # Zephyr
@@ -398,7 +397,7 @@ callLightning:
     - 3d*4
   - target: Broken
     apply:
-    - Weakened
+    - Weak
 gust:
   name: Gust
   action: Tactics
@@ -417,7 +416,6 @@ mistyFigure:
     apply:
     - Aegis
     - Aegis
-    - Aegis
 waveStep:
   name: Wave Step
   action: Move
@@ -426,7 +424,7 @@ waveStep:
   - target: Path
     apply:
     - Move 1
-    - Expose
+    - Harm
 
 lightningInfusion:
   name: Lightning Infusion
@@ -451,8 +449,8 @@ graspingWind:
   - target: Single
     apply:
     - Move 4
-    - Hobbled
-    - Hobbled
+    - Slow
+    - Slow
 staticCharge:
   name: Static Charge
   action: Guard
@@ -464,7 +462,7 @@ staticCharge:
     - 5d*5
   - target: Zone
     apply:
-    - Weakened
+    - Weak
 hungryCloud:
   name: Hungry Cloud
   action: Attack
@@ -489,7 +487,7 @@ lunge:
     - 2d*7
   - target: Exposed
     apply:
-    - Expose
+    - Harm
 feint:
   name: Feint
   flavor: Deception is essential in a duel between masters
@@ -498,8 +496,8 @@ feint:
   effects:
   - target: Single
     apply:
-    - Expose
-    - Vulnerable
+    - Harm
+    - Weak
 riposte:
   name: Riposte
   action: Guard
@@ -528,13 +526,13 @@ exploit:
   effects:
   - target: Single
     apply:
-    - Vulnerable
-    - Vulnerable
+    - Weak
+    - Weak
     - 3d*5
   - target: Broken
     apply:
-    - Weakened
-    - Weakened
+    - Weak
+    - Weak
 runOfLuck:
   name: Run of Luck
   action: Tactics
@@ -544,7 +542,7 @@ runOfLuck:
   - target: Self
     apply:
     - Aegis
-    - Heroic
+    - Hero
 defyDeath:
   name: Defy Death
   flavor: You're unphased by your injuries
@@ -555,7 +553,7 @@ sureFooted:
   name: Sure-footed
   action: Passive
   description: >
-    Ignore difficult and hazardous terrain during your turn.  Discard a Hobbled
+    Ignore difficult and hazardous terrain during your turn.  Discard a Slow
     token at the beginning of each turn.
 rapidStrikes:
   name: Rapid Strikes
@@ -590,7 +588,7 @@ volley:
   target:
   - target: Triple
     apply:
-    - Expose
+    - Harm
 crush:
   name: Crush
   action: Attack
@@ -601,7 +599,7 @@ crush:
     - 4d*2
   - target: Broken
     apply:
-    - Hobbled
+    - Slow
 deadlySwing:
   name: Deadly Swing
   action: Attack
@@ -612,7 +610,8 @@ deadlySwing:
     - 4d*3
   - target: Broken
     apply:
-    - Expose
+    - Harm
+    - Harm
 cracklingPower:
   name: Crackling Power
   action: Attack
@@ -624,7 +623,7 @@ cracklingPower:
     - 2d*5
   - target: Broken
     apply:
-    - Weakened
+    - Weak
 whirlingBlade:
   name:  Whirling Blade
   action: Tactics
@@ -634,7 +633,7 @@ whirlingBlade:
   - target: Triple
     apply:
     - Move 1
-    - Vulnerable
+    - Weak
 beat:
   name: Beat
   action: Guard
@@ -645,7 +644,7 @@ beat:
     - Defense +1
   - target: Single
     apply:
-    - Weakened
+    - Weak
 spike:
   name: Spike
   action: Attack
@@ -656,9 +655,9 @@ spike:
     - 2d*10
   - target: Broken
     apply:
-    - Vulnerable
-    - Expose
-    - Expose
+    - Weak
+    - Harm
+    - Harm
 shieldUp:
   name: Shield Up!
   action: Guard
@@ -666,9 +665,8 @@ shieldUp:
   effects:
   - target: Self
     apply:
-    - Shield
-    - Shield
-    - Shield
+    - Aegis
+    - Aegis
 reachAdvantage:
   name: Reach Advantage
   action: Guard
@@ -695,11 +693,11 @@ shieldBash:
   effects:
   - target: Self
     apply:
-    - Expose
+    - Harm
   - target: Single
     apply:
     - 3d*3
-    - Stunned
+    - Stun
     - Move 2
 sunder:
   name: Sunder
@@ -709,7 +707,7 @@ sunder:
   - target: Single
     apply:
     - 2d*4+1
-    - Vulnerable
+    - Weak
 cleave:
   name: Cleave
   action: Attack
@@ -731,7 +729,7 @@ hook:
     - Move 2
   - target: Broken
     apply:
-    - Vulnerable
+    - Weak
 openStrike:
   name: Open Strike
   action: Attack
@@ -739,13 +737,13 @@ openStrike:
   effects:
   - target: Self
     apply:
-    - Expose
+    - Harm
   - target: Single
     apply:
     - 3d*4
   - target: Broken
     apply:
-    - Expose
+    - Harm
 lance:
   name: Lance
   action: Attack
@@ -760,7 +758,7 @@ lance:
     - 3d*3
   - target: Broken
     apply:
-    - Hobbled
+    - Slow
 hurl:
   name: Hurl
   action: Attack
@@ -794,8 +792,8 @@ fireBreath:
     - 2d*4
   - target: Exposed
     apply:
-    - Stunned
-    - Vulnerable
+    - Stun
+    - Weak
 soar:
   name: Soar
   action: Move
@@ -812,9 +810,9 @@ dragonScales:
   effects:
   - target: Self
     apply:
-    - Shield
-    - Shield
     - Aegis
+    - Aegis
+    - Hero
 invigorate:
   name: Invigorate
   action: Tactics
@@ -822,8 +820,8 @@ invigorate:
   effects:
   - target: Self
     apply:
-    - Heroic
-    - Heroic
+    - Hero
+    - Vigor
 
 dragonBlood:
   name: Dragon Blood
@@ -841,18 +839,18 @@ formOfFear:
   effects:
   - target: Self
     apply:
-    - Shield
+    - Aegis
   - target: Burst
     apply:
     - 3d*2
   - target: Exposed
     apply:
-    - Weakened
+    - Weak
 eternal:
   name: Eternal
   action: Passive
   description: >
-    You no longer age, and are immune to non-magical disease. Gain 2 Heroic tokens
+    You no longer age, and are immune to non-magical disease. Gain 2 Hero tokens
     at the beginning of each combat. You can use Influence one additional time,
     even if you aren't trained in it.
 fireStorm:
@@ -866,4 +864,4 @@ fireStorm:
     - 4d*3
   - target: Exposed
     apply:
-    - Vulnerable
+    - Weak

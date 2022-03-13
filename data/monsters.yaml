@@ -129,6 +129,7 @@ townGuard:
       name: Watch's Discipline
       action: Tactics
       uses: At-Will
+      effects:
       - target: Single
         apply:
         - Hero
@@ -174,6 +175,7 @@ townGuardArcher:
       name: Watch's Discipline
       action: Tactics
       uses: At-Will
+      effects:
       - target: Single
         apply:
         - Hero

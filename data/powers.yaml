@@ -585,7 +585,7 @@ volley:
     - bow
   action: Attack
   uses: At-Will
-  target:
+  effects:
   - target: Triple
     apply:
     - Harm

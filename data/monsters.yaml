@@ -132,7 +132,7 @@ townGuard:
       - target: Single
         apply:
         - Hero
-        - Hero
+        - Aegis
     reachAdvantage:
       name: Reach Advantage
       flavor: The advantage of a polearm's reach makes it more difficult to outflank him.
@@ -149,37 +149,46 @@ townGuardArcher:
   class: Mob
   level: 1
   stats:
-    Evasion: 5
-    Defense: 7
+    Evasion: 6
+    Defense: 6
     Resilience: 2
-    Speed: 4
+    Speed: 6
   powers:
     loose:
       name: Loose
       action: Attack
-      pattern: Precision
       uses: At-Will
-      description: >
-        The target takes 2d*4 damage.
+      effects:
+      - target: Single
+        apply:
+        - 1d*12
     volley:
       name: Volley
       action: Attack
-      pattern: Scatter
       uses: At-Will
-      description: >
-        Each target takes 2d*2 damage.
+      effects:
+      - target: Triple
+        apply:
+        - Harm
     watchsDiscipline:
       name: Watch's Discipline
       action: Tactics
       uses: At-Will
-      description: >
-        Restore one condition. Refresh one defense token.
-    guardsman:
-      name: Guardsman
-      action: Move
+      - target: Single
+        apply:
+        - Hero
+        - Aegis
+    skirmisher:
+      name: Skirmisher
+      flavor: The advantage of a polearm's reach makes it more difficult to outflank him.
+      action: Guard
       uses: At-Will
-      description: >
-        If you end your movement next to an ally, they may refresh a defense token.
+      effects:
+      - target: Self
+        apply:
+        - Ignore Challenging Terrain
+        - Ignore Difficult Terrain
+        - Ignore Zone of Control
 
 direWolf:
   name: Dire Wolf

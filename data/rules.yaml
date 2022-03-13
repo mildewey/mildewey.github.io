@@ -165,42 +165,35 @@
         be triggered. The possible effects are: Weakened, Confused, Vulnerable,
         Hobbled, Stunned, Poisoned, Wounded, Heroic, Lucky, Invigorated.
       sections:
-      - heading: Weakened
+      - heading: Weak
         description: >
-          When you make an attack, reduce the Attack Value by 1 for each Weakened
-          token and then discard a Weakened token.
-      - heading: Vulnerable
+          When you make an attack, reduce the Attack Value by 1 for each Weak
+          token you have and then discard a Weak token. When you are attacked,
+          add 1 to the Attack Value for each Weak token you have and then discard
+          a Weak token.
+      - heading: Slow
         description: >
-          When you are attacked, add 1 to the Attack Value for each Vulnerable
-          token you have and then discard a Vulnerable token.
-      - heading: Hobbled
+          Reduce the number of Movement Points and Focus Points you get at the
+          start of your turn by 1 for each Slow token you have and then discard
+          a Slow token.
+      - heading: Stun
         description: >
-          Reduce the number of movement points you get at the start of your turn
-          by 1 for each Hobbled token you have and then discard a Hobbled token.
-      - heading: Stunned
-        description: >
-          You can only take a single action on your turn and then discard a Stunned
+          You can only take a single action on your turn and then discard a Stun
           token. You can still double down on that action.
-      - heading: Poisoned
+      - heading: Harm
         description: >
           Tap or break a defense token at the start of your turn and then discard
-          a Poisoned token.
-      - heading: Wound
+          a Harm token.
+      - heading: Hero
         description: >
-          Tap or break an additional token when this effect is applied.
-      - heading: Heroic
-        description: >
-          At the start of your turn you may discard a Heroic token to eliminate
+          At the start of your turn you may discard a Hero token to discard
           another token before it has any effect.
-      - heading: Invigorated
+      - heading: Vigor
         description: >
-          You may double down without spending Energy. The action does not have to
-          have the repeatable tag to use an identical action. After doubling down
-          like this, discard an Invigorated token.
+          You may spend a Vigor token instead of Energy when you double down.
       - heading: Aegis
         description: >
-          Discard this token instead of tapping a defense token. Disard one of these
-          tokens at the beginning of your turn.
+          Discard this token instead of tapping a defense token.
   - heading: Movement
     description: >
       Regardless of what actions you do, your character gains movement points

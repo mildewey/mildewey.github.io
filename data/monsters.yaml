@@ -113,15 +113,17 @@ townGuard:
     hook:
       name: Hook
       action: Tactics
-      uses: At-Will
+      uses: Energy
       effects:
       - target: Single
-        apply: 1d
+        apply: 2d*3
       - target: Exposed
         apply:
         - Weak
-        - Weak
         - Slow
+      - target: Broken
+        apply:
+        - Weak
         - Slow
     watchsDiscipline:
       name: Watch's Discipline

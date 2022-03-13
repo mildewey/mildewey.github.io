@@ -193,7 +193,8 @@
           You may spend a Vigor token instead of Energy when you double down.
       - heading: Aegis
         description: >
-          Discard this token instead of tapping a defense token. At the beginning
+          Discard this token instead of tapping or breaking a defense token any
+          time you would otherwise have to tap a defense token. At the beginning
           of your turn, you must untap as many defense tokens as you can by
           discarding an Aegis token per tapped defense token you have.
   - heading: Movement

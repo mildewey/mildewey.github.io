@@ -116,8 +116,6 @@ townGuard:
       uses: At-Will
       effects:
       - target: Single
-        apply: 1d
-      - target: Exposed
         apply:
         - Weak
         - Weak

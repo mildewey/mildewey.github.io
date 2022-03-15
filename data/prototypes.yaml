@@ -10,9 +10,6 @@
   upgrades:
   - lightningInfusion
   - defyDeath
-  equipment:
-  - dagger
-  - wand
 - name: Kasimir (level 6)
   blurb: A ne'er do well with more power than he deserves.
   level: 6
@@ -29,9 +26,6 @@
   - staticCharge
   - sureFooted
   - exploit
-  equipment:
-  - dagger
-  - wand
 - name: Golem (level 2)
   blurb: A patriot and a hero.
   level: 2
@@ -44,9 +38,6 @@
   upgrades:
   - shoulderCannon
   - defiance
-  equipment:
-  - spear
-  - shield
 - name: Golem (level 6)
   blurb: A patriot and a hero.
   level: 6
@@ -63,9 +54,6 @@
   - indomitable
   - arcaneIntellect
   - fleshTransmutation
-  equipment:
-  - spear
-  - shield
 - name: Cassian (level 2)
   blurb: A troubled mercenary, bound but not defeated.
   level: 2
@@ -78,8 +66,6 @@
   upgrades:
   - battleSavant
   - bloodyHands
-  equipment:
-  - pollaxe
 - name: Cassian (level 6)
   blurb: A troubled mercenary, bound but not defeated.
   level: 6
@@ -96,5 +82,3 @@
   - eldritch
   - pestilence
   - ethereal
-  equipment:
-  - pollaxe

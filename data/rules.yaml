@@ -220,8 +220,7 @@
           Difficult Terrain costs an extra movement point to enter.
       - heading: Challenging Terrain
         description: >
-          Challenging Terrain cannot be moved through, but movement actions frequently
-          remove this restriction.
+          Challenging Terrain costs 1 focus to move through.
       - heading: Barrier Terrain
         description: >
           Barrier Terrain cannot be moved through.
@@ -235,7 +234,7 @@
       - heading: Liquid Terrain
         description: >
           Liquid Terrain costs an extra movement point to enter. Attacks targeting or
-          originating from liquid derrain roll one fewer hit die.
+          originating from liquid terrain roll one fewer hit die.
       - heading: Elevated Terrain
         description: >
           Elevated Terrain costs two extra movement points to enter unless entering

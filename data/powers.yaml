@@ -1,43 +1,3 @@
-# Basic
-strike:
-  name: Strike
-  basic: true
-  action: Attack
-  uses: At-Will
-  effects:
-  - target: Single
-    apply:
-    - 3d*3
-move:
-  name: Reposition
-  basic: true
-  action: Move
-  uses: At-Will
-  effects:
-  - target: Self
-    apply:
-    - Movement Points +2
-    - Ignore Challenging Terrain
-guard:
-  name: Recover
-  basic: true
-  action: Guard
-  uses: At-Will
-  effects:
-  - target: Self
-    apply:
-    - Aegis
-tactics:
-  name: Aid
-  basic: true
-  action: Tactics
-  uses: At-Will
-  effects:
-  - target: Double
-    apply:
-    - Hero
-
-
 # Myrmidon
 practicedStrike:
   name: Practiced Strike
@@ -68,7 +28,7 @@ myrmidonsSteel:
   flavor: Paid in gold, deliver a deluge of blood and steel.
   action: Tactics
   uses: At-Will
-  duration: Stance
+  concentration: 1 Focus
   effects:
   - target: Self
     apply:
@@ -91,7 +51,7 @@ battleSavant:
   flavor: Your brilliance in battle is unparalleled.
   action: Tactics
   uses: Energy
-  duration: Stance
+  concentration: 2 Focus
   effects:
   - target: Self
     apply:
@@ -125,7 +85,7 @@ opportunist:
   flavor: Killing is a full time job.
   action: Guard
   uses: Energy
-  duration: 5 rounds
+  concentration: 2 focus
   effects:
   - target: Zone
     apply:
@@ -165,11 +125,12 @@ contagion:
   name: Contagion
   action: Guard
   uses: At-Will
-  duration: 1 Round
+  concentration: 2 Focus
   effects:
   - target: Zone
     apply:
     - Weak
+    - Slow
 ghostlyJaunt:
   name: Ghostly Jaunt
   action: Move
@@ -216,7 +177,7 @@ ethereal:
   name: Ethereal
   action: Guard
   uses: Energy
-  duration: 5 rounds
+  concentration: 2 Focus
   effects:
   - target: Self
     apply:
@@ -239,7 +200,7 @@ inspire:
   name: Inspire
   action: Tactics
   uses: At-Will
-  duration: Stance
+  concentration: 3 Focus
   effects:
   - target: Single
     apply:
@@ -274,7 +235,7 @@ aegis:
   name: Aegis
   action: Guard
   uses: Energy
-  duration: Stance
+  concentration: 2 Focus
   effects:
   - target: Allies
     apply:
@@ -308,7 +269,7 @@ tinyArmy:
   flavor: Your autotools and whizbots swarm your enemies.
   action: Attack
   uses: At-Will
-  duration: 3 rounds
+  concentration: 1 Focus
   effects:
   - target: Single
     apply:
@@ -326,7 +287,7 @@ runicShield:
   name: Runic Shield
   action: Guard
   uses: At-Will
-  duration: Stance
+  concentration: 1 Focus
   effects:
   - target: Self
     apply:
@@ -365,7 +326,7 @@ fleshTransmutation:
   name: Flesh Transmutation
   action: Guard
   uses: Energy
-  duration: 5 turns
+  concentration: 4 Focus
   effects:
   - target: Self
     apply:
@@ -435,7 +396,7 @@ flight:
   name: Flight
   action: Move
   uses: Energy
-  duration: 1 hour
+  concentration: 1 Focus
   effects:
   - target: Single
     apply:
@@ -444,7 +405,7 @@ graspingWind:
   name: Grasping Wind
   action: Tactics
   uses: Energy
-  duration: 10 rounds
+  concentration: 3 Focus
   effects:
   - target: Single
     apply:
@@ -455,7 +416,7 @@ staticCharge:
   name: Static Charge
   action: Guard
   uses: Energy
-  duration: 5 rounds
+  concentration: 1 Focus
   effects:
   - target: Revenge
     apply:
@@ -467,7 +428,7 @@ hungryCloud:
   name: Hungry Cloud
   action: Attack
   uses: Energy
-  duration: 5 rounds
+  concentration: 3 Focus
   effects:
   - target: All Enemies
     apply:
@@ -502,7 +463,7 @@ riposte:
   name: Riposte
   action: Guard
   uses: At-Will
-  duration: 1 round
+  concentration: 1 Focus
   effects:
   - target: Revenge
     apply:
@@ -537,7 +498,7 @@ runOfLuck:
   name: Run of Luck
   action: Tactics
   uses: Energy
-  duration: Stance
+  concentration: 1 Focus
   effects:
   - target: Self
     apply:
@@ -560,225 +521,6 @@ rapidStrikes:
   action: Passive
   description: >
     You may double down on an attack action twice -- making three attacks.
-
-# Weapon
-stab:
-  name: Stab
-  action: Attack
-  uses: At-Will
-  repeatable: true
-  effects:
-  - target: Single
-    apply:
-    - 3d*3+3
-loose:
-  name: Loose
-  action: Attack
-  uses: At-Will
-  effects:
-  - target: Single
-    apply:
-    - 1d*12
-volley:
-  name: Volley
-  equipmentTags:
-    - bow
-  action: Attack
-  uses: At-Will
-  effects:
-  - target: Triple
-    apply:
-    - Harm
-crush:
-  name: Crush
-  action: Attack
-  uses: At-Will
-  effects:
-  - target: Single
-    apply:
-    - 4d*2
-  - target: Broken
-    apply:
-    - Slow
-deadlySwing:
-  name: Deadly Swing
-  action: Attack
-  uses: At-Will
-  effects:
-  - target: Single
-    apply:
-    - 4d*3
-  - target: Broken
-    apply:
-    - Harm
-    - Harm
-cracklingPower:
-  name: Crackling Power
-  action: Attack
-  repeatable: true
-  uses: At-Will
-  effects:
-  - target: Single
-    apply:
-    - 2d*5
-  - target: Broken
-    apply:
-    - Weak
-whirlingBlade:
-  name:  Whirling Blade
-  action: Tactics
-  uses: At-Will
-  repeatable: true
-  effects:
-  - target: Triple
-    apply:
-    - Move 1
-    - Weak
-beat:
-  name: Beat
-  action: Guard
-  uses: At-Will
-  effects:
-  - target: Self
-    apply:
-    - Defense +1
-  - target: Single
-    apply:
-    - Weak
-spike:
-  name: Spike
-  action: Attack
-  uses: At-Will
-  effects:
-  - target: Single
-    apply:
-    - 2d*10
-  - target: Broken
-    apply:
-    - Weak
-    - Harm
-    - Harm
-shieldUp:
-  name: Shield Up!
-  action: Guard
-  uses: At-Will
-  effects:
-  - target: Self
-    apply:
-    - Aegis
-    - Aegis
-reachAdvantage:
-  name: Reach Advantage
-  action: Guard
-  uses: At-Will
-  duration: Stance
-  effects:
-  - target: Self
-    apply:
-    - Defense +1
-
-#intercept:
-#  name: Intercept
-#  tags:
-#  action: Move
-#  duration: 1 Round
-#  uses: At-Will
-#  description: >
-#    Move your Speed. If you end your movement next to an Ally, you can spend one Focus to become the target of an attack targeting that ally.
-
-shieldBash:
-  name: Shield Bash
-  action: Attack
-  uses: At-Will
-  effects:
-  - target: Self
-    apply:
-    - Harm
-  - target: Single
-    apply:
-    - 3d*3
-    - Stun
-    - Move 2
-sunder:
-  name: Sunder
-  action: Attack
-  uses: At-Will
-  effects:
-  - target: Single
-    apply:
-    - 2d*4+1
-    - Weak
-cleave:
-  name: Cleave
-  action: Attack
-  uses: Energy
-  effects:
-  - target: Double
-    apply:
-    - 2d*6
-hook:
-  name: Hook
-  action: Attack
-  uses: At-Will
-  effects:
-  - target: Single
-    apply:
-    - 3d*3
-  - target: Exposed
-    apply:
-    - Move 2
-  - target: Broken
-    apply:
-    - Weak
-openStrike:
-  name: Open Strike
-  action: Attack
-  uses: At-Will
-  effects:
-  - target: Self
-    apply:
-    - Harm
-  - target: Single
-    apply:
-    - 3d*4
-  - target: Broken
-    apply:
-    - Harm
-lance:
-  name: Lance
-  action: Attack
-  uses: At-Will
-  repeatable: true
-  effects:
-  - target: Self
-    apply:
-    - Movement Points +2
-  - target: Single
-    apply:
-    - 3d*3
-  - target: Broken
-    apply:
-    - Slow
-hurl:
-  name: Hurl
-  action: Attack
-  uses: At-Will
-  effects:
-  - target: Single
-    apply:
-    - 2d*2
-  - target: Exposed
-    apply:
-    - 5d*2
-throwingKnives:
-  name: Throwing Knives
-  action: Attack
-  uses: At-Will
-  repeatable: true
-  effects:
-  - target: Triple
-    apply:
-    - 2d*2
 
 
 #Dragonblood
@@ -834,8 +576,7 @@ formOfFear:
   name: Form of Fear
   action: Guard
   uses: Energy
-  duration: 3 Rounds
-  concentration:  Guard
+  concentration: 4 Focus
   effects:
   - target: Self
     apply:
@@ -857,7 +598,7 @@ fireStorm:
   name: Fire Storm
   action: Attack
   uses: Energy
-  duration: 3 Rounds
+  concentration: 3 Focus
   effects:
   - target: Burst
     apply:

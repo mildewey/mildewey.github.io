@@ -16,23 +16,23 @@ practicedStrike:
     - Harm
 whirlingCounters:
   name: Whirling Counters
-  flavor: You use your attacker's momentum to counter with a quick and vicious blow.
+  flavor: Killing is a full time job.
   action: Guard
-  uses: At-Will
+  uses: Energy
   effects:
   - target: Zone
     apply:
-    - Weak
+    - 1d*5+3
 myrmidonsSteel:
   name: Myrmidon's Steel
   flavor: Paid in gold, deliver a deluge of blood and steel.
   action: Tactics
   uses: At-Will
-  concentration: 1 Focus
   effects:
   - target: Self
     apply:
-    - Attack Value +2
+    - Attack Value +1
+    - Vigor
 bruteForce:
   name: Brute Force
   flavor: You use your shield to push enemies out of the way in order to reach your target.
@@ -42,9 +42,10 @@ bruteForce:
   - target: Self
     apply:
     - Ignore Zone
+    - Aegis
   - target: Path
     apply:
-    - Weak
+    - Slow
 
 battleSavant:
   name: Battle Savant
@@ -52,44 +53,32 @@ battleSavant:
   action: Tactics
   uses: Energy
   concentration: 2 Focus
-  effects:
-  - target: Self
-    apply:
-    - Vigor
+  description: >
+    You can double down on two different actions on the same turn.
 veteran:
   name: Veteran
   flavor: Your hard won experience pays off.
   action: Passive
   description: >
-    Increase the number of stances you can maintain by 1.
+    Reduce your total concentration costs by 2 each round.
 bloodyHands:
   name: Bloody Hands
   flavor: You are death.
   action: Passive
   description: >
-    Attack Value +2.
+    You can concentrate on Myrmidon's Steel and Whirling Counters for 2 Focus each.
 hardenedSteel:
   name: Hardened Steel
   flavor: Your steel will see you through even deathly situations.
   action: Attack
   uses: Energy
-  effects:
-  - target: Self
-    apply:
-    - Aegis
-  - target: Burst
-    apply:
-    - 3d*2
+  description: >
+    Gain a heroic token whenever you take a Move Action.
 opportunist:
   name: Opportunist
-  flavor: Killing is a full time job.
-  action: Guard
-  uses: Energy
-  concentration: 2 focus
-  effects:
-  - target: Zone
-    apply:
-    - 1d*5+3
+  flavor: You don't throw away your shot.
+  description: >
+    Your Zone of Control is a 3x3 square centered on you.
 
 
 # Warlock
@@ -151,14 +140,8 @@ pestilence:
   action: Attack
   uses: Energy
   concentration: Attack
-  effects:
-  - target: Enemies
-    apply:
-      - 1d*5+5
-  - target: Broken Defense
-    apply:
-    - Slow
-    - Stun
+  description: >
+    Contagion also applies Stun to enemies.
 darkness:
   name: Darkness
   action: Passive
@@ -178,10 +161,7 @@ ethereal:
   action: Guard
   uses: Energy
   concentration: 2 Focus
-  effects:
-  - target: Self
-    apply:
-    - Resistance +5
+  description: You gain Resistance +3.
 
 # Knight
 charge:
@@ -223,7 +203,7 @@ overpower:
   - target: Path
     apply:
     - Harm
-    - Slow
+    - Weak
 
 indomitable:
   name: Indomitable
@@ -231,15 +211,13 @@ indomitable:
   description: >
     Gain 3 Hero tokens at the beginning of combat. You can use any Charisma
     skill an additional time.
-aegis:
-  name: Aegis
+guardian:
+  name: Guardian
   action: Guard
   uses: Energy
   concentration: 2 Focus
-  effects:
-  - target: Allies
-    apply:
-    - Evasion +1
+  description: >
+    You and your allies gain +1 evasion when they have at least 1 Aegis token.
 paragon:
   name: Paragon
   action: Passive
@@ -249,13 +227,8 @@ commander:
   name: Commander
   action: Attack
   uses: Energy
-  effects:
-  - target: Self
-    apply:
-    - Attack action
-  - target: Single
-    apply:
-    - Attack action
+  description: >
+    When you double down, you can give a vigor token to an ally.
 defiance:
   name: Defiance
   action: Passive
@@ -264,44 +237,6 @@ defiance:
     each round.
 
 # Artificer
-tinyArmy:
-  name: Tiny Army
-  flavor: Your autotools and whizbots swarm your enemies.
-  action: Attack
-  uses: At-Will
-  concentration: 1 Focus
-  effects:
-  - target: Single
-    apply:
-    - Harm
-    - Stun
-arcaneMines:
-  name: Arcane Mines
-  action: Tactics
-  uses: At-Will
-  effects:
-  - target: Triple
-    apply:
-    - Hazardous Terrain
-runicShield:
-  name: Runic Shield
-  action: Guard
-  uses: At-Will
-  concentration: 1 Focus
-  effects:
-  - target: Self
-    apply:
-    - Aegis
-rawTransmutation:
-  name: Raw Transmutation
-  action: Move
-  uses: At-Will
-  description: >
-  effects:
-  - target: Terrain
-    apply:
-    - Difficult
-
 shoulderCannon:
   name: Shoulder Cannon
   action: Attack
@@ -309,8 +244,46 @@ shoulderCannon:
   effects:
   - target: Burst
     apply:
-    - 4d*5
+    - 4d*4
     - Stun
+tinyArmy:
+  name: Tiny Army
+  flavor: Your autotools and whizbots swarm your enemies.
+  action: Tactics
+  uses: At-Will
+  concentration: 1 Focus
+  effects:
+  - target: Single
+    apply:
+    - Harm
+runicShield:
+  name: Runic Shield
+  action: Guard
+  uses: At-Will
+  concentration: 2 Focus
+  effects:
+  - target: Self
+    apply:
+    - Vigor
+rawTransmutation:
+  name: Raw Transmutation
+  action: Move
+  uses: At-Will
+  description: >
+  effects:
+  - target: Self
+    apply:
+    - Aegis
+  - target: Triple
+    apply:
+    - Difficult
+
+
+walkingBombs:
+  name: Walking Bombs
+  action: Passive
+  description: >
+    Your Zone of Control is Hazardous Terrain.
 fabrication:
   name: Fabrication
   action: Passive
@@ -321,29 +294,18 @@ arcaneIntellect:
   name: Arcane Intellect
   action: Passive
   description: >
-    You don't need to use focus to maintain powers.
+    Reduce focus cost to maintain powers by 1 for each power.
 fleshTransmutation:
   name: Flesh Transmutation
-  action: Guard
-  uses: Energy
-  concentration: 4 Focus
-  effects:
-  - target: Self
-    apply:
-    - Evasion +1
-    - Defense +1
-    - Speed +2
+  action: Passive
+  description: >
+    For each Aegis token you have, increase your Defense by 1. For each Vigor
+    token you have, increase your Evasion by 1.
 tonic:
   name: Tonic
-  action: Move
-  uses: Energy
-  effects:
-  - target: Self
-    apply:
-    - Movement Points +6
-    - Hero
-    - Hero
-    - Aegis
+  action: Passive
+  description: >
+    When you double down, you gain a Vigor token.
 
 
 # Zephyr
@@ -351,23 +313,28 @@ callLightning:
   name: Call Lightning
   action: Attack
   repeatable: true
-  uses: At-Will
+  uses: Energy
   effects:
   - target: Single
     apply:
     - 3d*4
   - target: Broken
     apply:
-    - Weak
-gust:
-  name: Gust
+    - Stun
+batteringWaves:
+  name: Battering Waves
   action: Tactics
-  uses: At-Will
+  uses: Energy
+  concentration: 3 Focus
   effects:
   - target: Burst
     apply:
     - 3d
+  - target: Exposed
+    apply:
     - Move 2
+    - Slow
+    - Harm
 mistyFigure:
   name: Misty Figure
   action: Guard
@@ -376,22 +343,7 @@ mistyFigure:
   - target: Self
     apply:
     - Aegis
-    - Aegis
-waveStep:
-  name: Wave Step
-  action: Move
-  uses: At-Will
-  effects:
-  - target: Path
-    apply:
-    - Move 1
-    - Harm
-
-lightningInfusion:
-  name: Lightning Infusion
-  action: Passive
-  description: >
-    You can double down on repeatable attacks without spending energy.
+    - Resistance +2
 flight:
   name: Flight
   action: Move
@@ -401,39 +353,33 @@ flight:
   - target: Single
     apply:
     - Flying
+
+lightningInfusion:
+  name: Lightning Infusion
+  action: Passive
+  description: >
+    You can double down on repeatable attacks without spending energy. You can
+    spend vigor tokens to trigger powers that cost Energy.
 graspingWind:
   name: Grasping Wind
-  action: Tactics
-  uses: Energy
-  concentration: 3 Focus
-  effects:
-  - target: Single
-    apply:
-    - Move 4
-    - Slow
-    - Slow
+  action: Passive
+  description: >
+    Your Zone of Control gives enemies 2 Slow tokens.
 staticCharge:
   name: Static Charge
-  action: Guard
-  uses: Energy
-  concentration: 1 Focus
-  effects:
-  - target: Revenge
-    apply:
-    - 5d*5
-  - target: Zone
-    apply:
-    - Weak
+  action: Passive
+  description: >
+    All enemies in your Path gain a Harm token.
 hungryCloud:
   name: Hungry Cloud
-  action: Attack
-  uses: Energy
-  concentration: 3 Focus
-  effects:
-  - target: All Enemies
-    apply:
-    - 4d*2
-    - Confused
+  action: Passive
+  description: >
+    You can use Battering Waves without spending Energy.
+lightningSpeed:
+  name: Lightning Speed
+  action: Passive
+  description: >
+    When you take a Move action, you gain Teleport 2 and a Vigor token.
 
 
 # Swashbuckler
@@ -453,6 +399,7 @@ feint:
   name: Feint
   flavor: Deception is essential in a duel between masters
   action: Tactics
+  repeatable: true
   uses: At-Will
   effects:
   - target: Single
@@ -482,28 +429,14 @@ tumbling:
 
 exploit:
   name: Exploit
-  action: Attack
-  uses: Energy
-  effects:
-  - target: Single
-    apply:
-    - Weak
-    - Weak
-    - 3d*5
-  - target: Broken
-    apply:
-    - Weak
-    - Weak
+  action: Passive
+  description: >
+    Increase your Attack Value by +1 for every Weak token your target has.
 runOfLuck:
   name: Run of Luck
-  action: Tactics
-  uses: Energy
-  concentration: 1 Focus
-  effects:
-  - target: Self
-    apply:
-    - Aegis
-    - Hero
+  action: Passive
+  description: >
+    When you start combat, you have 1 Heroic token, 1 Aegis token, and 1 Vigor token.
 defyDeath:
   name: Defy Death
   flavor: You're unphased by your injuries
@@ -534,8 +467,10 @@ fireBreath:
     - 2d*4
   - target: Exposed
     apply:
-    - Stun
     - Weak
+  - target: Broken
+    apply:
+    - Stun
 soar:
   name: Soar
   action: Move
@@ -553,7 +488,6 @@ dragonScales:
   - target: Self
     apply:
     - Aegis
-    - Aegis
     - Hero
 invigorate:
   name: Invigorate
@@ -567,26 +501,15 @@ invigorate:
 
 dragonBlood:
   name: Dragon Blood
-  flavor: The power of dragons and sorcerers flows in your veins, imbuing you with indefatigable energy.
   action: Passive
   description: >
-    When you spend an energy to take an action, gain an Invigotared token.
+    You may spend an energy to double the number of hit dice you roll for an action.
     You can use Athletics one additional time, even if you aren't trained in it.
 formOfFear:
   name: Form of Fear
-  action: Guard
-  uses: Energy
-  concentration: 4 Focus
-  effects:
-  - target: Self
-    apply:
-    - Aegis
-  - target: Burst
-    apply:
-    - 3d*2
-  - target: Exposed
-    apply:
-    - Weak
+  action: Passive
+  description: >
+    Your Zone of Control gives targets a Stun token.
 eternal:
   name: Eternal
   action: Passive
@@ -596,13 +519,11 @@ eternal:
     even if you aren't trained in it.
 fireStorm:
   name: Fire Storm
-  action: Attack
-  uses: Energy
-  concentration: 3 Focus
-  effects:
-  - target: Burst
-    apply:
-    - 4d*3
-  - target: Exposed
-    apply:
-    - Weak
+  action: Passive
+  description: >
+    Fire Breath becomes repeatable. You can concentrate on Fire Breath for 4 Focus.
+ancestralForm:
+  name: Ancestral Form
+  action: Passive
+  description: >
+    You can concentrate on Invigorate, Dragon Scales, and Soar for 1 Focus each.

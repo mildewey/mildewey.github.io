@@ -1,10 +1,10 @@
 myrmidon:
   name: Myrmidon
   basePowers:
-  - myrmidonsSteel
-  - bruteForce
   - practicedStrike
   - whirlingCounters
+  - myrmidonsSteel
+  - bruteForce
   upgrades:
   - battleSavant
   - veteran
@@ -33,19 +33,19 @@ knight:
   - overpower
   upgrades:
   - indomitable
-  - aegis
+  - guardian
   - paragon
   - commander
   - defiance
 artificer:
   name: Artificer
   basePowers:
+  - shoulderCannon
   - tinyArmy
-  - arcaneMines
   - runicShield
   - rawTransmutation
   upgrades:
-  - shoulderCannon
+  - walkingBombs
   - fabrication
   - arcaneIntellect
   - fleshTransmutation
@@ -54,15 +54,15 @@ zephyr:
   name: Zephyr
   basePowers:
   - callLightning
-  - gust
+  - batteringWaves
   - mistyFigure
-  - waveStep
+  - flight
   upgrades:
   - lightningInfusion
-  - flight
   - graspingWind
   - staticCharge
   - hungryCloud
+  - lightningSpeed
 swashbuckler:
   name: Swashbuckler
   basePowers:
@@ -72,8 +72,8 @@ swashbuckler:
   - tumbling
   upgrades:
   - exploit
-  - defyDeath
   - runOfLuck
+  - defyDeath
   - sureFooted
   - rapidStrikes
 dragonblood:
@@ -88,4 +88,4 @@ dragonblood:
   - formOfFear
   - eternal
   - fireStorm
-  - arcaneIntellect
+  - ancestralForm

@@ -167,10 +167,9 @@
       sections:
       - heading: Weak
         description: >
-          When you make an attack, reduce the Attack Value by 1 for each Weak
-          token you have and then discard a Weak token. When you are attacked,
-          add 1 to the Attack Value for each Weak token you have and then discard
-          a Weak token.
+          Reduce your attack value by one for each Weak token. Increase the attack
+          value of attacks targeting you by one for each Weak token. Discard a
+          Weak token at the end of your turn.
       - heading: Slow
         description: >
           Reduce the number of Movement Points and Focus Points you get at the
@@ -193,10 +192,10 @@
           You may spend a Vigor token instead of Energy when you double down.
       - heading: Aegis
         description: >
-          Discard this token instead of tapping or breaking a defense token any
-          time you would otherwise have to tap a defense token. At the beginning
-          of your turn, you must untap as many defense tokens as you can by
-          discarding an Aegis token per tapped defense token you have.
+          Discard one Aegis token when your defenses are exposed or broken. Broken
+          defenses are reduced to exposed and exposed defenses are canceled.
+          At the beginning of your turn, you must untap as many defense tokens as
+          you can by discarding an Aegis token per tapped defense token you have.
   - heading: Movement
     description: >
       Regardless of what actions you do, your character gains movement points

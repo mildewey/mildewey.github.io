@@ -1,7 +1,7 @@
 smokeMephit:
   name: Smoke Mephit
   flavor: The smoky figure is both frolicsome and fierce.
-  class: Mob
+  class: Skirmisher
   level: 1
   stats:
     Evasion: 7
@@ -47,7 +47,7 @@ smokeMephit:
 mudMephit:
   name: Mud Mephit
   flavor: The muddy terrain before you bubbles up into a dripping, prancing imp.
-  class: Mob
+  class: Skirmisher
   level: 1
   stats:
     Evasion: 6
@@ -93,14 +93,13 @@ mudMephit:
 townGuard:
   name: Town Guard
   flavor: The uniform tabard is well kept, but shows signs of wear.
-  class: Elite
-  level: 1
+  class: Minion
+  level: 2
   stats:
-    Evasion: 5
+    Evasion: 8
     Defense: 7
-    Resilience: 4
+    Resilience: 1
     Speed: 4
-    Energy: 3
   powers:
     cleave:
       name: Cleave
@@ -110,25 +109,13 @@ townGuard:
       - target: Double
         apply:
         - 2d*4
-    hook:
-      name: Hook
-      action: Tactics
-      uses: Energy
-      effects:
-      - target: Single
-        apply:
-        - 2d*3
-      - target: Exposed
-        apply:
-        - Weak
-        - Slow
       - target: Broken
         apply:
         - Weak
         - Slow
     watchsDiscipline:
       name: Watch's Discipline
-      action: Tactics
+      action: Guard
       uses: At-Will
       effects:
       - target: Single
@@ -137,7 +124,6 @@ townGuard:
         - Aegis
     reachAdvantage:
       name: Reach Advantage
-      flavor: The advantage of a polearm's reach makes it more difficult to outflank him.
       action: Guard
       uses: At-Will
       effects:
@@ -148,12 +134,12 @@ townGuard:
 townGuardArcher:
   name: Town Guard Archer
   flavor: The uniform tabard is well kept, but shows signs of wear.
-  class: Mob
-  level: 1
+  class: Minion
+  level: 2
   stats:
     Evasion: 6
     Defense: 6
-    Resilience: 2
+    Resilience: 1
     Speed: 6
   powers:
     loose:
@@ -166,15 +152,15 @@ townGuardArcher:
         - 1d*12
     volley:
       name: Volley
-      action: Attack
+      action: Tactics
       uses: At-Will
       effects:
-      - target: Triple
+      - target: Single
         apply:
         - Harm
     watchsDiscipline:
       name: Watch's Discipline
-      action: Tactics
+      action: Guard
       uses: At-Will
       effects:
       - target: Single
@@ -184,7 +170,7 @@ townGuardArcher:
     skirmisher:
       name: Skirmisher
       flavor: The advantage of a polearm's reach makes it more difficult to outflank him.
-      action: Guard
+      action: Move
       uses: At-Will
       effects:
       - target: Self
@@ -196,21 +182,19 @@ townGuardArcher:
 direWolf:
   name: Dire Wolf
   flavor: This hungry creature is a grim sight in the wilderness.
-  class: Apex
+  class: Boss
   level: 1
   stats:
     Evasion: 7
     Defense: 6
     Resilience: 6
     Speed: 8
-    Energy: 4
-    Focus: 3
   powers: []
 
 goblin:
   name: Goblin
   flavor: It's green, ugly, and hates you.
-  class: Mob
+  class: Minion
   level: 2
   stats:
     Evasion: 8
@@ -229,7 +213,6 @@ bugbear:
     Defense: 7
     Resilience: 8
     Speed: 5
-    Energy: 2
   powers: []
 
 bugbearAlpha:
@@ -242,8 +225,6 @@ bugbearAlpha:
     Defense: 7
     Resilience: 9
     Speed: 5
-    Energy: 3
-    Focus: 4
   powers: []
 
 hobgoblin:
@@ -268,7 +249,6 @@ hobgoblinMyrmidon:
     Defense: 6
     Resilience: 6
     Speed: 5
-    Energy: 4
   powers: []
 
 goblinWarlord:
@@ -281,8 +261,6 @@ goblinWarlord:
     Defense: 5
     Resilience: 8
     Speed: 7
-    Energy: 2
-    Focus: 6
   powers: []
 
 direTiger:
@@ -307,7 +285,6 @@ salamanderMage:
     Defense: 5
     Resilience: 6
     Speed: 5
-    Energy: 7
   powers: []
 
 youngDragon:
@@ -320,8 +297,6 @@ youngDragon:
     Defense: 8
     Resilience: 8
     Speed: 6
-    Energy: 6
-    Focus: 3
   powers: []
 
 stoneGiant:
@@ -346,7 +321,6 @@ boneDevil:
     Defense: 10
     Resilience: 10
     Speed: 5
-    Energy: 3
   powers: []
 
 adultDragon:
@@ -359,6 +333,4 @@ adultDragon:
     Defense: 10
     Resilience: 10
     Speed: 6
-    Energy: 8
-    Focus: 5
   powers: []

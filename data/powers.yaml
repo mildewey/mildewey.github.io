@@ -18,7 +18,7 @@ whirlingCounters:
   name: Whirling Counters
   flavor: Killing is a full time job.
   action: Guard
-  uses: Energy
+  uses: At-Will
   effects:
   - target: Zone
     apply:
@@ -27,11 +27,11 @@ myrmidonsSteel:
   name: Myrmidon's Steel
   flavor: Paid in gold, deliver a deluge of blood and steel.
   action: Tactics
-  uses: At-Will
+  uses: Energy
   effects:
   - target: Self
     apply:
-    - Attack Value +1
+    - Attack Value +2
     - Vigor
 bruteForce:
   name: Brute Force
@@ -51,8 +51,6 @@ battleSavant:
   name: Battle Savant
   flavor: Your brilliance in battle is unparalleled.
   action: Tactics
-  uses: Energy
-  concentration: 2 Focus
   description: >
     You can double down on two different actions on the same turn.
 veteran:
@@ -70,10 +68,10 @@ bloodyHands:
 hardenedSteel:
   name: Hardened Steel
   flavor: Your steel will see you through even deathly situations.
-  action: Attack
-  uses: Energy
+  action: Passive
   description: >
-    Gain a heroic token whenever you take a Move Action.
+    When you use the Brute Force action, you also gain a Heroic token, an additional
+    Aegis token and you can double down on another Move action for free.
 opportunist:
   name: Opportunist
   flavor: You don't throw away your shot.
@@ -113,7 +111,7 @@ graveCurse:
 contagion:
   name: Contagion
   action: Guard
-  uses: At-Will
+  uses: Energy
   concentration: 2 Focus
   effects:
   - target: Zone
@@ -134,33 +132,27 @@ eldritch:
   name: Eldritch
   action: Passive
   description: >
-    Effects applied by breaking tokens are inflicted when tokens are Exposed.
+    Effects applied by breaking tokens are applied when tokens are Exposed.
 pestilence:
   name: Pestilence
   action: Attack
-  uses: Energy
-  concentration: Attack
+  uses: Passive
   description: >
-    Contagion also applies Stun to enemies.
+    Contagion also applies Stun.
 darkness:
   name: Darkness
   action: Passive
   description: >
-    You can see in the dark as though you were in bright light. You can use Stealth
-    one additional time, even if you aren't trained in it.
-familiarSpirit:
-  name: Familiar Spirit
+    Your Zone becomes Obscuring Terrain. You and your allies in your Zone ignore
+    the effects of Obscuring Terrain.
+vampiric:
+  name: Vampiric
   action: Passive
   description: >
-    In a 1 hour ritual, you imbue a tiny creature with the soul of a familiar
-    spirit. The familiar is proficient in all Lore skills and can allow you an
-    additional die when you roll against any Magic skill. The familiar can communicate
-    with you in a language you know.
+    When you break an enemy's defenses, gain an Aegis token.
 ethereal:
   name: Ethereal
-  action: Guard
-  uses: Energy
-  concentration: 2 Focus
+  action: Passive
   description: You gain Resistance +3.
 
 # Knight
@@ -179,7 +171,7 @@ charge:
 inspire:
   name: Inspire
   action: Tactics
-  uses: At-Will
+  uses: Energy
   concentration: 3 Focus
   effects:
   - target: Single
@@ -209,8 +201,7 @@ indomitable:
   name: Indomitable
   action: Passive
   description: >
-    Gain 3 Hero tokens at the beginning of combat. You can use any Charisma
-    skill an additional time.
+    Gain 1 Hero token at the beginning of each round.
 guardian:
   name: Guardian
   action: Guard
@@ -222,19 +213,18 @@ paragon:
   name: Paragon
   action: Passive
   description: >
-    Whenever you use Energy to roll a used skill, you can recharge another skill.
+    You can spend a Hero token to gain +2 attack value for all rolls for one action.
 commander:
   name: Commander
-  action: Attack
-  uses: Energy
-  description: >
-    When you double down, you can give a vigor token to an ally.
-defiance:
-  name: Defiance
   action: Passive
   description: >
-    You can spend 2 focus to refresh a Exposed Defense token at the beginning of
-    each round.
+    When you double down, you can give a vigor token to an ally.
+heroicSacrifice:
+  name: Heroic Sacrifice
+  action: Passive
+  description: >
+    At the beginning of each turn, you may give up to three tokens you have to
+    your allies.
 
 # Artificer
 shoulderCannon:
@@ -251,7 +241,7 @@ tinyArmy:
   flavor: Your autotools and whizbots swarm your enemies.
   action: Tactics
   uses: At-Will
-  concentration: 1 Focus
+  concentration: 2 Focus
   effects:
   - target: Single
     apply:
@@ -268,15 +258,16 @@ runicShield:
 rawTransmutation:
   name: Raw Transmutation
   action: Move
+  repeatable: True
   uses: At-Will
   description: >
   effects:
   - target: Self
     apply:
     - Aegis
-  - target: Triple
+  - target: Double
     apply:
-    - Difficult
+    - Hazardous
 
 
 walkingBombs:
@@ -288,8 +279,7 @@ fabrication:
   name: Fabrication
   action: Passive
   description: >
-    You can use your Creativity skills twice before exhausting them. You may use
-    the Artifice skills in place of Physique skills.
+    Tiny Army becomes a Triple Power.
 arcaneIntellect:
   name: Arcane Intellect
   action: Passive
@@ -305,7 +295,7 @@ tonic:
   name: Tonic
   action: Passive
   description: >
-    When you double down, you gain a Vigor token.
+    When you spend Energy, you gain a Vigor token.
 
 
 # Zephyr
@@ -325,20 +315,20 @@ batteringWaves:
   name: Battering Waves
   action: Tactics
   uses: Energy
-  concentration: 3 Focus
   effects:
   - target: Burst
     apply:
     - 3d
   - target: Exposed
     apply:
-    - Move 2
+    - Move 3
     - Slow
     - Harm
 mistyFigure:
   name: Misty Figure
   action: Guard
   uses: At-Will
+  concentration: 3 Focus
   effects:
   - target: Self
     apply:
@@ -364,7 +354,7 @@ graspingWind:
   name: Grasping Wind
   action: Passive
   description: >
-    Your Zone of Control gives enemies 2 Slow tokens.
+    All enemies in your Path gain 2 Slow tokens.
 staticCharge:
   name: Static Charge
   action: Passive
@@ -387,11 +377,12 @@ lunge:
   name: Lunge
   flavor: You dart in for a powerful strike.
   action: Attack
+  repeatable: True
   uses: At-Will
   effects:
   - target: Single
     apply:
-    - 2d*7
+    - 2d*5
   - target: Exposed
     apply:
     - Harm
@@ -412,10 +403,12 @@ riposte:
   uses: At-Will
   concentration: 1 Focus
   effects:
+  - target: Self
+    apply:
+    - Aegis
   - target: Revenge
     apply:
     - 2d*4
-    - Aegis
 tumbling:
   name: Tumbling
   flavor: You know parkour
@@ -436,7 +429,7 @@ runOfLuck:
   name: Run of Luck
   action: Passive
   description: >
-    When you start combat, you have 1 Heroic token, 1 Aegis token, and 1 Vigor token.
+    Gain 1 Hero token at the beginning of each round.
 defyDeath:
   name: Defy Death
   flavor: You're unphased by your injuries
@@ -467,28 +460,10 @@ fireBreath:
     - 2d*4
   - target: Exposed
     apply:
-    - Weak
+    - Harm
   - target: Broken
     apply:
     - Stun
-soar:
-  name: Soar
-  action: Move
-  uses: At-Will
-  effects:
-  - target: Self
-    apply:
-    - Movement Points +2
-    - Flying
-dragonScales:
-  name: Dragon Scales
-  action: Guard
-  uses: At-Will
-  effects:
-  - target: Self
-    apply:
-    - Aegis
-    - Hero
 invigorate:
   name: Invigorate
   action: Tactics
@@ -498,13 +473,30 @@ invigorate:
     apply:
     - Hero
     - Vigor
+dragonScales:
+  name: Dragon Scales
+  action: Guard
+  uses: At-Will
+  effects:
+  - target: Self
+    apply:
+    - Aegis
+    - Hero
+soar:
+  name: Soar
+  action: Move
+  uses: At-Will
+  effects:
+  - target: Self
+    apply:
+    - Movement Points +2
+    - Flying
 
 dragonBlood:
   name: Dragon Blood
   action: Passive
   description: >
     You may spend an energy to double the number of hit dice you roll for an action.
-    You can use Athletics one additional time, even if you aren't trained in it.
 formOfFear:
   name: Form of Fear
   action: Passive
@@ -514,16 +506,15 @@ eternal:
   name: Eternal
   action: Passive
   description: >
-    You no longer age, and are immune to non-magical disease. Gain 2 Hero tokens
-    at the beginning of each combat. You can use Influence one additional time,
-    even if you aren't trained in it.
+    Gain 1 Vigor token at the beginning of each round.
 fireStorm:
   name: Fire Storm
   action: Passive
   description: >
     Fire Breath becomes repeatable. You can concentrate on Fire Breath for 4 Focus.
+    You can only maintain one instance of Fire Breath at a time.
 ancestralForm:
   name: Ancestral Form
   action: Passive
   description: >
-    You can concentrate on Invigorate, Dragon Scales, and Soar for 1 Focus each.
+    You can concentrate on Invigorate, Dragon Scales, and Soar for 2 Focus each.

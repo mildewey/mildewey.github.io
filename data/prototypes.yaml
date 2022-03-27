@@ -11,7 +11,7 @@
     Focus: 5
   upgrades:
   - lightningInfusion
-  - defyDeath
+  - rapidStrikes
 - name: Kasimir (level 6)
   blurb: A ne'er do well with more power than he deserves.
   level: 6
@@ -25,11 +25,11 @@
     Focus: 5
   upgrades:
   - lightningInfusion
-  - defyDeath
   - rapidStrikes
+  - lightningSpeed
   - staticCharge
   - sureFooted
-  - exploit
+  - graspingWind
 - name: Golem (level 2)
   blurb: A patriot and a hero.
   level: 2
@@ -42,26 +42,26 @@
     Energy: 4
     Focus: 4
   upgrades:
-  - tonic
   - heroicSacrifice
+  - fleshTransmutation
 - name: Golem (level 6)
   blurb: A patriot and a hero.
   level: 6
   class: arcaneFortress
   stats:
-    Evasion: 10
+    Evasion: 7
     Defense: 8
     Resilience: 7
     Speed: 5
-    Energy: 7
+    Energy: 10
     Focus: 5
   upgrades:
-  - tonic
   - heroicSacrifice
-  - guardian
-  - indomitable
-  - arcaneIntellect
   - fleshTransmutation
+  - tonic
+  - guardian
+  - commander
+  - walkingBombs
 - name: Cassian (level 2)
   blurb: A troubled mercenary, bound but not defeated.
   level: 2
@@ -71,26 +71,26 @@
     Defense: 8
     Resilience: 5
     Speed: 4
-    Energy: 7
-    Focus: 4
+    Energy: 5
+    Focus: 6
   upgrades:
-  - battleSavant
-  - bloodyHands
+  - opportunist
+  - pestilence
 - name: Cassian (level 6)
   blurb: A troubled mercenary, bound but not defeated.
   level: 6
   class: blackguard
   stats:
-    Evasion: 10
+    Evasion: 9
     Defense: 8
     Resilience: 5
     Speed: 4
     Energy: 10
-    Focus: 5
+    Focus: 6
   upgrades:
-  - battleSavant
-  - bloodyHands
-  - veteran
-  - eldritch
+  - opportunist
   - pestilence
-  - ethereal
+  - veteran
+  - bloodyHands
+  - battleSavant
+  - eldritch

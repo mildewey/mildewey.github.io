@@ -14,9 +14,9 @@
 </p>
 <ul>
   <li>
-    <b>Speed </b> grants movement points to the combatant. Each turn the combatant
-    spends those movement points to define their <i>Path of Movement</i>. Movement
-    points expire at the end of the combatant's turn.
+    <b>Speed </b> grants is a resource a combatant spends to define their <i>Path
+    of Movement</i>. Each turn the combatant's speed is restored to their Speed
+    stat value.
   </li>
   <li>
     <b>Evasion </b> helps a combatant resist attacks. When an attack roll is made,
@@ -34,16 +34,19 @@
     defense tokens, allowing them to be regenerated later.
   </li>
   <li>
-    <b>Energy </b> is a resource that a combatant gets when initiative is rolled.
-    Energy is consumed to trigger more powerful actions and to <i>Double Down</i>
-    on actions.
+    <b>Energy </b> is a resource that a combatant spends for powerful actions.
+    Energy can also be used to <i>Double Down</i> on actions. When initiative is
+    rolled, the combatant's Energy is restored to their Energy stat value.
   </li>
   <li>
-    <b>Focus </b> is a resource that a combatant gets at the start of each of their
-    turns. Focus can be used to maintain actions at the beginning of the combatant's
-    turn, noted as a focus cost on the action if the action can be maintained.
-    Unused focus can be spent to increase a combatant's defense, reroll a hit die,
-    or gain an extra movement point.
+    <b>Focus </b> is a resource that a combatant spends in a variety of ways to
+    enhance what they're trying to do. Each turn the combatant's Focus is restored
+    to their Focus stat value. Focus can be used to maintain actions at the beginning
+    of the combatant's turn, noted as a focus cost on the action if the action can
+    be maintained. Unused focus can be spent to increase a combatant's defense against
+    a single attack, one point of defense per Focus spent, reroll a hit die on one
+    of their attacks per focus spent, gain an extra Speed, or traverse Challenging
+    Terrain.
 </ul>
 <h3>Movement and Terrain</h3>
 <p>
@@ -57,12 +60,12 @@
   Each combatant involved in combat remains on one side of the <i>battleground</i>.
 </p>
 <p>
-  Regardless of what actions a combatant performs, a combatant gains movement points
-  equal to their Speed at the start of their turn. Focus points can be converted
-  into movement points. Move actions (discussed later) only augment movement.
+  Regardless of what actions a combatant performs, a combatant gains Speed
+  equal to their Speed stat at the start of their turn. Focus points can be converted
+  into Speed as well. Move actions (discussed later) only augment movement.
   Each turn, the combatant defines a <i>Path of Movement</i> that uses some or all
-  of their movement points. The <i>Path of movement</i> (frequently referred to as
-  simply the <i>"Path"</i>) determines what targets a combatant can apply their
+  of their Speed. The <i>Path of Movement</i> (frequently referred to as
+  simply the "<i>Path</i>") determines what targets a combatant can apply their
   actions to (See the section on <i>Patterns</i>). Once a combatant resolves their
   actions, they return to where they started or ended, provided the space is on
   their side of the <i>battleground</i>. This usually means that combatants have a fixed
@@ -71,17 +74,17 @@
 </p>
 <p>
   Movement is complicated by terrain types. While a basic terrain has no special
-  effects and costs just 1 movement point to enter, there are various specialized
+  effects and costs just 1 Speed to enter, there are various specialized
   terrain types that a combatant may encounter. GMs should feel free to create
   additional, specialized terrain types as long as players understand the rules
   of those terrain types at the start of the combat.
 </p>
 <ul>
   <li>
-    <b>Difficult Terrain </b>costs an extra movement point to enter.
+    <b>Difficult Terrain </b>costs an extra Speed to enter.
   </li>
   <li>
-    <b>Challenging Terrain </b>costs 1 focus or 2 extra movement points to move through.
+    <b>Challenging Terrain </b>costs 1 focus or 2 extra Speed to move through.
   </li>
   <li>
     <b>Barrier Terrain </b>cannot be moved through.
@@ -93,7 +96,7 @@
     <b>Obscuring Terrain </b>reduces the attack value of any attack roll made by 1.
   </li>
   <li>
-    <b>Elevated Terrain </b>costs 2 movement points to enter unless entering the
+    <b>Elevated Terrain </b>costs 2 Speed to enter unless entering the
     space from a higher elevation. Elevation changes more than 2 levels cause the
     adjacent spaces to not be considered adjacent by other rules like attack patterns
     and Zone of Control.
@@ -101,7 +104,7 @@
   <li>
     <b>Zone of Control </b>is exerted by each combatant on the space they occupy as
     well as the spaces adjacent to them. Each space in the Zone of Control costs
-    an extra movement point for enemies to enter. Zones of Control from multiple
+    an extra Speed for enemies to enter. Zones of Control from multiple
     combatants overlap their effect. Many actions add additional effects to Zone of
     Control.
   </li>
@@ -126,7 +129,7 @@
     during their movement. Spaces that are skipped are removed from the Path
     of Movement. Teleportation cannot skip Barriers. It cannot skip Obscuring
     terrain, but it can bypass Liquid Terrain. It ignores all other Terrain
-    types. It costs 1 movement point to enter the space on the other side
+    types. It costs 1 Speed to enter the space on the other side
     of the teleport, regardless of the type of terrain entered. Multiple
     teleportation points can be used simultaneously to skip several spaces
     or broken up to skip multiple times in any combination of spaces that
@@ -143,11 +146,19 @@
   has completed their turns.
 </p>
 <p>
+  The side that goes first in combat is decided by a roll off or a coin toss. The
+  side that wins the roll off or coin toss decides if they will go first or second.
+  The side that goes second places their characters on the battleground first. Then
+  the side that goes first places their characters. The side that goes first only
+  takes one action on their first turn. Then the second side takes a full turn and
+  the two sides alternate taking full turns after that.
+</p>
+<p>
   At the beginning of each side's turn, the combatants perform upkeep actions,
-  most of which are covered by the rules about effects. All combatants in a group
-  should complete this before resolving each combatant's turn, but for efficiency
-  whoever completes their resolutions first can start taking and planning their
-  actions.
+  most of which are covered by the rules about effects. This is also when combatants
+  regenerate Speed and Focus. All combatants in a group should complete
+  this before resolving each combatant's turn, but for efficiency whoever completes
+  their resolutions first can start taking and planning their actions.
 </p>
 <p>
   Each combatant on a team can take two actions. The actions of one combatant
@@ -172,7 +183,7 @@
   <li>
     <b>Move </b> actions are intended to enhance the movement of a combatant. A
     combatant does not have to take a move action to move! A character may (should)
-    define a Path of Movement no matter what.
+    define a <i>Path of Movement</i> no matter what.
   </li>
 </ul>
 <p>
@@ -242,7 +253,7 @@
     roll Hit dice.
   </li>
   <li>
-    <b>Slow</b> tokens reduce the number of <i>Movement Points</i> and <i>Focus</i>
+    <b>Slow</b> tokens reduce the amount of <i>Speed</i> and <i>Focus</i>
     a target gets at the beginning of each turn. The combatant discards a Slow
     token at the beginning of each turn.
   </li>

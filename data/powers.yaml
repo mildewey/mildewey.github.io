@@ -135,7 +135,6 @@ eldritch:
     Effects applied by breaking tokens are applied when tokens are Exposed.
 pestilence:
   name: Pestilence
-  action: Attack
   uses: Passive
   description: >
     Contagion also applies Stun.
@@ -249,14 +248,15 @@ tinyArmy:
 runicShield:
   name: Runic Shield
   action: Guard
-  uses: At-Will
+  uses: Energy
   concentration: 2 Focus
   effects:
   - target: Self
     apply:
     - Vigor
+    - Aegis
 rawTransmutation:
-  name: Raw Transmutation
+  name: Transmute
   action: Move
   repeatable: True
   uses: At-Will

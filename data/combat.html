@@ -1,0 +1,271 @@
+<h1>Combat</h1>
+<p>
+  When combatants in the game use violence to solve their problems, combat ensues.
+  Each combat encounter is played out on a <i>battleground</i>, represented by a hex grid.
+  Each side in combat is given a turn in which each combatant on that side takes actions.
+</p>
+<h3>Combatants and Stats</h3>
+<p>
+  Every participant in a fight is a combatant, but not all combatants are created
+  equal. Characters, controlled by players, have more complex actions and two additional
+  resources to manage: Focus and Energy. Combatants have the following 6 stats,
+  the first four of which are also posessed by the Adversaries controlled by the
+  Game Master:
+</p>
+<ul>
+  <li>
+    <b>Speed </b> grants movement points to the combatant. Each turn the combatant
+    spends those movement points to define their <i>Path of Movement</i>. Movement
+    points expire at the end of the combatant's turn.
+  </li>
+  <li>
+    <b>Evasion </b> helps a combatant resist attacks. When an attack roll is made,
+    the hit die must be greater than Evasion to count.
+  </li>
+  <li>
+    <b>Defense </b> also helps a combatant resist attacks. After seeing if the hit
+    dice are counted, the attack value is calculated. If it's greater than the
+    combatant's Defense, the target's defenses are <i>Broken</i>.
+  </li>
+  <li>
+    <b>Resilience </b> measures how hard it is to finish off a combatant. Each
+    combatant gets Defense Tokens equal to their Resilience. When a target's defenses
+    are broken, these tokens are discarded. Other, lesser hits, may tap these
+    defense tokens, allowing them to be regenerated later.
+  </li>
+  <li>
+    <b>Energy </b> is a resource that a combatant gets when initiative is rolled.
+    Energy is consumed to trigger more powerful actions and to <i>Double Down</i>
+    on actions.
+  </li>
+  <li>
+    <b>Focus </b> is a resource that a combatant gets at the start of each of their
+    turns. Focus can be used to maintain actions at the beginning of the combatant's
+    turn, noted as a focus cost on the action if the action can be maintained.
+    Unused focus can be spent to increase a combatant's defense, reroll a hit die,
+    or gain an extra movement point.
+</ul>
+<h3>Movement and Terrain</h3>
+<p>
+  In Dragonsteel, unlike many other Tabletop Role Playing Games, the <i>battleground</i>
+  is intended to be a conceptual <i>battleground</i> rather than representing the exact
+  terrain the sides fight over. The <i>battleground</i> is laid out on a hexagonal grid
+  such that adjacent hexes run in vertical columns. The <i>battleground</i> is split into
+  two sides with a no-man's land in between. The <i>battleground</i> is symmetrical around
+  the no-man's land which is made of a single column of 6 hexes. Each side has 5,
+  then 4, then 3, then 2 hexes in the columns going out from the central no-man's land.
+  Each combatant involved in combat remains on one side of the <i>battleground</i>.
+</p>
+<p>
+  Regardless of what actions a combatant performs, a combatant gains movement points
+  equal to their Speed at the start of their turn. Focus points can be converted
+  into movement points. Move actions (discussed later) only augment movement.
+  Each turn, the combatant defines a <i>Path of Movement</i> that uses some or all
+  of their movement points. The <i>Path of movement</i> (frequently referred to as
+  simply the <i>"Path"</i>) determines what targets a combatant can apply their
+  actions to (See the section on <i>Patterns</i>). Once a combatant resolves their
+  actions, they return to where they started or ended, provided the space is on
+  their side of the <i>battleground</i>. This usually means that combatants have a fixed
+  place on the <i>battleground</i> somewhere on their side, even though their <i>Path</i>
+  may cross into the enemy's side.
+</p>
+<p>
+  Movement is complicated by terrain types. While a basic terrain has no special
+  effects and costs just 1 movement point to enter, there are various specialized
+  terrain types that a combatant may encounter. GMs should feel free to create
+  additional, specialized terrain types as long as players understand the rules
+  of those terrain types at the start of the combat.
+</p>
+<ul>
+  <li>
+    <b>Difficult Terrain </b>costs an extra movement point to enter.
+  </li>
+  <li>
+    <b>Challenging Terrain </b>costs 1 focus or 2 extra movement points to move through.
+  </li>
+  <li>
+    <b>Barrier Terrain </b>cannot be moved through.
+  </li>
+  <li>
+    <b>Hazardous Terrain </b>requires the combatant to tap or discard a defense token.
+  </li>
+  <li>
+    <b>Obscuring Terrain </b>reduces the attack value of any attack roll made by 1.
+  </li>
+  <li>
+    <b>Elevated Terrain </b>costs 2 movement points to enter unless entering the
+    space from a higher elevation. Elevation changes more than 2 levels cause the
+    adjacent spaces to not be considered adjacent by other rules like attack patterns
+    and Zone of Control.
+  </li>
+  <li>
+    <b>Zone of Control </b>is exerted by each combatant on the space they occupy as
+    well as the spaces adjacent to them. Each space in the Zone of Control costs
+    an extra movement point for enemies to enter. Zones of Control from multiple
+    combatants overlap their effect. Many actions add additional effects to Zone of
+    Control.
+  </li>
+</ul>
+<p>
+  Move actions and passives allow certain combatants to ignore terrain types.
+  Specific actions may give specific benefits, but some movement types are
+  common enough to be named and defined:
+</p>
+<ul>
+  <li>
+    <b>Flight </b>allows combatants to ignore other combatants' Zone of Control
+    unless those combatants also have flight. Flight ignores Difficult Terrain,
+    Elevated Terrain and Challenging Terrain.
+  </li>
+  <li>
+    <b>Climbing </b>allows combatants to treat Elevated terrain of higher levels
+    as difficult terrain instead of Elevated terrain.
+  </li>
+  <li>
+    <b>Teleportation </b>is expressed in a number of spaces that a combatant may skip
+    during their movement. Spaces that are skipped are removed from the Path
+    of Movement. Teleportation cannot skip Barriers. It cannot skip Obscuring
+    terrain, but it can bypass Liquid Terrain. It ignores all other Terrain
+    types. It costs 1 movement point to enter the space on the other side
+    of the teleport, regardless of the type of terrain entered. Multiple
+    teleportation points can be used simultaneously to skip several spaces
+    or broken up to skip multiple times in any combination of spaces that
+    adds up to the number of teleportation points.
+  </li>
+</ul>
+<h3>Turns and Actions</h3>
+<p>
+  During combat, each side takes turns going. Each creature
+  on a side takes two actions during their sides' turn in any order -- the
+  players can either tactically decide who will go first or allow the player
+  that knows what they want to do earliest go first. For each side, the beginning
+  of a round of combat starts with their turn and continues until the enemy
+  has completed their turns.
+</p>
+<p>
+  At the beginning of each side's turn, the combatants perform upkeep actions,
+  most of which are covered by the rules about effects. All combatants in a group
+  should complete this before resolving each combatant's turn, but for efficiency
+  whoever completes their resolutions first can start taking and planning their
+  actions.
+</p>
+<p>
+  Each combatant on a team can take two actions. The actions of one combatant
+  should be resolved before the actions of another combatant, but the effects of
+  the actions of a each combatant can be resolved in whatever order the combatant
+  prefers. The two actions must be of different types:
+</p>
+<ul>
+  <li>
+    <b>Attack </b> actions are intended to harm the enemy and take them out of the fight.
+  </li>
+  <li>
+    <b>Tactics </b> actions are intended to reduce the effectiveness of enemies,
+    increase the effectiveness of the combatant or their allies, or manipulate the
+    battlefield. They may also involve attacks against the enemy, although those
+    attacks rarely break the defenses of the target.
+  </li>
+  <li>
+    <b>Guard </b> actions are intended to protect the combatant or their allies,
+    heal them, or improve their zone of control.
+  </li>
+  <li>
+    <b>Move </b> actions are intended to enhance the movement of a combatant. A
+    combatant does not have to take a move action to move! A character may (should)
+    define a Path of Movement no matter what.
+  </li>
+</ul>
+<p>
+  In addition to the two actions, a combatant may <i>Double Down</i> on an action.
+  To <i>Double Down</i> a combatant must spend an Energy or a Vigor token. The
+  action must be of the same type as one of the other actions taken in the same
+  round. The action may not be the exact same action unless that action is
+  <i>Repeatable</i>.
+</p>
+<p>
+  Attack and Tactics actions may include an attack. Attacks are expressed as a dice
+  equation like 2d*3+4. To resolve this attack, two 12-sided dice (d12s), called
+  hit dice will be rolled and compared to the target's <i>Evasion</i>. Each hit
+  die that is greater than the target's Evasion will count as 1 and be multiplied
+  as shown in the equation. After the dice and multipliers are resolved, any
+  other bonuses are added. The total is called the Attack Value. In the example
+  equation, if one die is greater than the evasion, the Attack Value would be 7 -
+  the possible values would be 4, 7, or 10. Some powers and the Weak effect may
+  alter the Attack Value further. The Attack Value is then compared
+  against the target's <i>Defense</i>. If it's greater, then the target's defense
+  is <i>Broken</i> and the target must discard a <i>Defense Token</i>. If not,
+  then the number is compared to the number of Aegis tokens the target has. If
+  the Attack Value is greater than the number of Aegis tokens, then the target's
+  defenses are <i>Exposed</i> and the target must tap a <i>Defense Token</i> or
+  - if they have no untapped defense tokens - discard a tapped <i>Defense Token</i>.
+  Actions that have an attack included frequently also indicate what happens to
+  targets whose defenses are Exposed or Broken.
+</p>
+<p>
+  Actions also indicate their targets. Actions use one of the following patterns:
+</p>
+<ul>
+  <li>
+    <b>Single, Double, or Triple</b> means the target can be any one,
+    two, or three combatants or spaces on or adjacent to the Path of the combatant
+    taking the action.
+  </li>
+  <li>
+    <b>Line</b> means the targets are all combatants
+    along a contiguous line of hexes that intersects the Path of the combatant
+    taking the action.
+  </li>
+  <li>
+    <b>Burst</b> means the targets are all combatants inside three spaces that are
+    all adjacent to each other. One space must be on or adjacent to the Path
+    of the combatant taking the action.
+  </li>
+  <li>
+    <b>Blast</b> means the targets are all combatants in one central space and all spaces
+    adjacent to that central space. One space must be on or adjacent to the Path
+    of the combatant taking the action.
+  </li>
+  <li>
+    <b>Path</b> means the targets are all combatants along the Path of the combatant
+    taking the action.
+  </li>
+</ul>
+<p>
+  Targets of powers frequently have effects applied to them. Effects are all tracked
+  by tokens given to a target. If tokens are inconvenient, counter boxes may be
+  used to track virtual tokens. Some tokens are positive and some are negative.
+</p>
+<ul>
+  <li>
+    <b>Weak</b> tokens reduce the combatant's <i>Attack Value</i> by 1 for each token.
+    The combatant discards a Weak token each time they use an action that would
+    roll Hit dice.
+  </li>
+  <li>
+    <b>Slow</b> tokens reduce the number of <i>Movement Points</i> and <i>Focus</i>
+    a target gets at the beginning of each turn. The combatant discards a Slow
+    token at the beginning of each turn.
+  </li>
+  <li>
+    <b>Harm</b> tokens cause a target to tap a <i>Defense Token</i> at the
+    beginning of each turn. The target discards all Harm tokens after doing so.
+  </li>
+  <li>
+    <b>Stun</b> tokens cause a target to only be able to take one action on their
+    turn. They then discard a token. The target may still <i>Double Down</i> on that action.
+  </li>
+  <li>
+    <b>Hero</b> tokens may be discarded with any other token the combatant has
+    at the beginning of their turn before the other effects of that token are applied.
+  </li>
+  <li>
+    <b>Vigor</b> tokens may be spent in place of energy to <i>Double Down</i>
+    on an action.
+  </li>
+  <li>
+    <b>Aegis</b> tokens reduce the effectiveness of incoming attacks as explained
+    in the section about resolving attacks. At the beginning of a combatant's turn, an Aegis
+    token must be discarded for each <i>Defense token</i> that is tapped. For each
+    Aegis token discarded like this, a <i>Defense token</i> is untapped.
+  </li>
+</ul>

@@ -94,3 +94,31 @@
   - bloodyHands
   - battleSavant
   - eldritch
+- name: Heimlich
+  blurb: A Lich-to-be
+  level: 2
+  class: necrophage
+  stats:
+    Evasion: 4
+    Defense: 4
+    Resilience: 6
+    Speed: 7
+    Energy: 8
+    Focus: 5
+  upgrades:
+  - arcaneIntellect
+  - eldritch
+- name: Lucious
+  blurb: A Demon Slayer
+  level: 2
+  class: duelist
+  stats:
+    Evasion: 4
+    Defense: 4
+    Resilience: 6
+    Speed: 7
+    Energy: 8
+    Focus: 5
+  upgrades:
+  - sureFooted
+  - paragon

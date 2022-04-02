@@ -18,3 +18,18 @@ wyrmblade:
   archetypes:
   - myrmidon
   - dragonblood
+dracoknight:
+  name: Dracoknight
+  archetypes:
+  - knight
+  - dragonblood
+necrophage:
+  name: Necrophage
+  archetypes:
+  - warlock
+  - artificer
+duelist:
+  name: Duelist
+  archetypes:
+  - swashbuckler
+  - knight

@@ -195,13 +195,49 @@ goblin:
   name: Goblin
   flavor: It's green, ugly, and hates you.
   class: Minion
-  level: 2
+  level: 1
   stats:
-    Evasion: 8
-    Defense: 5
-    Resilience: 4
-    Speed: 5
-  powers: []
+    Evasion: 6
+    Defense: 4
+    Resilience: 2
+    Speed: 7
+  powers:
+    skirmish:
+      name: Skirmish
+      action: Attack
+      effects:
+      - target: Self
+        apply:
+        - Ignore Difficult Terrain
+      - target: Single
+        apply:
+        - 1d*8
+      - target: Broken
+        apply:
+        - Slow
+    pepper:
+      name: Pepper
+      action: Tactics
+      effects:
+      - target: Single
+        apply:
+        - Weak
+    hide:
+      name: Hide
+      action: Guard
+      effects:
+      - target: Self
+        apply:
+        - Aegis
+        - Hero
+    lightFoot:
+      name: Light Foot
+      action: Move
+      effects:
+      - target: Self
+        apply:
+        - Ignore Hazardous Terrain
+        - Vigor
 
 bugbear:
   name: Bugbear
@@ -229,27 +265,108 @@ bugbearAlpha:
 
 hobgoblin:
   name: Hobgoblin
-  flavor: Hobgoblins are known for their fanatic devotion to the God of Battle.
-  class: Mob
-  level: 3
+  flavor: Hobgoblins are known for devotion to the God of Battle.
+  class: Soldier
+  level: 2
   stats:
     Evasion: 8
-    Defense: 5
+    Defense: 6
     Resilience: 5
     Speed: 5
-  powers: []
+  powers:
+    hack:
+      name: Hack
+      action: Attack
+      effects:
+      - target: Single
+        apply:
+        - 3d*4
+      - target: Broken
+        apply:
+        - Slow
+        - Harm
+    flank:
+      name: Flank
+      action: Tactics
+      effects:
+      - target: Single
+        apply:
+        - 2d
+      - target: Exposed
+        apply:
+        - Weak
+        - Weak
+    shieldWall:
+      name: Shield Wall
+      action: Guard
+      effects:
+      - target: Self
+        apply:
+        - Aegis
+      - target: Single
+        apply:
+        - Aegis
+    charge:
+      name: Charge
+      action: Move
+      effects:
+      - target: Self
+        apply:
+        - Ignores Challenging Terrain
 
 hobgoblinMyrmidon:
   name: Hobgoblin Myrmidon
-  flavor: The battle grace before you and the aura of command set this hobgoblin apart.
-  class: Elite
+  flavor: The aura of grace and command set this hobgoblin apart.
+  class: Boss
   level: 3
   stats:
     Evasion: 8
     Defense: 6
     Resilience: 6
     Speed: 5
-  powers: []
+  powers:
+    maim:
+      name: Maim
+      action: Attack
+      effects:
+      - target: Double
+        apply:
+        - 1d*12
+      - target: Broken
+        apply:
+        - Stun
+    intimidate:
+      name: Intimidate
+      action: Tactics
+      effects:
+      - target: Single
+        apply:
+        - 2d*3
+      - target: Exposed
+        apply:
+        - Weak
+        - Weak
+        - Slow
+        - Slow
+    reinforce:
+      name: Reinforce
+      action: Guard
+      effects:
+      - target: Double
+        apply:
+        - Vigor
+        - Aegis
+    whirlingDeath:
+      name: Whirling Death
+      action: Move
+      effects:
+      - target: Self
+        apply:
+        - Ignore Zone
+      - target: Path
+        apply:
+        - Harm
+
 
 goblinWarlord:
   name: Goblin Warlord

@@ -1,7 +1,9 @@
 - name: Kasimir (level 2)
   blurb: A ne'er do well with more power than he deserves.
   level: 2
-  class: sailsword
+  archetypes:
+  - zephyr
+  - swashbuckler
   stats:
     Evasion: 8
     Defense: 4
@@ -15,7 +17,9 @@
 - name: Kasimir (level 6)
   blurb: A ne'er do well with more power than he deserves.
   level: 6
-  class: sailsword
+  archetypes:
+  - zephyr
+  - swashbuckler
   stats:
     Evasion: 8
     Defense: 8
@@ -33,7 +37,9 @@
 - name: Golem (level 2)
   blurb: A patriot and a hero.
   level: 2
-  class: arcaneFortress
+  archetypes:
+  - knight
+  - artificer
   stats:
     Evasion: 7
     Defense: 8
@@ -47,7 +53,9 @@
 - name: Golem (level 6)
   blurb: A patriot and a hero.
   level: 6
-  class: arcaneFortress
+  archetypes:
+  - knight
+  - artificer
   stats:
     Evasion: 7
     Defense: 8
@@ -65,7 +73,9 @@
 - name: Cassian (level 2)
   blurb: A troubled mercenary, bound but not defeated.
   level: 2
-  class: blackguard
+  archetypes:
+  - myrmidon
+  - warlock
   stats:
     Evasion: 6
     Defense: 8
@@ -79,7 +89,9 @@
 - name: Cassian (level 6)
   blurb: A troubled mercenary, bound but not defeated.
   level: 6
-  class: blackguard
+  archetypes:
+  - myrmidon
+  - warlock
   stats:
     Evasion: 9
     Defense: 8
@@ -97,7 +109,9 @@
 - name: Heimlich
   blurb: A Lich-to-be
   level: 2
-  class: necrophage
+  archetypes:
+  - warlock
+  - artificer
   stats:
     Evasion: 4
     Defense: 4
@@ -111,7 +125,9 @@
 - name: Lucious
   blurb: A Demon Slayer
   level: 2
-  class: duelist
+  archetypes:
+  - swashbuckler
+  - knight
   stats:
     Evasion: 4
     Defense: 4

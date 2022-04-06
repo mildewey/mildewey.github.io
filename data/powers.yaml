@@ -152,7 +152,7 @@ vampiric:
 ethereal:
   name: Ethereal
   action: Passive
-  description: You gain Resistance +3.
+  description: You gain an Aegis token at the beginning of each round.
 
 # Knight
 charge:
@@ -191,6 +191,8 @@ overpower:
   action: Move
   uses: At-Will
   effects:
+  - target: Self
+    - Ignore Zone
   - target: Path
     apply:
     - Harm
@@ -233,7 +235,8 @@ shoulderCannon:
   effects:
   - target: Burst
     apply:
-    - 4d*4
+    - 3d*4
+  - target: Broken
     - Stun
 tinyArmy:
   name: Tiny Army
@@ -307,7 +310,7 @@ callLightning:
   effects:
   - target: Single
     apply:
-    - 3d*4
+    - 4d*4
   - target: Broken
     apply:
     - Stun
@@ -333,7 +336,7 @@ mistyFigure:
   - target: Self
     apply:
     - Aegis
-    - Resistance +2
+    - Aegis
 flight:
   name: Flight
   action: Move
@@ -382,6 +385,7 @@ lunge:
   effects:
   - target: Single
     apply:
+    - 2d*5
     - 2d*5
   - target: Exposed
     apply:
@@ -446,16 +450,16 @@ rapidStrikes:
   name: Rapid Strikes
   action: Passive
   description: >
-    You may double down on an attack action twice -- making three attacks.
+    You may double down on the attack action twice -- making three attacks.
 
 
 #Dragonblood
 fireBreath:
   name: Fire Breath
   action: Attack
-  uses: At-Will
+  uses: Energy
   effects:
-  - target: Burst
+  - target: Blast
     apply:
     - 2d*4
   - target: Exposed
@@ -511,7 +515,7 @@ fireStorm:
   name: Fire Storm
   action: Passive
   description: >
-    Fire Breath becomes repeatable. You can concentrate on Fire Breath for 4 Focus.
+    You can concentrate on Fire Breath for 4 Focus.
     You can only maintain one instance of Fire Breath at a time.
 ancestralForm:
   name: Ancestral Form

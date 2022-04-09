@@ -192,6 +192,7 @@ overpower:
   uses: At-Will
   effects:
   - target: Self
+    apply:
     - Ignore Zone
   - target: Path
     apply:
@@ -237,6 +238,7 @@ shoulderCannon:
     apply:
     - 3d*4
   - target: Broken
+    apply:
     - Stun
 tinyArmy:
   name: Tiny Army

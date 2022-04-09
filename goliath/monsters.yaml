@@ -1,0 +1,453 @@
+smokeMephit:
+  name: Smoke Mephit
+  flavor: The smoky figure is both frolicsome and fierce.
+  class: Skirmisher
+  level: 1
+  stats:
+    Evasion: 7
+    Defense: 5
+    Resilience: 2
+    Speed: 7
+  powers:
+    sear:
+      name: Sear
+      action: Attack
+      effects:
+      - target: Single
+        apply:
+        - 1d*8
+      - target: Exposed
+        apply:
+        - Weak
+    puff:
+      name: Puff
+      action: Tactics
+      effects:
+      - target: Self
+        apply:
+        - Remove Slow
+        - Remove Slow
+        - Remove Slow
+    wisp:
+      name: Wisp
+      action: Guard
+      effects:
+      - target: Self
+        apply:
+        - Resistance +5
+    drift:
+      name: Drift
+      action: Move
+      effects:
+      - target: Self
+        apply:
+        - Ignore Hazardous Terrain
+        - Ignore Zone
+
+mudMephit:
+  name: Mud Mephit
+  flavor: The muddy terrain before you bubbles up into a dripping, prancing imp.
+  class: Skirmisher
+  level: 1
+  stats:
+    Evasion: 6
+    Defense: 7
+    Resilience: 2
+    Speed: 5
+  powers:
+    fling:
+      name: Fling
+      action: Attack
+      effects:
+      - target: Single
+        apply:
+        - 2d*4
+      - target: Exposed
+        apply:
+        - Slow
+    mud:
+      name: Mud
+      action: Tactics
+      effects:
+      - target: Self
+        apply:
+        - Remove Weak
+        - Remove Weak
+        - Remove Weak
+    meld:
+      name: Meld
+      action: Guard
+      effects:
+      - target: Self
+        apply:
+        - Resistance +5
+    gloop:
+      name: Gloop
+      action: Move
+      effects:
+      - target: Self
+        apply:
+        - Ignore Difficult Terrain
+        - Ignore Challenging Terrain
+
+townGuard:
+  name: Town Guard
+  flavor: The uniform tabard is well kept, but shows signs of wear.
+  class: Minion
+  level: 2
+  stats:
+    Evasion: 8
+    Defense: 7
+    Resilience: 1
+    Speed: 4
+  powers:
+    cleave:
+      name: Cleave
+      action: Attack
+      uses: At-Will
+      effects:
+      - target: Double
+        apply:
+        - 2d*4
+      - target: Broken
+        apply:
+        - Weak
+        - Slow
+    watchsDiscipline:
+      name: Watch's Discipline
+      action: Guard
+      uses: At-Will
+      effects:
+      - target: Single
+        apply:
+        - Hero
+        - Aegis
+    reachAdvantage:
+      name: Reach Advantage
+      action: Guard
+      uses: At-Will
+      effects:
+      - target: Zone
+        apply:
+        - +1 Movement Point Cost
+
+townGuardArcher:
+  name: Town Guard Archer
+  flavor: The uniform tabard is well kept, but shows signs of wear.
+  class: Minion
+  level: 2
+  stats:
+    Evasion: 6
+    Defense: 6
+    Resilience: 1
+    Speed: 6
+  powers:
+    loose:
+      name: Loose
+      action: Attack
+      uses: At-Will
+      effects:
+      - target: Single
+        apply:
+        - 1d*12
+    volley:
+      name: Volley
+      action: Tactics
+      uses: At-Will
+      effects:
+      - target: Single
+        apply:
+        - Harm
+    watchsDiscipline:
+      name: Watch's Discipline
+      action: Guard
+      uses: At-Will
+      effects:
+      - target: Single
+        apply:
+        - Hero
+        - Aegis
+    skirmisher:
+      name: Skirmisher
+      flavor: The advantage of a polearm's reach makes it more difficult to outflank him.
+      action: Move
+      uses: At-Will
+      effects:
+      - target: Self
+        apply:
+        - Ignore Challenging Terrain
+        - Ignore Difficult Terrain
+        - Ignore Zone of Control
+
+direWolf:
+  name: Dire Wolf
+  flavor: This hungry creature is a grim sight in the wilderness.
+  class: Boss
+  level: 1
+  stats:
+    Evasion: 7
+    Defense: 6
+    Resilience: 6
+    Speed: 8
+  powers: []
+
+goblin:
+  name: Goblin
+  flavor: It's green, ugly, and hates you.
+  class: Minion
+  level: 1
+  stats:
+    Evasion: 6
+    Defense: 4
+    Resilience: 2
+    Speed: 7
+  powers:
+    skirmish:
+      name: Skirmish
+      action: Attack
+      effects:
+      - target: Self
+        apply:
+        - Ignore Difficult Terrain
+      - target: Single
+        apply:
+        - 1d*8
+      - target: Broken
+        apply:
+        - Slow
+    pepper:
+      name: Pepper
+      action: Tactics
+      effects:
+      - target: Single
+        apply:
+        - Weak
+    hide:
+      name: Hide
+      action: Guard
+      effects:
+      - target: Self
+        apply:
+        - Aegis
+        - Hero
+    lightFoot:
+      name: Light Foot
+      action: Move
+      effects:
+      - target: Self
+        apply:
+        - Ignore Hazardous Terrain
+        - Vigor
+
+bugbear:
+  name: Bugbear
+  flavor: You didn't see the hairy monstrosity until it was strangling you.
+  class: Elite
+  level: 2
+  stats:
+    Evasion: 5
+    Defense: 7
+    Resilience: 8
+    Speed: 5
+  powers: []
+
+bugbearAlpha:
+  name: Bugbear Alpha
+  flavor: Bigger, hairier, smellier.
+  class: Apex
+  level: 2
+  stats:
+    Evasion: 6
+    Defense: 7
+    Resilience: 9
+    Speed: 5
+  powers: []
+
+hobgoblin:
+  name: Hobgoblin
+  flavor: Hobgoblins are known for devotion to the God of Battle.
+  class: Soldier
+  level: 2
+  stats:
+    Evasion: 8
+    Defense: 6
+    Resilience: 5
+    Speed: 5
+  powers:
+    hack:
+      name: Hack
+      action: Attack
+      effects:
+      - target: Single
+        apply:
+        - 3d*4
+      - target: Broken
+        apply:
+        - Slow
+        - Harm
+    flank:
+      name: Flank
+      action: Tactics
+      effects:
+      - target: Single
+        apply:
+        - 2d
+      - target: Exposed
+        apply:
+        - Weak
+        - Weak
+    shieldWall:
+      name: Shield Wall
+      action: Guard
+      effects:
+      - target: Self
+        apply:
+        - Aegis
+      - target: Single
+        apply:
+        - Aegis
+    charge:
+      name: Charge
+      action: Move
+      effects:
+      - target: Self
+        apply:
+        - Ignores Challenging Terrain
+
+hobgoblinMyrmidon:
+  name: Hobgoblin Myrmidon
+  flavor: The aura of grace and command set this hobgoblin apart.
+  class: Boss
+  level: 3
+  stats:
+    Evasion: 8
+    Defense: 6
+    Resilience: 6
+    Speed: 5
+  powers:
+    maim:
+      name: Maim
+      action: Attack
+      effects:
+      - target: Double
+        apply:
+        - 1d*12
+      - target: Broken
+        apply:
+        - Stun
+    intimidate:
+      name: Intimidate
+      action: Tactics
+      effects:
+      - target: Single
+        apply:
+        - 2d*3
+      - target: Exposed
+        apply:
+        - Weak
+        - Weak
+        - Slow
+        - Slow
+    reinforce:
+      name: Reinforce
+      action: Guard
+      effects:
+      - target: Double
+        apply:
+        - Vigor
+        - Aegis
+    whirlingDeath:
+      name: Whirling Death
+      action: Move
+      effects:
+      - target: Self
+        apply:
+        - Ignore Zone
+      - target: Path
+        apply:
+        - Harm
+
+
+goblinWarlord:
+  name: Goblin Warlord
+  flavor: The insanity of its grin is the first sign of trouble.
+  class: Apex
+  level: 3
+  stats:
+    Evasion: 7
+    Defense: 5
+    Resilience: 8
+    Speed: 7
+  powers: []
+
+direTiger:
+  name: Dire Tiger
+  flavor: 12 inch teeth can do quite a bit of maiming.
+  class: Mob
+  level: 4
+  stats:
+    Evasion: 6
+    Defense: 6
+    Resilience: 6
+    Speed: 10
+  powers: []
+
+salamanderMage:
+  name: Salamander Mage
+  flavor: Dispassionate malevolence
+  class: Elite
+  level: 4
+  stats:
+    Evasion: 5
+    Defense: 5
+    Resilience: 6
+    Speed: 5
+  powers: []
+
+youngDragon:
+  name: Young Dragon
+  flavor: wings, claws, teeth, fear, death
+  class: Apex
+  level: 4
+  stats:
+    Evasion: 5
+    Defense: 8
+    Resilience: 8
+    Speed: 6
+  powers: []
+
+stoneGiant:
+  name: Stone Giant
+  flavor: 12 feet tall with literally flint skin.
+  class: Mob
+  level: 5
+  stats:
+    Evasion: 4
+    Defense: 10
+    Resilience: 10
+    Speed: 6
+  powers: []
+
+boneDevil:
+  name: Bone Devil
+  flavor: The protrusions and bone weapons are terrifying
+  class: Elite
+  level: 5
+  stats:
+    Evasion: 6
+    Defense: 10
+    Resilience: 10
+    Speed: 5
+  powers: []
+
+adultDragon:
+  name: Adult Dragon
+  flavor: Magesty incarnate.
+  class: Apex
+  level: 5
+  stats:
+    Evasion: 7
+    Defense: 10
+    Resilience: 10
+    Speed: 6
+  powers: []

@@ -1,0 +1,81 @@
+primaryWeapons:
+  name: Primary Weapons
+  equipment:
+    plasmaLance:
+      name: Plasma Lance
+      powers:
+        plasmaLance:
+          name: Plasma Lance
+          action: Attack
+          uses: Energy
+          effects:
+          - target: Line
+            apply:
+            - 3d*3
+          - target: Exposed
+            apply:
+            - Weak
+            - Weak
+    havocRing:
+      name: Havoc Ring
+      powers:
+        havocRing:
+          name: Havoc Ring
+          action: Attack
+          uses: Energy
+          effects:
+          - target: Line
+            apply:
+            - 1d*12
+          - target: Exposed
+            apply:
+            - Stun
+          - target: Broken
+            apply:
+            - Stun
+    laserTurret:
+      name: Laser Turret
+      powers:
+        laserTurret:
+          name: Laser Turret
+          action: Attack
+          uses: Energy
+          effects:
+          - target: Triple
+            apply:
+            - 2d*5
+          - target: Broken
+            apply:
+            - Harm
+secondaryWeapons:
+  name: Secondary Weapons
+  equipment:
+    laserCannon:
+      name: Laser Cannon
+      powers:
+        laserCannon:
+          name: Laser Cannon
+          action: Attack
+          uses: At-Will
+          effects:
+          - target: Single
+            apply:
+            - 3d*3
+          - target: Broken
+            apply:
+            - Harm
+    energyBlade:
+      name: Energy Blade
+      powers:
+        energyBlade:
+          name: Energy Blade
+          action: Attack
+          uses: At-Will
+          effects:
+          - target: Double
+            apply:
+            - 1d*10
+          - target: Broken
+            apply:
+            - Weak
+            - 1d*10

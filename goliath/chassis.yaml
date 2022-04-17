@@ -1,0 +1,240 @@
+goliath:
+  name: Goliath
+  slots:
+  - primaryWeapon
+  - secondaryWeapon
+  - secondaryWeapon
+  - compute
+  - armor
+  - armor
+  - armor
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 4
+    Defense: 7
+    Resilience: 5
+    Speed: 4
+    Energy: 6
+    Focus: 4
+hercules:
+  name: Hercules
+  slots:
+  - primaryWeapon
+  - secondaryWeapon
+  - secondaryWeapon
+  - compute
+  - armor
+  - armor
+  - armor
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 5
+    Defense: 6
+    Resilience: 7
+    Speed: 4
+    Energy: 4
+    Focus: 4
+minotaur:
+  name: Minotaur
+  slots:
+  - primaryWeapon
+  - secondaryWeapon
+  - secondaryWeapon
+  - compute
+  - compute
+  - armor
+  - core
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 6
+    Defense: 4
+    Resilience: 4
+    Speed: 7
+    Energy: 5
+    Focus: 4
+chevalier:
+  name: Chevalier
+  slots:
+  - primaryWeapon
+  - secondaryWeapon
+  - secondaryWeapon
+  - compute
+  - compute
+  - armor
+  - core
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 7
+    Defense: 5
+    Resilience: 3
+    Speed: 6
+    Energy: 4
+    Focus: 5
+orion:
+  name: Orion
+  slots:
+  - primaryWeapon
+  - primaryWeapon
+  - secondaryWeapon
+  - compute
+  - compute
+  - armor
+  - core
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 6
+    Defense: 4
+    Resilience: 4
+    Speed: 5
+    Energy: 6
+    Focus: 5
+diana:
+  name: Diana
+  slots:
+  - primaryWeapon
+  - primaryWeapon
+  - secondaryWeapon
+  - compute
+  - compute
+  - armor
+  - core
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 5
+    Defense: 5
+    Resilience: 3
+    Speed: 8
+    Energy: 6
+    Focus: 3
+hela:
+  name: Hela
+  slots:
+  - primaryWeapon
+  - primaryWeapon
+  - secondaryWeapon
+  - compute
+  - compute
+  - armor
+  - armor
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 4
+    Defense: 6
+    Resilience: 3
+    Speed: 4
+    Energy: 8
+    Focus: 5
+balor:
+  name: Balor
+  slots:
+  - primaryWeapon
+  - primaryWeapon
+  - secondaryWeapon
+  - compute
+  - compute
+  - armor
+  - armor
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 5
+    Defense: 6
+    Resilience: 4
+    Speed: 4
+    Energy: 7
+    Focus: 4
+nightOwl:
+  name: Night Owl
+  slots:
+  - primaryWeapon
+  - secondaryWeapon
+  - compute
+  - compute
+  - compute
+  - armor
+  - core
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 6
+    Defense: 3
+    Resilience: 3
+    Speed: 5
+    Energy: 6
+    Focus: 7
+rogue:
+  name: Rogue
+  slots:
+  - primaryWeapon
+  - secondaryWeapon
+  - compute
+  - compute
+  - compute
+  - armor
+  - core
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 6
+    Defense: 5
+    Resilience: 3
+    Speed: 6
+    Energy: 5
+    Focus: 5
+chihuahua:
+  name: Chihuahua
+  slots:
+  - primaryWeapon
+  - secondaryWeapon
+  - compute
+  - compute
+  - compute
+  - armor
+  - armor
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 8
+    Defense: 3
+    Resilience: 3
+    Speed: 5
+    Energy: 5
+    Focus: 6
+theseus:
+  name: Theseus
+  slots:
+  - primaryWeapon
+  - secondaryWeapon
+  - compute
+  - compute
+  - compute
+  - armor
+  - armor
+  - core
+  - core
+  - core
+  stats:
+    Evasion: 5
+    Defense: 5
+    Resilience: 5
+    Speed: 5
+    Energy: 5
+    Focus: 5

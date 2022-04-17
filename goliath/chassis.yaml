@@ -1,16 +1,26 @@
 goliath:
   name: Goliath
   slots:
-  - primaryWeapon
-  - secondaryWeapon
-  - secondaryWeapon
-  - compute
-  - armor
-  - armor
-  - armor
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Armor
+    type: armor
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 4
     Defense: 7
@@ -21,16 +31,26 @@ goliath:
 hercules:
   name: Hercules
   slots:
-  - primaryWeapon
-  - secondaryWeapon
-  - secondaryWeapon
-  - compute
-  - armor
-  - armor
-  - armor
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Armor
+    type: armor
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 5
     Defense: 6
@@ -41,16 +61,26 @@ hercules:
 minotaur:
   name: Minotaur
   slots:
-  - primaryWeapon
-  - secondaryWeapon
-  - secondaryWeapon
-  - compute
-  - compute
-  - armor
-  - core
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 6
     Defense: 4
@@ -61,16 +91,26 @@ minotaur:
 chevalier:
   name: Chevalier
   slots:
-  - primaryWeapon
-  - secondaryWeapon
-  - secondaryWeapon
-  - compute
-  - compute
-  - armor
-  - core
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 7
     Defense: 5
@@ -81,16 +121,26 @@ chevalier:
 orion:
   name: Orion
   slots:
-  - primaryWeapon
-  - primaryWeapon
-  - secondaryWeapon
-  - compute
-  - compute
-  - armor
-  - core
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 6
     Defense: 4
@@ -101,16 +151,26 @@ orion:
 diana:
   name: Diana
   slots:
-  - primaryWeapon
-  - primaryWeapon
-  - secondaryWeapon
-  - compute
-  - compute
-  - armor
-  - core
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 5
     Defense: 5
@@ -121,16 +181,26 @@ diana:
 hela:
   name: Hela
   slots:
-  - primaryWeapon
-  - primaryWeapon
-  - secondaryWeapon
-  - compute
-  - compute
-  - armor
-  - armor
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 4
     Defense: 6
@@ -141,16 +211,26 @@ hela:
 balor:
   name: Balor
   slots:
-  - primaryWeapon
-  - primaryWeapon
-  - secondaryWeapon
-  - compute
-  - compute
-  - armor
-  - armor
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 5
     Defense: 6
@@ -161,16 +241,26 @@ balor:
 nightOwl:
   name: Night Owl
   slots:
-  - primaryWeapon
-  - secondaryWeapon
-  - compute
-  - compute
-  - compute
-  - armor
-  - core
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 6
     Defense: 3
@@ -181,16 +271,26 @@ nightOwl:
 rogue:
   name: Rogue
   slots:
-  - primaryWeapon
-  - secondaryWeapon
-  - compute
-  - compute
-  - compute
-  - armor
-  - core
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 6
     Defense: 5
@@ -201,16 +301,26 @@ rogue:
 chihuahua:
   name: Chihuahua
   slots:
-  - primaryWeapon
-  - secondaryWeapon
-  - compute
-  - compute
-  - compute
-  - armor
-  - armor
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 8
     Defense: 3
@@ -221,16 +331,26 @@ chihuahua:
 theseus:
   name: Theseus
   slots:
-  - primaryWeapon
-  - secondaryWeapon
-  - compute
-  - compute
-  - compute
-  - armor
-  - armor
-  - core
-  - core
-  - core
+  - name: Primary Weapon
+    type: primaryWeapon
+  - name: Secondary Weapon
+    type: secondaryWeapon
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Compute
+    type: compute
+  - name: Armor
+    type: armor
+  - name: Armor
+    type: armor
+  - name: Core
+    type: core
+  - name: Core
+    type: core
+  - name: Core
+    type: core
   stats:
     Evasion: 5
     Defense: 5

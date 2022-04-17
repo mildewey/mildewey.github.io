@@ -1,4 +1,4 @@
-primaryWeapons:
+primaryWeapon:
   name: Primary Weapons
   equipment:
     plasmaLance:
@@ -47,7 +47,7 @@ primaryWeapons:
           - target: Broken
             apply:
             - Harm
-secondaryWeapons:
+secondaryWeapon:
   name: Secondary Weapons
   equipment:
     laserCannon:

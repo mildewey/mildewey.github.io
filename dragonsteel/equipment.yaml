@@ -1,3 +1,14 @@
 weapon:
   name: Weapons
-  equipment: []
+  equipment: stormshield
+      flavor: This Stormshield, imbued with the power of the Tempest, crackles with energy that strikes back at any attacker.
+      action: Guard
+      uses: Energy
+      concentration: 1 Focus
+      effects:
+      - target: Self
+        apply:
+        - Aegis
+      - target: Revenge
+        apply:
+        - 2d*4

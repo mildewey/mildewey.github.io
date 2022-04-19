@@ -1,3 +1,74 @@
 weapon:
   name: Weapons
-  equipment: []
+  equipment: khansEdge
+      flavor: The Khan's Edge is a magical saber, imbued with the power of a cavalry charge.
+      action: Attack
+      uses: At-Will
+      repeatable: True
+      effects:
+      - target: Path
+        apply:
+        - 3d*3
+      - target: Exposed
+        apply:
+        - Harm
+   equipment: wandofFarah
+      flavor: The Wand of Farah oozes with necrotic energy and feels cold to the touch.
+      action: Attack
+      uses: Energy
+      effects:
+      - target: Burst
+        apply:
+        - 3d*3
+      - target: Exposed
+        apply:
+        - Harm
+        - Weak
+   equipment: sieleeStiletto
+      flavor: A thin blade forged in Faerie Fire.
+      action: Attack
+      uses: At-Will
+      repeatable: True
+      effects:
+      - target: Single
+        apply:
+        - 3d*5
+   equipment: phosphorosHammer
+      flavor: A warhammer, forged in phosphoric ferrite, and set with the runes Ash-Loh-Jer. 
+         While it takes the strength of five men to wield,It roils the ground when it strikes.
+      action: Attack
+      uses: Energy
+      effects:
+      - target: Burst
+        apply:
+        - 4d*4
+      - target: Exposed
+        apply:
+        - Weak
+        - Weak
+      - target: Broken
+        apply:
+        - Stun
+   
+secondary:
+  name: Secondary
+  equipment: stormshield
+      flavor: This Stormshield, imbued with the power of the Tempest, crackles with energy that strikes back at any attacker.
+      action: Guard
+      uses: Energy
+      concentration: 1 Focus
+      effects:
+      - target: Self
+        apply:
+        - Aegis
+      - target: Revenge
+        apply:
+        - 2d*4
+        
+core:
+  name: Core
+  equipment: beltOfVigor
+      flavor: A Belt of Vigor, imbued with sun stones and the runes Ohr-Khet
+      action: Passive
+      description: >
+        Gain 2 Vigor token at the beginning of each combat.

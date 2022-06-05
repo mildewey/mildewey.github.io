@@ -5,15 +5,7 @@
   main {
   }
 
-  aside {
-    display: none;
-  }
-
   header {
-  }
-
-  nav {
-    display: none;
   }
 
   div.context {
@@ -48,7 +40,19 @@
 	  grid-auto-rows: minmax(100px, auto);
 	}
 
+  article {
+    column-count: 2;
+  }
+
+  nav {
+    display: none;
+  }
+
   footer {
+    display: none;
+  }
+
+  aside {
     display: none;
   }
 }

@@ -75,7 +75,25 @@
 
 	div.content {
 		grid-area: content;
-		overflow-y: scroll;
 		height: 100%;
+		width: 100%;
+		overflow-y: scroll;
+
+		display: grid;
+		grid-template-columns: auto 250px;
+		grid-template-rows: auto auto 2rem;
+		grid-template-areas:
+			"article aside";
+		grid-gap: 10px;
+	}
+
+	article {
+		grid-area: article;
+		overflow-y: scroll;
+	}
+
+	aside {
+		grid-area: aside;
+		overflow-y: scroll;
 	}
 }

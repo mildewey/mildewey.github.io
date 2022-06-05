@@ -152,6 +152,10 @@ div.vertical-section + div.vertical-section {
 	margin-bottom: 5px;
 }
 
+div.power + div.power {
+	margin-top: 1rem;
+}
+
 table + table {
 	margin-top: 1rem;
 }
@@ -280,7 +284,8 @@ button.navigation.active {
 
 table.statblock {
 	text-align: left;
-	margin-right: 15px;
+	margin: 1rem;
+	width: max-content;
 }
 
 td.stat {

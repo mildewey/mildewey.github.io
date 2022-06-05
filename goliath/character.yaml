@@ -1,0 +1,13 @@
+goliathPilot:
+  name: Goliath Pilot
+  tags:
+  - character
+  slots:
+    class:
+      name: Pilot Class
+      allowedTags:
+      - archetype
+    chassis:
+      name: Goliath Chassis
+      allowedTags:
+      - chassis

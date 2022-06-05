@@ -1,0 +1,13 @@
+name: Goliath
+elements:
+- /goliath/archetypes.yaml
+- /goliath/armor.yaml
+- /goliath/chassis.yaml
+- /goliath/compute.yaml
+- /goliath/core.yaml
+- /goliath/weapon.yaml
+- /goliath/character.yaml
+adversaries:
+- /goliath/adversaries.yaml
+prototypes:
+- /goliath/prototypes.yaml

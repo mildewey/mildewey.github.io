@@ -1,6 +1,6 @@
 myrmidon:
   name: Myrmidon
-  basePowers:
+  powers:
     practicedStrike:
       name: Practiced Strike
       flavor: Practice until it becomes instinct, then practice some more.
@@ -81,7 +81,7 @@ myrmidon:
         Your Zone of Control is a 3x3 square centered on you.
 warlock:
   name: Warlock
-  basePowers:
+  powers:
     deathlyGaze:
       name: Deathly Gaze
       flavor: The pain of death is manifest in your visage
@@ -157,7 +157,7 @@ warlock:
       description: You gain an Aegis token at the beginning of each round.
 knight:
   name: Knight
-  basePowers:
+  powers:
     charge:
       name: Charge
       action: Attack
@@ -232,7 +232,7 @@ knight:
         your allies.
 artificer:
   name: Artificer
-  basePowers:
+  powers:
     shoulderCannon:
       name: Shoulder Cannon
       action: Attack
@@ -306,7 +306,7 @@ artificer:
         When you spend Energy, you gain a Vigor token.
 zephyr:
   name: Zephyr
-  basePowers:
+  powers:
     callLightning:
       name: Call Lightning
       action: Attack
@@ -380,7 +380,7 @@ zephyr:
         When you take a Move action, you gain Teleport 2 and a Vigor token.
 swashbuckler:
   name: Swashbuckler
-  basePowers:
+  powers:
     lunge:
       name: Lunge
       flavor: You dart in for a powerful strike.
@@ -458,7 +458,7 @@ swashbuckler:
         You may double down on the attack action twice -- making three attacks.
 dragonblood:
   name: Dragonblood
-  basePowers:
+  powers:
     fireBreath:
       name: Fire Breath
       action: Attack

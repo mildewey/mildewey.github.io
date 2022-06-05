@@ -1,360 +1,592 @@
 goliath:
   name: Goliath
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Armor
-    type: armor
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    secondary2:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    armor2:
+      name: Armor
+      allowedTags:
+      - armor
+    armor3:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 4
     Defense: 7
     Resilience: 5
-    Speed: 4
     Energy: 6
-    Focus: 4
 hercules:
   name: Hercules
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Armor
-    type: armor
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    secondary2:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    armor2:
+      name: Armor
+      allowedTags:
+      - armor
+    armor3:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 5
     Defense: 6
     Resilience: 7
-    Speed: 4
     Energy: 4
-    Focus: 4
 minotaur:
   name: Minotaur
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    secondary2:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    compute2:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 6
     Defense: 4
     Resilience: 4
-    Speed: 7
     Energy: 5
-    Focus: 4
 chevalier:
   name: Chevalier
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    secondary2:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    compute2:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 7
     Defense: 5
     Resilience: 3
-    Speed: 6
     Energy: 4
-    Focus: 5
 orion:
   name: Orion
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    primary2:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    compute2:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
+    core4:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 6
     Defense: 4
     Resilience: 4
-    Speed: 5
     Energy: 6
-    Focus: 5
 diana:
   name: Diana
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    primary2:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    compute2:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
+    core4:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 5
     Defense: 5
     Resilience: 3
-    Speed: 8
     Energy: 6
-    Focus: 3
 hela:
   name: Hela
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    primary2:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    compute2:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    armor2:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 4
     Defense: 6
     Resilience: 3
-    Speed: 4
     Energy: 8
-    Focus: 5
 balor:
   name: Balor
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    primary2:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    compute2:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    armor2:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 5
     Defense: 6
     Resilience: 4
-    Speed: 4
     Energy: 7
-    Focus: 4
 nightOwl:
   name: Night Owl
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    compute2:
+      name: Compute
+      allowedTags:
+      - compute
+    compute3:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
+    core4:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 6
     Defense: 3
     Resilience: 3
-    Speed: 5
     Energy: 6
-    Focus: 7
 rogue:
   name: Rogue
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    compute2:
+      name: Compute
+      allowedTags:
+      - compute
+    compute3:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
+    core4:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 6
     Defense: 5
     Resilience: 3
-    Speed: 6
     Energy: 5
-    Focus: 5
 chihuahua:
   name: Chihuahua
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    compute2:
+      name: Compute
+      allowedTags:
+      - compute
+    compute3:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    armor2:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 8
     Defense: 3
     Resilience: 3
-    Speed: 5
     Energy: 5
-    Focus: 6
 theseus:
   name: Theseus
+  tags:
+  - chassis
   slots:
-  - name: Primary Weapon
-    type: primaryWeapon
-  - name: Secondary Weapon
-    type: secondaryWeapon
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Compute
-    type: compute
-  - name: Armor
-    type: armor
-  - name: Armor
-    type: armor
-  - name: Core
-    type: core
-  - name: Core
-    type: core
-  - name: Core
-    type: core
+    primary1:
+      name: Primary Weapon
+      allowedTags:
+      - primary weapon
+    secondary1:
+      name: Secondary Weapon
+      allowedTags:
+      - secondary weapon
+    compute1:
+      name: Compute
+      allowedTags:
+      - compute
+    compute2:
+      name: Compute
+      allowedTags:
+      - compute
+    compute3:
+      name: Compute
+      allowedTags:
+      - compute
+    armor1:
+      name: Armor
+      allowedTags:
+      - armor
+    armor2:
+      name: Armor
+      allowedTags:
+      - armor
+    core1:
+      name: Core
+      allowedTags:
+      - core
+    core2:
+      name: Core
+      allowedTags:
+      - core
+    core3:
+      name: Core
+      allowedTags:
+      - core
   stats:
     Evasion: 5
     Defense: 5
     Resilience: 5
-    Speed: 5
     Energy: 5
-    Focus: 5

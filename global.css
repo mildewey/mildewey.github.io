@@ -43,6 +43,10 @@ main {
 	text-align: left;
 }
 
+textarea {
+	height: 10rem;
+}
+
 nav div.row-flex {
 	display: flex;
 	flex-flow: row wrap;

@@ -1,4 +1,4 @@
-import{S as O,i as Q,s as V,e as r,t as n,k as h,c,a as l,h as o,d as s,m as p,g as W,F as e,n as D}from"../../chunks/index-6a66f5b0.js";function X(K){let a,i,_,w,d,k,A,u,S,C,f,B,E,g,x,P,v,T,H,y,U,F,m,R;return{c(){a=r("article"),i=r("h1"),_=n("Building a Character"),w=h(),d=r("p"),k=n(`Building a character consists of selecting stats, archetypes, and upgrades.
+import{S as O,i as Q,s as V,e as r,t as n,k as h,c,a as l,h as o,d as s,m as p,g as W,F as e,n as D}from"../../chunks/index-432774c0.js";function X(K){let a,i,_,w,d,k,A,u,S,C,f,B,E,g,x,P,v,T,H,y,U,F,m,R;return{c(){a=r("article"),i=r("h1"),_=n("Building a Character"),w=h(),d=r("p"),k=n(`Building a character consists of selecting stats, archetypes, and upgrades.
     As a character levels up, they gain new stats (2 points per level) and upgrades
     (1 per level). The GM will decide what level the campaign starts at, from 0 to 10.`),A=h(),u=r("h3"),S=n("Stats"),C=h(),f=r("p"),B=n(`A character has 6 combat stats: Speed, Evasion, Defense, Resilience, Energy,
     and Focus. See the section on Combat for more details about what these stats do.

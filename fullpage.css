@@ -1,4 +1,4 @@
-@media screen and (min-width: 31rem) {
+@media screen and (min-width: 60rem) {
 	html, body {
 		height: 100%;
 		overflow-y: hidden;
@@ -6,10 +6,9 @@
 
 	body {
 		display: grid;
-		grid-template-columns: 250px auto;
-		grid-template-rows: auto auto 2rem;
+		grid-template-columns: 20rem auto;
+		grid-template-rows: auto 2rem;
 		grid-template-areas:
-			"nav main"
 			"nav main"
 			"nav footer";
 		grid-gap: 10px;
@@ -25,31 +24,13 @@
 	}
 
 	main {
-		grid-area: main;
-		display: grid;
-		grid-template-columns: auto 300px;
-		grid-template-rows: auto;
-		grid-template-areas:
-			"content side";
-		grid-gap: 10px;
 		overflow-y: hidden;
-		height: 99%;
-	}
-
-	div.context {
-		grid-area: side;
-		overflow-y: scroll;
 		height: 100%;
 	}
 
-	div.action {
-		border-radius: 1rem;
-		border-width: 0.2rem;
-		border-style: solid;
-		width: 12rem;
-		height: 18rem;
-		padding: 1rem;
-		margin: 2rem 0rem;
+	div.context {
+		overflow-y: scroll;
+		height: 100%;
 	}
 
 	div.monster {
@@ -74,14 +55,13 @@
 	}
 
 	div.content {
-		grid-area: content;
 		height: 100%;
 		width: 100%;
 		overflow-y: scroll;
 
 		display: grid;
-		grid-template-columns: auto 250px;
-		grid-template-rows: auto auto 2rem;
+		grid-template-columns: auto 20rem;
+		grid-template-rows: auto;
 		grid-template-areas:
 			"article aside";
 		grid-gap: 10px;
@@ -90,10 +70,12 @@
 	article {
 		grid-area: article;
 		overflow-y: scroll;
+		height: 100%;
 	}
 
 	aside {
 		grid-area: aside;
 		overflow-y: scroll;
+		height: 100%;
 	}
 }

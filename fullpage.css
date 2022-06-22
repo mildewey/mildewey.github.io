@@ -4,6 +4,10 @@
 		overflow-y: hidden;
 	}
 
+	a.local-link {
+		color: var(--default-font-color);
+	}
+
 	body {
 		display: grid;
 		grid-template-columns: 20rem auto;

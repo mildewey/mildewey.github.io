@@ -25,6 +25,21 @@
 }
 
 
+div.nav-section {
+	border: solid;
+	padding: 0.5rem;
+}
+
+div.nav-section.link:hover {
+	background: blue;
+}
+
+div.nav-section:hover {
+	background: var(--default-font-color);
+	color: var(--reverse-font-color);
+}
+
+
 html, body {
 	position: relative;
 	width: 100%;
